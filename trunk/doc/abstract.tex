@@ -1,0 +1,20 @@
+We extend the Bayesian skill rating system of TrueSkill to accommodate
+score-based match outcomes. TrueSkill has proven to be a very
+effective algorithm for matchmaking --- the process of pairing
+competitors based on similar skill-level --- in competitive online
+gaming.  However, for the case of two teams/players, TrueSkill only
+learns from win, lose, or draw outcomes and cannot use additional
+match outcome information such as scores.  To address this deficiency,
+we propose novel Bayesian graphical models as extensions of TrueSkill
+that (1) model player's offence and defence skills separately and (2)
+model how these offence and defence skills interact to generate
+score-based match outcomes.  We derive efficient (approximate)
+Bayesian inference methods for inferring latent skills in these new
+models and evaluate them on three real data sets including Halo 2 XBox
+Live matches. Empirical evaluations demonstrate that the new
+score-based models (a) provide more accurate win/loss probability
+estimates than TrueSkill when training data is limited,
+(b) provide competitive and often better win/loss classification
+performance than TrueSkill, and (c) provide reasonable score outcome predictions with an
+appropriate choice of likelihood --- prediction for which TrueSkill was not
+designed, but which can be useful in many applications.

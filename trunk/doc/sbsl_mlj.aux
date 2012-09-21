@@ -1,0 +1,94 @@
+\relax 
+\citation{herbrich06569}
+\citation{elo78TheRatingOfChessPlayers}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}}
+\citation{herbrich06569}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Skill Learning using TrueSkill}{3}}
+\newlabel{eq:BayeTrueSkill}{{1}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip TrueSkill factor graph for a match between two single-player teams with team i winning. There are three types of variables: $l_i$ for the skills of all players, $p_i$ for the performances of all players and $d$ the performance difference. The first row of factors encode the (product) prior; the product of the remaining factors characterizes the likelihood for the game outcome team $i$ winning team $j$. The arrows show the optimal message passing schedule: (1) messages pass along \emph  {gray} arrows from top to bottom, (2) the marginal over $d$ is updated via message 1 followed by message 2 (which requires moment matching), (3) messages pass from bottom to top along \emph  {black} arrows.}}{4}}
+\newlabel{fig:trueskill}{{1}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Score-based Bayesian Skill Models}{5}}
+\newlabel{sec:PoissonGaussianModels}{{3}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Offence and Defence Skill Models}{5}}
+\newlabel{sec:PoissonGraphicalModel}{{3.1}{5}}
+\newlabel{eq:sampleAssumption}{{4}{5}}
+\newlabel{eq:Bay}{{6}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Poisson Offence/Defence Skill Model}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  The Poisson-OD (P) and Gaussian-OD (N) variants of TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the Poisson-OD and Gaussian-OD graphical models are merged due to limited space. Note also that the score observation factors use the Poisson distribution for the Poisson-OD model and the normal distribution for the Gaussian-OD model. The shaded variables are the observed ones. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. }}{7}}
+\newlabel{fig:trueskill_variant}{{2}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Gaussian Offence/Defence Skill Model}{7}}
+\citation{herbrich06569}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Gaussian-SD model for skill learning from score differences. Both team $i$ and team $j$ are characterized by skill level $l_i$ and $l_j$, respectively. The shaded variable $s$ ($s=s_i-s_j$) denotes the score difference between $s_i$ and $s_j$. Bayesian inference for the posterior skill level distributions has a closed-form solution.}}{8}}
+\newlabel{fig:modelAndInferenceGaussianGraphicalModelScoreDifference}{{3}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Gaussian Score Difference (SD) Model}{8}}
+\newlabel{eq:ScoreDifferenceGaussianGraphicalModel}{{9}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Skill and Win Probability Inference}{8}}
+\newlabel{sec:inference}{{4}{8}}
+\citation{herbrich06569}
+\citation{kschischang01498}
+\citation{Beal:EMFixedPoint02}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Inference in TrueSkill}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Inference in Poisson-OD Model}{9}}
+\newlabel{sec:PoissonInference}{{4.2}{9}}
+\newlabel{eq:marginal}{{12}{9}}
+\newlabel{eq:marginal2}{{13}{9}}
+\newlabel{eq:KL}{{14}{9}}
+\newlabel{eq:ExactMuSigmaNew}{{15}{10}}
+\newlabel{eq:approximationZQuad5}{{16}{10}}
+\newlabel{eq:firstTermFinal}{{17}{10}}
+\newlabel{eq:finalSecondTerm}{{18}{10}}
+\citation{Skellam46TheFrequencyDistribution}
+\citation{Abramowitz74HandbookOfMathematical}
+\newlabel{eq:kappa}{{19}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Inference in Gaussian-OD Model}{11}}
+\newlabel{eq:GaussianGraphicalModelsUpdatingEquation}{{20}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Inference in Gaussian-SD Model}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Empirical Evaluation}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Data Sets}{12}}
+\newlabel{sec:data_sets}{{5.1}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Evaluation Criteria}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Information Gain}{13}}
+\newlabel{sec:informationGain}{{5.2.1}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Win/no-Win Prediction Accuracy}{13}}
+\newlabel{sec:WLPredictionAccuracy}{{5.2.2}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Score Prediction Error}{14}}
+\newlabel{sec:scorePredictionError}{{5.2.3}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Results}{14}}
+\newlabel{sec:results}{{5.3}{14}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parameter settings. Priors on offence/defence skills: $\mathcal  {N}(\mu _{0},\sigma _{0}^2)$ with $\mu _{0}=25$ and $\sigma _{0}=25/3$. Performance variance: $\beta $, $\beta _o$, $\beta _d$.}}{14}}
+\newlabel{table:Parameters}{{1}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Information Gain}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Win/no-Win Prediction Accuracy }{14}}
+\citation{elo78TheRatingOfChessPlayers}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL, Halo, and AFL datasets evaluated using information gain (left column), win/loss prediction accuracy in term of the area of the curve (AUC) (middle column), and score prediction error (right column). Error bars indicate 95\% confidence intervals.}}{15}}
+\newlabel{fig:Results}{{4}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Score Prediction Errors}{15}}
+\citation{herbrich06569}
+\citation{dangauthier07337}
+\citation{birlutiu07ExpectationPropagation}
+\citation{Moroney56FactsFromFigures}
+\citation{dixon97ModellingAssociationFootball}
+\citation{Glickman98JASA}
+\citation{Karlis03AnalysisOfSportsData}
+\citation{karlis09BayesianModellingFootballOutcomes}
+\citation{Moroney56FactsFromFigures}
+\citation{karlis09BayesianModellingFootballOutcomes}
+\citation{Glickman98JASA}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Related Work}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{16}}
+\bibcite{Abramowitz74HandbookOfMathematical}{1}
+\bibcite{birlutiu07ExpectationPropagation}{2}
+\bibcite{dangauthier07337}{3}
+\bibcite{elo78TheRatingOfChessPlayers}{4}
+\bibcite{herbrich06569}{5}
+\bibcite{karlis09BayesianModellingFootballOutcomes}{6}
+\bibcite{kschischang01498}{7}
+\bibcite{minka01ExpectationUAI}{8}
+\bibcite{Moroney56FactsFromFigures}{9}
+\bibcite{Skellam46TheFrequencyDistribution}{10}
+\bibcite{Glickman98JASA}{11}
+\bibcite{Beal:EMFixedPoint02}{12}
+\bibcite{karlis09BayesianModellingFootballOutcomes}{13}
+\bibcite{Karlis03AnalysisOfSportsData}{14}
+\bibcite{Moroney56FactsFromFigures}{15}
+\bibcite{dixon97ModellingAssociationFootball}{16}
