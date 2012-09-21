@@ -1,0 +1,22 @@
+We proposed novel score-based, online Bayesian skill learning extensions of
+TrueSkill that modeled (1) player's offence and defence skills
+separately and (2) how these offence and defence skills
+interact to generate scores.  Overall these new models --- and
+Gaussian-OD (using a separate offence/defence skill model) in particular ---
+show an often improved ability to model winning probability and
+win/loss prediction accuracy over TrueSkill, especially when the
+amount of training data is limited.  This indicates that there is
+indeed useful information in score-based outcomes that is ignored by
+TrueSkill and that separate offence/defence skill modeling does help
+(c.f. the performance of Gaussian-OD vs. Gaussian-SD).  Furthermore,
+these new models allow the prediction of scores (unlike TrueSkill),
+with the Poisson-OD model and its variational Bayesian update derived
+in Section~\ref{sec:PoissonInference} performing best on the
+high-scoring AFL data.  Altogether, these results suggest the
+potential advantages of score-based Bayesian skill learning over
+state-of-the-art WLD-based skill learning approaches like TrueSkill.
+
+Future research could combine the proposed models with
+related work that models home field advantage, time-dependent skills,
+multi-team games, and correlated skills to utilise score-based
+outcomes.

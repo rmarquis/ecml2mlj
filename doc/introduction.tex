@@ -1,0 +1,74 @@
+In online gaming, it is important to pair players or teams of players
+so as to optimise their gaming experience.  Game players often expect
+competitors with comparable skills for the most enjoyable experience;
+match experience can be compromised if one side consistently
+outperforms the other.  \emph{Matchmaking} attempts to pair players
+such that match results are close to being even or a draw.  Hence, a
+prerequisite for good matchmaking is the ability to predict future
+match results correctly from historical match outcomes --- a task
+that is often cast in terms of latent skill learning.
+%How to do
+%this for matches with score-based outcomes is the question we address
+%in this paper.
+
+TrueSkill~\cite{herbrich06569} is a state-of-the-art Bayesian skill
+learning system: it has been deployed in the Microsoft Xbox 360 online
+gaming system for both matchmaking and player ranking.  For the case
+of two teams/players, TrueSkill, like
+Elo~\cite{elo78TheRatingOfChessPlayers}, is restricted to learn skills
+from match outcomes in terms of win, lose, or draw (WLD).
+While we conjecture that TrueSkill discards potentially
+valuable skill information carried by score-based outcomes,
+there are at least two arguments in favour of TrueSkill's WLD-based
+skill learning approach:
+\begin{itemize}
+\item WLD-based systems can be applied to any game whose outcome space
+is WLD, no matter what the underlying scoring system is.
+\item In many games, the objective is not to win by the highest
+score differential, but rather simply to win.  In this case,
+it can be said that TrueSkill's skill modeling and learning from WLD
+outcomes aligns well with the players' underlying objective.
+\end{itemize}
+%if the skill estimates of the system are revealed back to the
+%players, there is a danger that the players may begin optimising their
+%game play to influence their public skill estimate.  Hence, if the
+%skill estimate is based on measurements other than the true game
+%outcomes, this can lead to a distortion of the game's dynamics.
+%However, if we assume that score information is available and
+%estimated skill information is maintained privately, then it makes
+%sense to attempt to exploit this additional score information in
+On the other hand, we note that discarding score results
+ignores two important sources of information:
+\begin{itemize}
+\item High (or low) score
+differentials can provide insight into relative team strengths.
+\item Two dimensional score outcomes (i.e., a score for each side) provide a
+direct basis for inferring separate offense and defense strengths for
+each team, hence permitting finer-grained modeling of performance against
+future opponents.
+%Peeking ahead, we note that the predictive
+%improvements of score-based models over TrueSkill as shown in
+%Section~\ref{sec:results} support this conjecture in many cases.
+\end{itemize}
+
+In this work, we augment the TrueSkill model of WLD skill learning to
+learn from score-based outcomes.  We explore single skill models as
+well as separate offense/defense skill models made possible via
+score-based modeling.  We also investigate both Gaussian and Poisson
+score likelihood models, deriving a novel variational update for
+approximate Bayesian inference in the latter case.  We evaluate these
+novel Bayesian score-based skill-learning models in comparison to
+TrueSkill (for WLD outcomes) on three datasets: 14 years of match
+outcomes for the UK Premier League, 11 years of match outcomes for the
+Australian Football (Rugby) League (AFL), and three days covering
+6,000+ online match outcomes in the Halo 2 XBox video game.  Empirical
+evaluations demonstrate that the new score-based models (a) provide
+more accurate win/loss probability estimates than TrueSkill (in terms
+of information gain) with limited amounts of training data, (b)
+provide competitive and often better win/loss classification
+performance than TrueSkill (in terms of area under the curve), and (c)
+provide reasonably accurate score predictions with an appropriate
+likelihood --- prediction for which TrueSkill was not designed but
+important in cases such as tournaments that rank (or break ties) by
+points, professional sports betting and bookmaking, and game-play
+strategy decisions that are dependent on final score projections.

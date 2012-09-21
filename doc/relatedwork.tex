@@ -1,0 +1,51 @@
+{\bf Skill rating} dates at least as far back as the Elo system
+\cite{elo78TheRatingOfChessPlayers}, the idea of which is to model the
+probability of the possible game outcome as a function of the two
+players' skill levels. Players' skill levels are updated after each
+game in a way such that the observed game outcome becomes more likely
+and the summation of players' ratings remains unchanged.
+
+The Elo system cannot handle the case when three or more teams
+participate in one match, a disadvantage addressed by TrueSkill
+\cite{herbrich06569}. %Compared with the Elo system, TrueSkill models each
+%player's skill by a Gaussian distribution that simply requires
+%maintaining its mean and variance and updates these parameters based on
+%WLD match outcomes.
+Further extensions of TrueSkill incorporate time-dependent
+skill modeling for historical data~\cite{dangauthier07337}.
+
+%TrueSkill assumes that skill update just involves those teams
+%participating in a match, i.e., other players' skills are not
+%effected. To infer entire time series of skills of players, the
+%authors in \cite{dangauthier07337} have extended TrueSkill by
+%smoothing through time instead of filtering. Note that both consider
+%that players' skills are independent.
+
+In \cite{birlutiu07ExpectationPropagation}, the authors model and learn the
+correlation between all players' skills when updating skill beliefs, and
+develop a method called ``EP-Correlated", contrasted with the
+independent assumption on players' skills
+(EP-Independent).  Empirically, EP-Correlated outperforms
+EP-Independent on professional tennis match results;
+this suggests modeling correlations in extensions of the
+score-based learning presented here.
+
+These skill learning methods all share a common feature that they are
+restricted to model WLD only and have to discard meaningful
+information carried with scores.  While we proposed score-based extensions
+of TrueSkill in this work; it remains to incorporate other extensions
+motivated by this related work.
+
+{\bf Score modeling} has been studied since the 1950s
+\cite{Moroney56FactsFromFigures}
+\cite{dixon97ModellingAssociationFootball} \cite{Glickman98JASA}
+\cite{Karlis03AnalysisOfSportsData}
+\cite{karlis09BayesianModellingFootballOutcomes}; one of the most
+popular score models is the Poisson model, first presented in
+\cite{Moroney56FactsFromFigures}, and this work continues to the
+present~\cite{karlis09BayesianModellingFootballOutcomes}. Other
+commonly used score models are based on normal distributions
+\cite{Glickman98JASA}. However, it appears that most score-based
+models do not distinguish offence and defence skills of each team and
+the results here indicate that such separate offence/defence skill
+models can perform better than univariate models with limited data.
