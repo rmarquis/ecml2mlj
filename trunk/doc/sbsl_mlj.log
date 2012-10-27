@@ -1,37 +1,23 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.9.20)  21 SEP 2012 23:48
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.2.24)  25 OCT 2012 15:37
 entering extended mode
-**C:/Shengbo/Research/Submissions/MLJ_submission_basedon_ECML_2012_sbsl/sbsl_ml
-j.tex
+**C:/Shengbo/Research/Submissions/ecml2mlj/doc/sbsl_mlj.tex
+(C:/Shengbo/Research/Submissions/ecml2mlj/doc/sbsl_mlj.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\fix-cm.sty"
+Package: fix-cm 2006/03/24 v1.1n fixes to LaTeX
 
-(C:/Shengbo/Research/Submissions/MLJ_submission_basedon_ECML_2012_sbsl/sbsl_mlj
-.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fix-cm.sty"
-Package: fix-cm 2006/09/13 v1.1m fixes to LaTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 ))
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\svjour3.
-cls
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\svjour3.cls
 Document Class: svjour3 2007/05/08 v3.2 
 LaTeX document class for Springer journals
 Class Springer-SVJour3 Info: extra/valid Springer sub-package (-> *.clo) 
 (Springer-SVJour3)           not found in option list of \documentclass
 (Springer-SVJour3)           - autoactivating "global" style.
-
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\svglov3.
-clo
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\svglov3.clo
 File: svglov3.clo 2009/12/18 v3.2 style option for standardised journals
 
 SVJour Class option: svglov3.clo for standardised journals
@@ -92,42 +78,35 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
 \figgap=\dimen112
 \bibindent=\dimen113
 \@tempcntc=\count104
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 90.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
-)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 \Gread@gobject=\count105
 ))
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks17
 \symAMSa=\mathgroup4
@@ -135,24 +114,24 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen116
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen117
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count106
@@ -196,7 +175,7 @@ Package amsmath Warning: Unable to redefine math accent \vec.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
-) (C:\Users\sguo\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
+) ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\subfigure\subfigure.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip46
 \subfigcapskip=\skip47
@@ -212,21 +191,20 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(C:\Users\sguo\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip50
 \subfig@bottom=\skip51
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\epsfig.sty"
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen127
 \epsfysize=\dimen128
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\sbsl_mlj
-.aux
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\sbsl_mlj.aux
 
 LaTeX Warning: Label `karlis09BayesianModellingFootballOutcomes' multiply defin
 ed.
@@ -252,7 +230,7 @@ LaTeX Font Info:    ... okay on input line 84.
 
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
-(C:\Users\sguo\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen129
@@ -263,25 +241,22 @@ Unknown journal: specify \journalname{<name of your journal>} in preambel
 \MPscratchCnt=\count125
 \MPscratchDim=\dimen130
 \MPnumerator=\count126
-\makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks24
 )
 SVJour3 warning: Missing \journalname
 LaTeX Font Info:    Try loading font information for U+msa on input line 126.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 126.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\abstract
-.tex) [1{C:/Users/sguo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\introduc
-tion.tex) [2]
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\trueskil
-l.tex
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\abstract.tex) [1{C:/ProgramData/M
+iKTeX/2.8/pdftex/config/pdftex.map}]
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\introduction.tex) [2]
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\trueskill.tex
 Overfull \hbox (5.33395pt too wide) in paragraph at lines 1--8
 \OT1/cmr/m/n/10 Since our score-based Bayesian skill learn-ing con-tri-bu-tions
  build on TrueSkill [5],
@@ -289,35 +264,24 @@ Overfull \hbox (5.33395pt too wide) in paragraph at lines 1--8
 
 [3] <TrueSkill.pdf, id=27, 580.1675pt x 640.3925pt>
 File: TrueSkill.pdf Graphic file (type pdf)
- <use TrueSkill.pdf>
-Package pdftex.def Info: TrueSkill.pdf used on input line 62.
-(pdftex.def)             Requested size: 174.05157pt x 192.11923pt.
-)
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\model.te
-x [4 <C:/Shengbo/Research/Submissions/MLJ_submission_basedon_ECML_2012_sbsl/Tru
-eSkill.pdf>] [5] <modelAndInference.pdf, id=50, 950.55125pt x 696.6025pt>
+ <use TrueSkill.pdf>)
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\model.tex [4 <C:/Shengbo/Research
+/Submissions/ecml2mlj/doc/TrueSkill.pdf>] [5]
+<modelAndInference.pdf, id=50, 950.55125pt x 696.6025pt>
 File: modelAndInference.pdf Graphic file (type pdf)
 
-<use modelAndInference.pdf>
-Package pdftex.def Info: modelAndInference.pdf used on input line 119.
-(pdftex.def)             Requested size: 266.15253pt x 195.04736pt.
- [6]
+<use modelAndInference.pdf> [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <C:/Shengbo/Research/Submissions/MLJ_submission_basedon_ECML_2012_sbsl/mode
-lAndInference.pdf>]
+ [7 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/modelAndInference.pdf>]
 <modelAndInferenceGaussianGraphicalModelScoreDifference.pdf, id=76, 580.1675pt 
 x 626.34pt>
 File: modelAndInferenceGaussianGraphicalModelScoreDifference.pdf Graphic file (
 type pdf)
- <use modelAndInferenceGaussianGraphicalModelScoreDifference.pdf>
-Package pdftex.def Info: modelAndInferenceGaussianGraphicalModelScoreDifference
-.pdf used on input line 199.
-(pdftex.def)             Requested size: 159.54211pt x 172.23924pt.
-)
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\inferenc
-e.tex [8 <C:/Shengbo/Research/Submissions/MLJ_submission_basedon_ECML_2012_sbsl
-/modelAndInferenceGaussianGraphicalModelScoreDifference.pdf>]
+ <use modelAndInferenceGaussianGraphicalModelScoreDifference.pdf>)
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\inference.tex [8 <C:/Shengbo/Rese
+arch/Submissions/ecml2mlj/doc/modelAndInferenceGaussianGraphicalModelScoreDiffe
+rence.pdf>]
 Overfull \hbox (8.14456pt too wide) in paragraph at lines 64--80
  \OT1/cmr/m/n/10 To avoid clut-tered no-ta-tion, let us use $\OML/cmm/m/it/10 m
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ to rep-re-sent $\OML/cm
@@ -333,27 +297,17 @@ L/cmm/m/it/10 x\OT1/cmr/m/n/10 )$, we cal-cu-late the par-tial deriva-tives of
 $[] []$
  []
 
-[10] [11])
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\experime
-nt.tex [12] [13] <InforGain_UK.pdf, id=112, 845.1575pt x 597.23125pt>
+[10] [11]) (C:\Shengbo\Research\Submissions\ecml2mlj\doc\experiment.tex
+[12] [13] <InforGain_UK.pdf, id=112, 845.1575pt x 597.23125pt>
 File: InforGain_UK.pdf Graphic file (type pdf)
 
-<use InforGain_UK.pdf>
-Package pdftex.def Info: InforGain_UK.pdf used on input line 274.
-(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
- <WLAccuracy_UK.pdf, id=113, 845.1575pt x 597.23125pt>
+<use InforGain_UK.pdf> <WLAccuracy_UK.pdf, id=113, 845.1575pt x 597.23125pt>
 File: WLAccuracy_UK.pdf Graphic file (type pdf)
 
-<use WLAccuracy_UK.pdf>
-Package pdftex.def Info: WLAccuracy_UK.pdf used on input line 274.
-(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
- <ScoreError_UK.pdf, id=114, 845.1575pt x 597.23125pt>
+<use WLAccuracy_UK.pdf> <ScoreError_UK.pdf, id=114, 845.1575pt x 597.23125pt>
 File: ScoreError_UK.pdf Graphic file (type pdf)
 
 <use ScoreError_UK.pdf>
-Package pdftex.def Info: ScoreError_UK.pdf used on input line 274.
-(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
-
 Overfull \hbox (41.28831pt too wide) in paragraph at lines 274--274
  [][] 
  []
@@ -362,23 +316,14 @@ Overfull \hbox (41.28831pt too wide) in paragraph at lines 274--274
 File: InforGain_Halo.pdf Graphic file (type pdf)
 
 <use InforGain_Halo.pdf>
-Package pdftex.def Info: InforGain_Halo.pdf used on input line 282.
-(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
-
 <WLAccuracy_Halo.pdf, id=116, 845.1575pt x 597.23125pt>
 File: WLAccuracy_Halo.pdf Graphic file (type pdf)
 
 <use WLAccuracy_Halo.pdf>
-Package pdftex.def Info: WLAccuracy_Halo.pdf used on input line 282.
-(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
-
 <ScoreError_Halo.pdf, id=117, 845.1575pt x 597.23125pt>
 File: ScoreError_Halo.pdf Graphic file (type pdf)
 
 <use ScoreError_Halo.pdf>
-Package pdftex.def Info: ScoreError_Halo.pdf used on input line 282.
-(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
-
 Overfull \hbox (41.28831pt too wide) in paragraph at lines 282--282
  [][] 
  []
@@ -386,90 +331,76 @@ Overfull \hbox (41.28831pt too wide) in paragraph at lines 282--282
 <InforGain_AFL.pdf, id=118, 845.1575pt x 597.23125pt>
 File: InforGain_AFL.pdf Graphic file (type pdf)
  <use InforGain_AFL.pdf>
-Package pdftex.def Info: InforGain_AFL.pdf used on input line 290.
-(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
-
 <WLAccuracy_AFL.pdf, id=119, 845.1575pt x 597.23125pt>
 File: WLAccuracy_AFL.pdf Graphic file (type pdf)
 
 <use WLAccuracy_AFL.pdf>
-Package pdftex.def Info: WLAccuracy_AFL.pdf used on input line 290.
-(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
-
 <ScoreError_AFL.pdf, id=120, 845.1575pt x 597.23125pt>
 File: ScoreError_AFL.pdf Graphic file (type pdf)
 
 <use ScoreError_AFL.pdf>
-Package pdftex.def Info: ScoreError_AFL.pdf used on input line 290.
-(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
-
 Overfull \hbox (41.28831pt too wide) in paragraph at lines 290--290
  [][] 
  []
 
 [14] (Commented text...) (Commented text...))
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\relatedw
-ork.tex
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\relatedwork.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <C:/Shengbo/Research/Submissions/MLJ_submission_basedon_ECML_2012_sbsl/Inf
-orGain_UK.pdf, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/MLJ
-_submission_basedon_ECML_2012_sbsl/WLAccuracy_UK.pdf, page is rotated 90 degree
-s> <C:/Shengbo/Research/Submissions/MLJ_submission_basedon_ECML_2012_sbsl/Score
-Error_UK.pdf, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/MLJ_
-submission_basedon_ECML_2012_sbsl/InforGain_Halo.pdf, page is rotated 90 degree
-s> <C:/Shengbo/Research/Submissions/MLJ_submission_basedon_ECML_2012_sbsl/WLAcc
-uracy_Halo.pdf, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ML
-J_submission_basedon_ECML_2012_sbsl/ScoreError_Halo.pdf, page is rotated 90 deg
-rees> <C:/Shengbo/Research/Submissions/MLJ_submission_basedon_ECML_2012_sbsl/In
-forGain_AFL.pdf, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/M
-LJ_submission_basedon_ECML_2012_sbsl/WLAccuracy_AFL.pdf, page is rotated 90 deg
-rees> <C:/Shengbo/Research/Submissions/MLJ_submission_basedon_ECML_2012_sbsl/Sc
-oreError_AFL.pdf, page is rotated 90 degrees>])
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\conclusi
-on.tex [16])
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\bib.tex)
-[17]
-(C:\Shengbo\Research\Submissions\MLJ_submission_basedon_ECML_2012_sbsl\sbsl_mlj
-.aux)
+ [15 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/InforGain_UK.pdf, page is ro
+tated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/WLAccuracy_UK.p
+df, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/S
+coreError_UK.pdf, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/
+ecml2mlj/doc/InforGain_Halo.pdf, page is rotated 90 degrees> <C:/Shengbo/Resear
+ch/Submissions/ecml2mlj/doc/WLAccuracy_Halo.pdf, page is rotated 90 degrees> <C
+:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError_Halo.pdf, page is rotate
+d 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/InforGain_AFL.pdf, 
+page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/WLAcc
+uracy_AFL.pdf, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecm
+l2mlj/doc/ScoreError_AFL.pdf, page is rotated 90 degrees>])
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\conclusion.tex [16])
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\bib.tex) [17]
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\sbsl_mlj.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3114 strings out of 494045
- 44195 string characters out of 3148390
- 95304 words of memory out of 3000000
- 6342 multiletter control sequences out of 15000+200000
+ 2900 strings out of 495285
+ 40500 string characters out of 3179881
+ 90637 words of memory out of 3000000
+ 6042 multiletter control sequences out of 15000+200000
  15558 words of font info for 57 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 27i,18n,25p,1295b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/symbols/msbm7.pfb>
-Output written on sbsl_mlj.pdf (17 pages, 442324 bytes).
+ 14 hyphenation exceptions out of 8191
+ 27i,18n,25p,1270b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
+><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
+/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program F
+iles (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program File
+s (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (
+x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86
+)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/M
+iKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTe
+X 2.8/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.
+8/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/
+amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/ams
+fonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfon
+ts/cm/cmtt8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfon
+ts/symbols/msbm7.pfb>
+Output written on sbsl_mlj.pdf (17 pages, 442001 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
+ 251 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
