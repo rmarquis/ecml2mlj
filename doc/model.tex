@@ -93,7 +93,7 @@ high-scoring games even when team skills are very close (and hence
 $p_{oi}-p_{dj} \approx 0$).}  Likewise, one can model $s_j$ by
 applying the same strategy when given $\lambda = \exp(p_{oj} - p_{di})$.
 We represent the resulting \emph{Poisson-OD}
-model in Figure~\ref{fig:trueskill_variant}(P) where the joint posterior
+model in Figure~\ref{fig:trueskill_variant} where the joint posterior
 is
 \begin{align}%\label{eq:BayTransNew2}
     p(o_i, d_j, p_{oi},p_{dj} | s_i) & \propto p(s_i|p_{oi},p_{dj}) p(p_{oi}|o_i) p(p_{dj}|d_j) p(o_i)p(d_j), \nonumber \\
@@ -118,8 +118,7 @@ will be covered in Section~\ref{sec:PoissonInference}.
 \begin{figure}[t!]
 \centerline{\includegraphics[scale=0.28]{modelAndInference}}
 \caption{
-The Poisson-OD (P) and Gaussian-OD (N) variants of TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the Poisson-OD and Gaussian-OD graphical models are merged due to limited space. Note also that the score observation factors use the Poisson distribution for the Poisson-OD model and the normal distribution for the Gaussian-OD model. The shaded variables are the observed ones. For each
-team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of
+The Poisson-OD variants of TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the score observation factors use the Poisson distribution for the Poisson-OD model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of
 team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing.
 }
 \label{fig:trueskill_variant}
@@ -144,42 +143,31 @@ we avoid this complication in exchange for the simple and exact
 updates offered by a purely Gaussian model.
 
 We show the resulting \emph{Gaussian-OD} model in
-Figure~\ref{fig:trueskill_variant}(N), which
+Figure~\ref{fig:GaussianOD}, which
 differs from our proposed Poisson model only in modeling the observed score $s_i$ ($s_j$) for team $i$ ($j$) given the univariate performance difference variable $x$ ($y$). In this model, all messages passed during inference
 are Gaussian, allowing for efficient and exact belief updates.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{figure}[htbp!]
-%\vspace{-3mm}
-%\centerline{\includegraphics[scale=0.28]{modelAndInferenceGaussianGraphicalModel}}
-%\vspace{-3mm}
-%\caption{\small
-%Gaussian-OD model for score-based skill learning (Left: modeling
-%$s_i$; Right: modeling $s_j$). The shaded variables are the observed
-%ones. Both team $i$ and team $j$ are characterized by offence skill
-%$o_{i}$ (team $i$'s offence skill) and defence skill $d_{i}$ (team
-%$i$'s defence skill). Given match outcomes $s_i$ and $s_j$, the
-%posteriors over $o_i$ and $d_j$ can be exactly inferred using message
-%passing.}
-%\vspace{-2mm}
-%\label{fig:modelAndInferenceGaussianGraphicalModel}
-%\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t!]
+\centerline{\includegraphics[scale=0.28]{modelAndInferenceGaussianGraphicalModel}}
+\caption{
+The Gaussian-OD variant of the TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the score observation factors use the Gaussian distribution for the Gaussian-OD model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of
+team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing.
+}
+\label{fig:GaussianOD}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Gaussian Score Difference (SD) Model}
 
 Again assuming $s_i \in \mathbb{R}$ and $s_j \in \mathbb{R}$,
 algebra for the performance means in % the Gaussian offense/defense skill model
-Figure~\ref{fig:trueskill_variant}(N) gives:
+Figure~\ref{fig:GaussianOD} gives:
 \begin{align}
-% Not sure this is it: \mu_{si} = o_i - d_j,    \;\;\;\;   \mu_{sj} = o_j - d_i.
-%s_i = o_i - d_j,    \;\;\;\;   s_j = o_j - d_i.
 s_i = p_{oi}-p_{dj}, \qquad \;\; s_j = p_{oj}-p_{di}.
 \label{eq:ScoreDifferenceGaussianGraphicalModel}
 \end{align}
-%where $\mu_{si}$ and $\mu_{sj}$ are the means for the Gaussian
-%distributions of the score variables $s_i$ and $s_j$,
-%respectively. \eqref{eq:ScoreDifferenceGaussianGraphicalModel}
 This implies
 \begin{align}
   s_i - s_j &= (p_{oi} - p_{dj}) - (p_{oj} - p_{di})  \nonumber \\
@@ -198,9 +186,9 @@ Figure~\ref{fig:modelAndInferenceGaussianGraphicalModelScoreDifference}.
 \begin{figure}
 \centerline{\includegraphics[scale=0.275]{modelAndInferenceGaussianGraphicalModelScoreDifference}}
 \caption{\small
-Gaussian-SD model for skill learning from score differences.  Both team
+The Gaussian-SD variant of the TrueSkill factor graph model for skill update of two teams based on the score difference. Both team
 $i$ and team $j$ are characterized by skill level $l_i$ and $l_j$,
-respectively. The shaded variable $s$ ($s=s_i-s_j$) denotes the score
+respectively. The shaded node $s$ ($s=s_i-s_j$) denotes the score
 difference between $s_i$ and $s_j$. Bayesian inference for the posterior
 skill level distributions has a closed-form solution.}
 \label{fig:modelAndInferenceGaussianGraphicalModelScoreDifference}

@@ -23,21 +23,6 @@ particularly when small proportion of training data set is selected
 (e.g., the first 10 percent games); we remove these games in the
 testing set when reporting performances for all models.
 
-%The training and testing settings are described as follows.  For Halo
-%2~\footnote{\noindent Credit for the use of the Halo 2 Beta Data set
-%is given to Microsoft Research Ltd. and Bungie.}, the last 20\%
-%of matches are used for testing, and we use different proportions of
-%the first 80\% of data for training. There are 8 proportions used
-%for training, ranging from 10\% to 80\% with an increment of
-%10\%. To cross validate, we
-%sample the data and run the learning 30 times at each proportion level
-%to get standard error bars. Note that there are some players in the
-%testing games who are not involved in any training data sets,
-%particularly when small proportion of training data set is selected
-%(e.g., the first 10 percent games); we remove these games in the
-%testing set when reporting performances for all models.
-
-
 For both UK-PL and AFL datasets, cross validation is performed by
 training and testing for each year separately (14 years for UK-PL, and
 11 years for AFL).  For these two datasets, we test the last 20\%
@@ -46,17 +31,17 @@ incrementally from 10\% to 80\% of the initial matches.
 
 \subsection{Evaluation Criteria}
 
-%We evaluate performances using three criteria: {\it information gain}
-%of predicting winning probability of a team
-%(Section~\ref{sec:informationGain}),
-%{\it win/lose prediction accuracy}
-%(Section~\ref{sec:WLPredictionAccuracy}),
-%and {\it score prediction errors}
-%(Section~\ref{sec:scorePredictionError}).
-%While the first two criteria focus on predicting win/lose, the third
-%criterion measures how good a model is at predicting scores, for which
-%TrueSkill does not apply since it is restricted to WLD only. Let us
-%introduce each criterion in detail.
+We evaluate performances using three criteria: {\it information gain}
+of predicting winning probability of a team
+(Section~\ref{sec:informationGain}),
+{\it win/lose prediction accuracy}
+(Section~\ref{sec:WLPredictionAccuracy}),
+and {\it score prediction errors}
+(Section~\ref{sec:scorePredictionError}).
+While the first two criteria focus on predicting win/lose, the third
+criterion measures how good a model is at predicting scores, for which
+TrueSkill does not apply since it is restricted to WLD only. Let us
+introduce each criterion in detail.
 
 \subsubsection{Information Gain}
 \label{sec:informationGain}
@@ -67,11 +52,11 @@ Tipping Competition}\footnote{Refer to
 \url{http://www.csse.monash.edu.au/~footy/}}: if a predictor assigns
 probability $p$ to team $i$ winning, then the score (in ``bits")
 gained is $1+\log_2(p)$ if team $i$ wins, $1+\log_2(1-p)$ if team $i$ loses, $1+(1/2)\log_2(p(1-p))$ if draw happens.
-%This evaluation metric can be viewed as an information gain
-%interpretable variant of a log likelihood score where an uninformed
-%prediction of $p=0.5$ leads to a score of 0 and a definite prediction
-%of $p=1$ ($p=0$) leads to a score of $-\infty$ if predicting
-%incorrectly and 1 if predicting correctly.
+This evaluation metric can be viewed as an information gain
+interpretable variant of a log likelihood score where an uninformed
+prediction of $p=0.5$ leads to a score of 0 and a definite prediction
+of $p=1$ ($p=0$) leads to a score of $-\infty$ if predicting
+incorrectly and 1 if predicting correctly.
 In Section~\ref{sec:inference}, we showed how to compute the win
 probability $p$ for each model.
 
@@ -156,15 +141,6 @@ predict score differences rather than scores.
 %    \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} | \hat{\text{sd}_i} - \text{sd}_i |
 %\end{align}
 %where $\hat{\text{sd}_i}$ is the predicted score difference for match $i$, and $\text{sd}_i$ is the ground truth for the score difference of match $i$.
-
-%Denoted by $\text{SD}_{\text{predict}}$ and $\text{SD}_{\text{accuracy}}$
-%respectively the {\it score
-%difference} of a match based on models and ground truth data, we define the
-%relative score prediction error $e(\text{SD}_{\text{predict}}, \text{SD}_{\text{accuracy}})$ as
-%\begin{align}
-% e(\text{SD}_{\text{predict}}, \text{SD}_{\text{accuracy}})=
-% |\text{SD}_{\text{predict}} - \text{SD}_{\text{accuracy}}|.
-%\end{align}
 
 % \subsection{Logistic Regression}
 % Perhaps the simplest score prediction approach is to use a linear regression model for $m$ teams and $n$ matches with variables $o_1,\ldots,o_m$ and $d_1,\ldots,d_m$
