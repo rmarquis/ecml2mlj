@@ -47,7 +47,7 @@ where $\Phi(\cdot)$ is the normal CDF.
 \subsection{Inference in Poisson-OD Model}
 \label{sec:PoissonInference}
 
-\noindent{\bf Bayesian update:}
+\subsubsection{Bayes Update}
 Some of the update equations in the Poisson-OD model
 (Figure~\ref{fig:trueskill_variant}(P)) have been presented in
 \cite{herbrich06569}, with the exception of the marginal distribution
@@ -72,9 +72,11 @@ Figure~\ref{fig:trueskill_variant}(P)). Due to the multiplication of
 $m_{1}(x)$ and $m_{2}(x)$, the exact marginal distribution of
 $p(x|s_i)$ is not Gaussian, which makes exact inference
 intractable. To maintain a compact representation of offence and
-defence skills, one can approximate $p(x|s_i)$ within a variational
-Bayes framework by %, contrasted with expectation propagation, i.e., to
-choosing a Gaussian distribution $q(x)^*:
+defence skills, one can approximate $p(x|s_i)$ with a variational
+Bayes framework or a sampling-based approach considering its being a univariate distribution.
+
+\paragraph{\bf Bayesian update with VB}
+In a variational Bayes framework, the problem is to choose a Gaussian distribution $q(x)^*:
 \mathcal{N}(x;\mu_{\text{new}}, \sigma_{\text{new}}^2)$ that minimizes
 the KL divergence between $p(x|s_i)$ and $q(x)$, i.e.,
 \begin{align}\label{eq:marginal2}
@@ -176,6 +178,8 @@ With convergence, we substitute the fixed-point solution
 into \eqref{eq:ExactMuSigmaNew} to get the optimal mean
 and variance for $q(x)^*$.
 
+\paragraph{\bf Bayes Update with Slice Sampling}
+One caveat associated with variational Bayes is that it may yield local minimum; and thus one tends to use sampling-based appoaches to obtain exact solutions. One widely used sampling-based approaches is based on Markov chain Monte Carlo (MCMC). To approximate this univariate distribution $p(x|s_i$, we can use one type of MCMC called slice sampling~\cite{neal03SliceSampling}. The idea behind slice sampling is to sample uniformly from the region under the plot of the density function to be approximated; by doing so, one can adatp to the characteristics of the distribution. One can construct this Markov chain that converges to this uniform distribution by alternating uniform sampling in the vertical direction with uniform sampling from the horizontal ``slice" defined by the current vertical position. This method can be easily implemented for univariate distributions, and we use the Matlab embedded function slicesample for approximating $p(x|s_i)$. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -204,7 +208,7 @@ and variance for $q(x)^*$.
 %message passing to compute the posterior involves only Gaussians and
 %can be done exactly and efficiently.
 
-\noindent{\bf Win probability:}
+\subsubsection{Win probability}
 Suppose we
 are given the offence and defence skills for team $i$ and $j$, we can
 estimate the distributions over performance difference variables of
@@ -234,8 +238,8 @@ when $k>100$.
 
 \subsection{Inference in Gaussian-OD Model}
 
-\noindent{\bf Bayesian update:} In the Gaussian-OD model
-(Figure~\ref{fig:trueskill_variant}(N)), all
+\subsubsection{Bayesian update} 
+In the Gaussian-OD model (Figure~\ref{fig:trueskill_variant}(N)), all
 messages are Gaussian so one can
 compute the belief update in closed-form as follows
 \begin{align}
@@ -253,8 +257,8 @@ precision and precision-adjusted mean for the posterior offence
 derive the update equations for team $j$'s offence skill $o_j$ and
 team $i$'s defence skill $d_i$.
 
-\noindent{\bf Win probability:} To compute
-the probability of team $i$ winning vs team $j$, we first use message
+\subsubsection{Win Probability} 
+To compute the probability of team $i$ winning vs team $j$, we first use message
 passing to estimate the normally distributed distributions for score
 variables $s_i$ and $s_j$, and then compute the probability that
 $s_i-s_j>0$, i.e., team $i$'s score is larger than team $j$'s. Given
@@ -269,7 +273,8 @@ winning probability of team $i$ by
 
 \subsection{Inference in Gaussian-SD Model}
 
-\noindent{\bf Bayesian update:} In the Gaussian-SD model
+\subsubsection{Bayes Update} 
+In the Gaussian-SD model
 (Figure~\ref{fig:modelAndInferenceGaussianGraphicalModelScoreDifference}),
 all messages are Gaussian so we can again derive the update
 for the single team skills $l_i$ and $l_j$ in closed-form
@@ -290,7 +295,8 @@ $\pi_{l_{i}}$ ($\pi_{l_{j}}$) and $\tau_{l_{i}}$
     % \item $\pi_{l_{j}}$ and $\tau_{l_{j}}$ are the precision and precision adjusted mean for team $j$'s posterior skill distribution.
 %\end{itemize}
 
-\noindent{\bf Win probability:} To estimate the winning probability of team $i$ for a match with team $j$, one can first use message passing to estimate the normally distributed score difference variable $s$, and then compute the winning probability of team $i$ by
+\subsubsection{Win probability} 
+To estimate the winning probability of team $i$ for a match with team $j$, one can first use message passing to estimate the normally distributed score difference variable $s$, and then compute the winning probability of team $i$ by
 \begin{align}
   p(s>0) = 1 -
   \Phi\left(\frac{l_i-l_j}{\sigma_i^2+\sigma_j^2+2 \beta^2}\right),
