@@ -1,0 +1,214 @@
+Adelaide: "Adelaide Crows,Crows" "FP"
+Brisbane: "Brisbane Lions,Lions" "GABBA"
+Carlton: "Carlton Blues,Blues" "OO"
+Collingwood: "Collingwood Magpies,Magpies" "MCG"
+Essendon: "Essendon Bombers,Bombers" "MCG"
+Fremantle: "Fremantle Dockers,Dockers" "S"
+Geelong: "Geelong Cats,Cats" "SS"
+Hawthorn: "Hawthorn Hawks,Hawks" "MCG"
+Melbourne: "Melbourne Demons,Demons" "MCG"
+Kangaroos: "North Melbourne Kangaroos,North Melbourne,North,Kangaroos" "MCG"
+P_Adelaide: "Port Adelaide Power,Power,Port Power" "FP"
+Richmond: "Richmond Tigers,Tigers" "MCG"
+St_Kilda: "St. Kilda Saints,Saints" "CS"
+Sydney: "Sydney Swans,Swans" "SCG"
+W_Coast: "West Coast Eagles,Eagles,Weagles" "S"
+W_Bulldogs: "Western Bulldogs,Bulldogs,Footscray,Fitzroy" "OO"                                  
+
+1.1 Richmond Carlton "MCG" 20100325:1910
+1.2 Geelong Essendon "MCG" 20100326:1940
+1.3 Melbourne Hawthorn "MCG" 20100327:1410
+1.4 Sydney St_Kilda "ANZ Stadium" 20100327:1910
+1.5 Brisbane W_Coast "Gabba" 20100327:1910
+1.6 P_Adelaide Kangaroos "AAMI Stadium" 20100328:1310
+1.7 W_Bulldogs Collingwood "Etihad Stadium" 20100328:1410
+1.8 Fremantle Adelaide "Subiaco" 20100328:2010
+
+2.1 Brisbane Carlton "Gabba" 20100401:1940
+2.2 Collingwood Melbourne "MCG" 20100403:1410
+2.3 W_Coast P_Adelaide "Subiaco" 20100403:2040
+2.4 St_Kilda Kangaroos "Etihad Stadium" 20100403:1910
+2.5 Adelaide Sydney "AAMI Stadium" 20100404:1310
+2.6 Essendon Fremantle "Etihad Stadium" 20100404:1410
+2.7 Richmond W_Bulldogs "MCG" 20100404:1640
+2.8 Hawthorn Geelong "MCG" 20100405:1410
+
+3.1 St_Kilda Collingwood "Etihad Stadium" 20100409:1940
+3.2 Kangaroos W_Coast "Etihad Stadium" 20100410:1410
+3.3 P_Adelaide Brisbane "AAMI Stadium" 20100410:1510
+3.4 Sydney Richmond "SCG" 20100410:1910
+3.5 Carlton Essendon "MCG" 20100410:1910
+3.6 Melbourne Adelaide "MCG" 20100411:1310
+3.7 W_Bulldogs Hawthorn "Etihad Stadium" 20100411:1410
+3.8 Fremantle Geelong "Subiaco" 20100411:1740
+
+4.1 W_Coast Essendon "Subiaco" 20100416:2140
+4.2 Kangaroos Sydney "Etihad Stadium" 20100417:1410
+4.3 Adelaide Carlton "AAMI Stadium" 20100417:1510
+4.4 Collingwood Hawthorn "MCG" 20100417:1910
+4.5 Brisbane W_Bulldogs "Gabba" 20100417:1910
+4.6 Richmond Melbourne "MCG" 20100418:1310
+4.7 Geelong P_Adelaide "Skilled Stadium" 20100418:1410
+4.8 St_Kilda Fremantle "Etihad Stadium" 20100418:1640
+
+5.1 W_Bulldogs Adelaide "Etihad Stadium" 20100423:1940
+5.2 Sydney W_Coast "SCG" 20100424:1410
+5.3 Melbourne Brisbane "MCG" 20100424:1910
+5.4 P_Adelaide St_Kilda "AAMI Stadium" 20100424:1940
+5.5 Collingwood Essendon "MCG" 20100425:1440
+5.6 Hawthorn Kangaroos "Aurora Stadium" 20100425:1740
+5.7 Fremantle Richmond "Subiaco" 20100425:2140
+5.8 Carlton Geelong "MCG" 20100426:1410
+
+6.1 W_Bulldogs St_Kilda "Etihad Stadium" 20100430:1940
+6.2 Kangaroos Melbourne "Etihad Stadium" 20100501:1410
+6.3 Adelaide P_Adelaide "AAMI Stadium" 20100501:1510
+6.4 Essendon Hawthorn "MCG" 20100501:1910
+6.5 Sydney Brisbane "SCG" 20100501:1910
+6.6 Geelong Richmond "Skilled Stadium" 20100502:1310
+6.7 Carlton Collingwood "MCG" 20100502:1410
+6.8 W_Coast Fremantle "Subiaco" 20100502:1740
+
+7.1 Melbourne W_Bulldogs "MCG" 20100507:1940
+7.2 W_Coast Hawthorn "Subiaco" 20100508:1610
+7.3 Essendon P_Adelaide "Etihad Stadium" 20100508:1410
+7.4 Collingwood Kangaroos "MCG" 20100508:1910
+7.5 Brisbane Fremantle "Gabba" 20100508:1910
+7.6 Geelong Sydney "Skilled Stadium" 20100509:1310
+7.7 Adelaide Richmond "AAMI Stadium" 20100509:1640
+7.8 St_Kilda Carlton "Etihad Stadium" 20100510:1920
+
+8.1 Fremantle Collingwood "Subiaco" 20100514:2140
+8.2 W_Bulldogs Sydney "Manuka Oval" 20100515:1410
+8.3 Melbourne W_Coast "MCG" 20100515:1410
+8.4 Brisbane Geelong "Gabba" 20100515:1910
+8.5 Kangaroos Adelaide "Etihad Stadium" 20100515:1910
+8.6 Richmond Hawthorn "MCG" 20100516:1310
+8.7 P_Adelaide Carlton "AAMI Stadium" 20100516:1510
+8.8 St_Kilda Essendon "Etihad Stadium" 20100516:1640
+
+9.1 Collingwood Geelong "MCG" 20100521:1940
+9.2 Kangaroos W_Bulldogs "Etihad Stadium" 20100522:1410
+9.3 Sydney Fremantle "SCG" 20100522:1410
+9.4 Melbourne P_Adelaide "TIO Stadium" 20100522:2040
+9.5 Essendon Richmond "MCG" 20100522:1930
+9.6 Adelaide Brisbane "AAMI Stadium" 20100523:1310
+9.7 Carlton Hawthorn "Etihad Stadium" 20100523:1410
+9.8 W_Coast St_Kilda "Subiaco" 20100523:1740
+
+10.1 Essendon W_Bulldogs "Etihad Stadium" 20100528:1940
+10.2 Geelong Melbourne "Skilled Stadium" 20100529:1410
+10.3 P_Adelaide Richmond "AAMI Stadium" 20100529:1510
+10.4 Brisbane Collingwood "Gabba" 20100529:1910
+10.5 St_Kilda Adelaide "Etihad Stadium" 20100529:1910
+10.6 Hawthorn Sydney "MCG" 20100530:1310
+10.7 Carlton W_Coast "Etihad Stadium" 20100530:1410
+10.8 Fremantle Kangaroos "Subiaco" 20100530:1740
+
+11.1 Richmond St_Kilda "Etihad Stadium" 20100604:1940
+11.2 Carlton Melbourne "MCG" 20100605:1410
+11.3 Adelaide Fremantle "AAMI Stadium" 20100605:1510
+11.4 W_Coast Geelong "Subiaco" 20100605:2040
+11.5 Kangaroos Brisbane "Etihad Stadium" 20100605:1910
+11.6 Sydney Essendon "SCG" 20100606:1310
+11.7 Hawthorn P_Adelaide "MCG" 20100606:1410
+11.8 Collingwood W_Bulldogs "Etihad Stadium" 20100606:1640
+
+12.1 Kangaroos Carlton "Etihad Stadium" 20100611:1940
+12.2 Hawthorn Adelaide "Aurora Stadium" 20100612:1410
+12.3 Essendon Geelong "Etihad Stadium" 20100612:1910
+12.4 P_Adelaide Sydney "AAMI Stadium" 20100612:1940
+12.5 Richmond W_Coast "MCG" 20100613:1310
+12.6 W_Bulldogs Brisbane "Etihad Stadium" 20100613:1410
+12.7 Fremantle St_Kilda "Subiaco" 20100613:1740
+12.8 Melbourne Collingwood "MCG" 20100614:1410
+
+13.1 Hawthorn Essendon "MCG" 20100618:1940
+13.2 Carlton Fremantle "Etihad Stadium" 20100619:1910
+13.3 Brisbane Richmond "Gabba" 20100619:1910
+13.4 Kangaroos P_Adelaide "Etihad Stadium" 20100620:1310
+13.5 W_Coast W_Bulldogs "Subiaco" 20100620:1740
+13.6 St_Kilda Geelong "MCG" 20100625:1940
+13.7 Sydney Collingwood "ANZ Stadium" 20100626:1910
+13.8 Adelaide Melbourne "AAMI Stadium" 20100627:1510
+
+14.1 Carlton Brisbane "Etihad Stadium" 20100701:1910
+14.2 Hawthorn W_Bulldogs "MCG" 20100702:1940
+14.3 Fremantle P_Adelaide "Subiaco" 20100703:1610
+14.4 Collingwood W_Coast "Etihad Stadium" 20100703:1910
+14.5 Adelaide Essendon "AAMI Stadium" 20100703:1940
+14.6 Geelong Kangaroos "Skilled Stadium" 20100704:1310
+14.7 Richmond Sydney "MCG" 20100704:1410
+14.8 St_Kilda Melbourne "Etihad Stadium" 20100704:1640
+
+15.1 P_Adelaide Collingwood "AAMI Stadium" 20100709:2040
+15.2 W_Coast Adelaide "Subiaco" 20100710:1610
+15.3 Geelong Hawthorn "MCG" 20100710:1410
+15.4 Brisbane St_Kilda "Gabba" 20100710:1910
+15.5 Richmond Fremantle "Etihad Stadium" 20100710:1910
+15.6 Sydney Kangaroos "SCG" 20100711:1310
+15.7 Melbourne Essendon "MCG" 20100711:1410
+15.8 Carlton W_Bulldogs "Etihad Stadium" 20100711:1640
+
+16.1 Adelaide Geelong "AAMI Stadium" 20100716:2040
+16.2 Collingwood St_Kilda "MCG" 20100717:1410
+16.3 Hawthorn Brisbane "Aurora Stadium" 20100717:1410
+16.4 Essendon W_Coast "Etihad Stadium" 20100717:1910
+16.5 W_Bulldogs P_Adelaide "TIO Stadium" 20100717:2040
+16.6 Carlton Sydney "Etihad Stadium" 20100718:1310
+16.7 Richmond Kangaroos "MCG" 20100718:1410
+16.8 Fremantle Melbourne "Subiaco" 20100718:1740
+
+17.1 St_Kilda Hawthorn "Etihad Stadium" 20100723:1940
+17.2 Collingwood Richmond "MCG" 20100724:1410
+17.3 Geelong Brisbane "Skilled Stadium" 20100724:1410
+17.4 W_Coast Carlton "Subiaco" 20100724:2040
+17.5 Kangaroos Essendon "Etihad Stadium" 20100724:1910
+17.6 W_Bulldogs Fremantle "Etihad Stadium" 20100725:1310
+17.7 Melbourne Sydney "MCG" 20100725:1410
+17.8 P_Adelaide Adelaide "AAMI Stadium" 20100725:1640
+
+18.1 Essendon St_Kilda "Etihad Stadium" 20100730:1940
+18.2 Collingwood Carlton "MCG" 20100731:1410
+18.3 P_Adelaide Hawthorn "AAMI Stadium" 20100731:1510
+18.4 Sydney Geelong "ANZ Stadium" 20100731:1910
+18.5 Brisbane Melbourne "Gabba" 20100731:1910
+18.6 Richmond Adelaide "MCG" 20100801:1310
+18.7 W_Bulldogs Kangaroos "Etihad Stadium" 20100801:1410
+18.8 Fremantle W_Coast "Subiaco" 20100801:1740
+
+19.1 Essendon Carlton "MCG" 20100806:1940
+19.2 Kangaroos Fremantle "Etihad Stadium" 20100807:1410
+19.3 Sydney Hawthorn "SCG" 20100807:1410
+19.4 W_Coast Brisbane "Subiaco" 20100807:2040
+19.5 Geelong Collingwood "MCG" 20100807:1910
+19.6 St_Kilda P_Adelaide "Etihad Stadium" 20100808:1310
+19.7 Melbourne Richmond "MCG" 20100808:1410
+19.8 Adelaide W_Bulldogs "AAMI Stadium" 20100808:1640
+
+20.1 Essendon Collingwood "MCG" 20100813:1940
+20.2 Fremantle Sydney "Subiaco" 20100814:1610
+20.3 Carlton Richmond "MCG" 20100814:1410
+20.4 W_Bulldogs Geelong "Etihad Stadium" 20100814:1910
+20.5 P_Adelaide W_Coast "AAMI Stadium" 20100814:1940
+20.6 Brisbane Adelaide "Gabba" 20100815:1310
+20.7 Hawthorn Melbourne "MCG" 20100815:1410
+20.8 Kangaroos St_Kilda "Etihad Stadium" 20100815:1640
+
+21.1 Geelong Carlton "Etihad Stadium" 20100820:1940
+21.2 St_Kilda Richmond "Etihad Stadium" 20100821:1410
+21.3 Hawthorn Fremantle "Aurora Stadium" 20100821:1410
+21.4 Collingwood Adelaide "MCG" 20100821:1910
+21.5 Sydney W_Bulldogs "SCG" 20100821:1910
+21.6 P_Adelaide Melbourne "AAMI Stadium" 20100822:1310
+21.7 Essendon Brisbane "Etihad Stadium" 20100822:1410
+21.8 W_Coast Kangaroos "Subiaco" 20100822:1740
+
+22.1 Adelaide St_Kilda "AAMI Stadium" 20100827:1414
+22.2 Hawthorn Collingwood "MCG" 20100827:1414
+22.3 Geelong W_Coast "Skilled Stadium" 20100827:1414
+22.4 Fremantle Carlton "Subiaco" 20100827:1414
+22.5 W_Bulldogs Essendon "Etihad Stadium" 20100827:1414
+22.6 Brisbane Sydney "Gabba" 20100827:1414
+22.7 Richmond P_Adelaide "Etihad Stadium" 20100827:1414
+22.8 Melbourne Kangaroos "MCG" 20100827:1414
