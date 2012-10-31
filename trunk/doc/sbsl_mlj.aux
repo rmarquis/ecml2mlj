@@ -25,49 +25,81 @@
 \newlabel{sec:inference}{{4}{8}}
 \citation{herbrich06569}
 \citation{herbrich06569}
-\citation{kschischang01498}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip The Gaussian-SD variant of the TrueSkill factor graph model for skill update of two teams based on the score difference. Both team $i$ and team $j$ are characterized by skill level $l_i$ and $l_j$, respectively. The shaded node $s$ ($s=s_i-s_j$) denotes the score difference between $s_i$ and $s_j$. Bayesian inference for the posterior skill level distributions has a closed-form solution.}}{9}}
 \newlabel{fig:modelAndInferenceGaussianGraphicalModelScoreDifference}{{4}{9}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Inference in TrueSkill}{9}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Inference in Poisson-OD Model}{9}}
 \newlabel{sec:PoissonInference}{{4.2}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Bayes Update}{9}}
+\citation{kschischang01498}
 \citation{Beal:EMFixedPoint02}
 \newlabel{eq:marginal}{{12}{10}}
+\@writefile{toc}{\contentsline {paragraph}{\bf  Bayesian update with VB}{10}}
 \newlabel{eq:marginal2}{{13}{10}}
 \newlabel{eq:KL}{{14}{10}}
 \newlabel{eq:ExactMuSigmaNew}{{15}{10}}
 \newlabel{eq:approximationZQuad5}{{16}{10}}
-\citation{Skellam46TheFrequencyDistribution}
+\citation{neal03SliceSampling}
 \newlabel{eq:firstTermFinal}{{17}{11}}
 \newlabel{eq:finalSecondTerm}{{18}{11}}
 \newlabel{eq:kappa}{{19}{11}}
+\citation{Skellam46TheFrequencyDistribution}
 \citation{Abramowitz74HandbookOfMathematical}
+\@writefile{toc}{\contentsline {paragraph}{\bf  Bayes Update with Slice Sampling}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Win probability}{12}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Inference in Gaussian-OD Model}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Bayesian update}{12}}
 \newlabel{eq:GaussianGraphicalModelsUpdatingEquation}{{20}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Win Probability}{13}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Inference in Gaussian-SD Model}{13}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Empirical Evaluation}{13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Data Sets}{13}}
-\newlabel{sec:data_sets}{{5.1}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Bayes Update}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Win probability}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Empirical Evaluation}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Data Sets}{14}}
+\newlabel{sec:data_sets}{{5.1}{14}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Evaluation Criteria}{14}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Information Gain}{14}}
 \newlabel{sec:informationGain}{{5.2.1}{14}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Win/no-Win Prediction Accuracy}{14}}
-\newlabel{sec:WLPredictionAccuracy}{{5.2.2}{14}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Score Prediction Error}{14}}
-\newlabel{sec:scorePredictionError}{{5.2.3}{14}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Results}{15}}
-\newlabel{sec:results}{{5.3}{15}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parameter settings. Priors on offence/defence skills: $\mathcal  {N}(\mu _{0},\sigma _{0}^2)$ with $\mu _{0}=25$ and $\sigma _{0}=25/3$. Performance variance: $\beta $, $\beta _o$, $\beta _d$.}}{15}}
-\newlabel{table:Parameters}{{1}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Information Gain}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Win/no-Win Prediction Accuracy }{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Score Prediction Errors}{15}}
+\citation{Brier:BrierScore}
+\citation{huang06GeneralizedBradleyTerryModels}
+\citation{huang06GeneralizedBradleyTerryModels}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Win/no-Win Prediction Accuracy}{15}}
+\newlabel{sec:WLPredictionAccuracy}{{5.2.2}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Multi-Class Classification Among Win, Lose, and Draw}{15}}
+\newlabel{sec:multiclassClassification}{{5.2.3}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}Score Prediction Error}{15}}
+\newlabel{sec:scorePredictionError}{{5.2.4}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Results}{16}}
+\newlabel{sec:results}{{5.3}{16}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parameter settings. Priors on offence/defence skills: $\mathcal  {N}(\mu _{0},\sigma _{0}^2)$ with $\mu _{0}=25$ and $\sigma _{0}=25/3$. Performance variance: $\beta $, $\beta _o$, $\beta _d$.}}{16}}
+\newlabel{table:Parameters}{{1}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Information Gain}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL, evaluated using win/loss prediction accuracy in term of the area of the curve (AUC). Error bars indicate 95\% confidence intervals.}}{17}}
+\newlabel{fig:WLAccuracy_UK}{{5}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the Halo 2 data set, evaluated using win/loss prediction accuracy in term of the area of the curve (AUC). Error bars indicate 95\% confidence intervals.}}{17}}
+\newlabel{fig:WLAccuracy_Halo}{{6}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the AFL data set, evaluated using win/loss prediction accuracy in term of the area of the curve (AUC). Error bars indicate 95\% confidence intervals.}}{18}}
+\newlabel{fig:WLAccuracy_AFL}{{7}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL, evaluated using information gain. Error bars indicate 95\% confidence intervals.}}{18}}
+\newlabel{fig:InforGain_UK}{{8}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the Halo 2 data set, evaluated using information gain. Error bars indicate 95\% confidence intervals.}}{19}}
+\newlabel{fig:InforGain_Halo}{{9}{19}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Win/no-Win Prediction Accuracy }{19}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Multi-Class Classification Evaluated with the Brier Score}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the AFL data set, evaluated using the Brier Score for multi-class classification. Error bars indicate standard errors.}}{20}}
+\newlabel{fig:WLAccuracy_AFL_BrierScore}{{10}{20}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.4}Score Prediction Errors}{20}}
 \citation{elo78TheRatingOfChessPlayers}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK data set, evaluated using the Brier Score for multi-class classification. Error bars indicate standard errors.}}{21}}
+\newlabel{fig:WLAccuracy_UK_BrierScore}{{11}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.5}VB Vs Sampling for the Poisson-OD Model}{21}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Related Work}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL, evaluated using score prediction error (right column). Error bars indicate 95\% confidence intervals.}}{22}}
+\newlabel{fig:ScoreError_UK}{{12}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the Halo 2 data set, evaluated using score prediction error (right column). Error bars indicate 95\% confidence intervals.}}{22}}
+\newlabel{fig:ScoreError_Halo}{{13}{22}}
 \citation{herbrich06569}
 \citation{dangauthier07337}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL, Halo, and AFL datasets evaluated using information gain (left column), win/loss prediction accuracy in term of the area of the curve (AUC) (middle column), and score prediction error (right column). Error bars indicate 95\% confidence intervals.}}{16}}
-\newlabel{fig:Results}{{5}{16}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Related Work}{16}}
 \citation{birlutiu07ExpectationPropagation}
 \citation{Moroney56FactsFromFigures}
 \citation{dixon97ModellingAssociationFootball}
@@ -77,23 +109,29 @@
 \citation{Moroney56FactsFromFigures}
 \citation{karlis09BayesianModellingFootballOutcomes}
 \citation{Glickman98JASA}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the AFL data set, evaluated using score prediction error (right column). Error bars indicate 95\% confidence intervals.}}{23}}
+\newlabel{fig:ScoreError_AFL}{{14}{23}}
 \citation{Baio:10JAS}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{17}}
 \bibstyle{spbasic}
-\bibcite{Baio:10JAS}{1}
-\bibcite{Abramowitz74HandbookOfMathematical}{2}
-\bibcite{birlutiu07ExpectationPropagation}{3}
-\bibcite{dangauthier07337}{4}
-\bibcite{elo78TheRatingOfChessPlayers}{5}
-\bibcite{herbrich06569}{6}
-\bibcite{karlis09BayesianModellingFootballOutcomes}{7}
-\bibcite{kschischang01498}{8}
-\bibcite{minka01ExpectationUAI}{9}
-\bibcite{Moroney56FactsFromFigures}{10}
-\bibcite{Skellam46TheFrequencyDistribution}{11}
-\bibcite{Glickman98JASA}{12}
-\bibcite{Beal:EMFixedPoint02}{13}
-\bibcite{karlis09BayesianModellingFootballOutcomes}{14}
-\bibcite{Karlis03AnalysisOfSportsData}{15}
-\bibcite{Moroney56FactsFromFigures}{16}
-\bibcite{dixon97ModellingAssociationFootball}{17}
+\bibcite{boulier:03IJF}{1}
+\bibcite{Brier:BrierScore}{2}
+\bibcite{huang06GeneralizedBradleyTerryModels}{3}
+\bibcite{neal03SliceSampling}{4}
+\bibcite{Baio:10JAS}{5}
+\bibcite{Abramowitz74HandbookOfMathematical}{6}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{24}}
+\bibcite{birlutiu07ExpectationPropagation}{7}
+\bibcite{dangauthier07337}{8}
+\bibcite{elo78TheRatingOfChessPlayers}{9}
+\bibcite{herbrich06569}{10}
+\bibcite{karlis09BayesianModellingFootballOutcomes}{11}
+\bibcite{kschischang01498}{12}
+\bibcite{minka01ExpectationUAI}{13}
+\bibcite{Moroney56FactsFromFigures}{14}
+\bibcite{Skellam46TheFrequencyDistribution}{15}
+\bibcite{Glickman98JASA}{16}
+\bibcite{Beal:EMFixedPoint02}{17}
+\bibcite{karlis09BayesianModellingFootballOutcomes}{18}
+\bibcite{Karlis03AnalysisOfSportsData}{19}
+\bibcite{Moroney56FactsFromFigures}{20}
+\bibcite{dixon97ModellingAssociationFootball}{21}
