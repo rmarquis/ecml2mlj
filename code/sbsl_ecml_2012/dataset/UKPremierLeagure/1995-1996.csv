@@ -1,0 +1,381 @@
+Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR
+E0,19/08/1995,Aston Villa,Man United,3,1,H,3,0,H
+E0,19/08/1995,Blackburn,QPR,1,0,H,1,0,H
+E0,19/08/1995,Chelsea,Everton,0,0,D,0,0,D
+E0,19/08/1995,Liverpool,Sheffield Weds,1,0,H,0,0,D
+E0,19/08/1995,Man City,Tottenham,1,1,D,0,1,A
+E0,19/08/1995,Newcastle,Coventry,3,0,H,1,0,H
+E0,19/08/1995,Southampton,Nott'm Forest,3,4,A,1,3,A
+E0,19/08/1995,West Ham,Leeds,1,2,A,1,0,H
+E0,19/08/1995,Wimbledon,Bolton,3,2,H,2,2,D
+E0,20/08/1995,Arsenal,Middlesbrough,1,1,D,1,1,D
+E0,21/08/1995,Leeds,Liverpool,1,0,H,0,0,D
+E0,22/08/1995,Bolton,Newcastle,1,3,A,0,1,A
+E0,23/08/1995,Coventry,Man City,2,1,H,1,0,H
+E0,23/08/1995,Everton,Arsenal,0,2,A,0,0,D
+E0,23/08/1995,Man United,West Ham,2,1,H,0,0,D
+E0,23/08/1995,Nott'm Forest,Chelsea,0,0,D,0,0,D
+E0,23/08/1995,QPR,Wimbledon,0,3,A,0,1,A
+E0,23/08/1995,Sheffield Weds,Blackburn,2,1,H,1,0,H
+E0,23/08/1995,Tottenham,Aston Villa,0,1,A,0,0,D
+E0,26/08/1995,Bolton,Blackburn,2,1,H,1,0,H
+E0,26/08/1995,Coventry,Arsenal,0,0,D,0,0,D
+E0,26/08/1995,Everton,Southampton,2,0,H,2,0,H
+E0,26/08/1995,Leeds,Aston Villa,2,0,H,1,0,H
+E0,26/08/1995,Man United,Wimbledon,3,1,H,1,0,H
+E0,26/08/1995,Middlesbrough,Chelsea,2,0,H,1,0,H
+E0,26/08/1995,Nott'm Forest,West Ham,1,1,D,1,1,D
+E0,26/08/1995,QPR,Man City,1,0,H,1,0,H
+E0,26/08/1995,Tottenham,Liverpool,1,3,A,0,2,A
+E0,27/08/1995,Sheffield Weds,Newcastle,0,2,A,0,0,D
+E0,28/08/1995,Blackburn,Man United,1,2,A,0,0,D
+E0,29/08/1995,Arsenal,Nott'm Forest,1,1,D,1,0,H
+E0,30/08/1995,Aston Villa,Bolton,1,0,H,0,0,D
+E0,30/08/1995,Chelsea,Coventry,2,2,D,2,1,H
+E0,30/08/1995,Liverpool,QPR,1,0,H,1,0,H
+E0,30/08/1995,Man City,Everton,0,2,A,0,0,D
+E0,30/08/1995,Newcastle,Middlesbrough,1,0,H,0,0,D
+E0,30/08/1995,Southampton,Leeds,1,1,D,0,0,D
+E0,30/08/1995,West Ham,Tottenham,1,1,D,1,0,H
+E0,30/08/1995,Wimbledon,Sheffield Weds,2,2,D,1,1,D
+E0,9/09/1995,Blackburn,Aston Villa,1,1,D,0,1,A
+E0,9/09/1995,Bolton,Middlesbrough,1,1,D,1,0,H
+E0,9/09/1995,Coventry,Nott'm Forest,1,1,D,1,1,D
+E0,9/09/1995,Everton,Man United,2,3,A,1,1,D
+E0,9/09/1995,QPR,Sheffield Weds,0,3,A,0,0,D
+E0,9/09/1995,Southampton,Newcastle,1,0,H,0,0,D
+E0,9/09/1995,Tottenham,Leeds,2,1,H,1,0,H
+E0,9/09/1995,Wimbledon,Liverpool,1,0,H,1,0,H
+E0,10/09/1995,Man City,Arsenal,0,1,A,0,0,D
+E0,11/09/1995,West Ham,Chelsea,1,3,A,0,2,A
+E0,12/09/1995,Middlesbrough,Southampton,0,0,D,0,0,D
+E0,16/09/1995,Arsenal,West Ham,1,0,H,0,0,D
+E0,16/09/1995,Aston Villa,Wimbledon,2,0,H,1,0,H
+E0,16/09/1995,Chelsea,Southampton,3,0,H,0,0,D
+E0,16/09/1995,Leeds,QPR,1,3,A,0,2,A
+E0,16/09/1995,Liverpool,Blackburn,3,0,H,3,0,H
+E0,16/09/1995,Man United,Bolton,3,0,H,2,0,H
+E0,16/09/1995,Middlesbrough,Coventry,2,1,H,0,0,D
+E0,16/09/1995,Newcastle,Man City,3,1,H,2,0,H
+E0,16/09/1995,Sheffield Weds,Tottenham,1,3,A,1,1,D
+E0,17/09/1995,Nott'm Forest,Everton,3,2,H,2,0,H
+E0,23/09/1995,Arsenal,Southampton,4,2,H,2,2,D
+E0,23/09/1995,Aston Villa,Nott'm Forest,1,1,D,0,0,D
+E0,23/09/1995,Blackburn,Coventry,5,1,H,2,1,H
+E0,23/09/1995,Liverpool,Bolton,5,2,H,2,0,H
+E0,23/09/1995,Man City,Middlesbrough,0,1,A,0,1,A
+E0,23/09/1995,Sheffield Weds,Man United,0,0,D,0,0,D
+E0,23/09/1995,West Ham,Everton,2,1,H,2,1,H
+E0,23/09/1995,Wimbledon,Leeds,2,4,A,1,3,A
+E0,24/09/1995,Newcastle,Chelsea,2,0,H,1,0,H
+E0,25/09/1995,QPR,Tottenham,2,3,A,1,0,H
+E0,30/09/1995,Bolton,QPR,0,1,A,0,0,D
+E0,30/09/1995,Chelsea,Arsenal,1,0,H,0,0,D
+E0,30/09/1995,Coventry,Aston Villa,0,3,A,0,1,A
+E0,30/09/1995,Leeds,Sheffield Weds,2,0,H,1,0,H
+E0,30/09/1995,Middlesbrough,Blackburn,2,0,H,1,0,H
+E0,30/09/1995,Nott'm Forest,Man City,3,0,H,1,0,H
+E0,30/09/1995,Tottenham,Wimbledon,3,1,H,2,1,H
+E0,1/10/1995,Everton,Newcastle,1,3,A,0,1,A
+E0,1/10/1995,Man United,Liverpool,2,2,D,1,1,D
+E0,2/10/1995,Southampton,West Ham,0,0,D,0,0,D
+E0,14/10/1995,Aston Villa,Chelsea,0,1,A,0,0,D
+E0,14/10/1995,Blackburn,Southampton,2,1,H,1,0,H
+E0,14/10/1995,Bolton,Everton,1,1,D,1,0,H
+E0,14/10/1995,Leeds,Arsenal,0,3,A,0,1,A
+E0,14/10/1995,Liverpool,Coventry,0,0,D,0,0,D
+E0,14/10/1995,Man United,Man City,1,0,H,1,0,H
+E0,14/10/1995,QPR,Newcastle,2,3,A,1,0,H
+E0,14/10/1995,Tottenham,Nott'm Forest,0,1,A,0,0,D
+E0,15/10/1995,Sheffield Weds,Middlesbrough,0,1,A,0,0,D
+E0,16/10/1995,Wimbledon,West Ham,0,1,A,0,1,A
+E0,21/10/1995,Arsenal,Aston Villa,2,0,H,0,0,D
+E0,21/10/1995,Chelsea,Man United,1,4,A,0,2,A
+E0,21/10/1995,Coventry,Sheffield Weds,0,1,A,0,1,A
+E0,21/10/1995,Man City,Leeds,0,0,D,0,0,D
+E0,21/10/1995,Middlesbrough,QPR,1,0,H,1,0,H
+E0,21/10/1995,Newcastle,Wimbledon,6,1,H,3,0,H
+E0,21/10/1995,Nott'm Forest,Bolton,3,2,H,1,1,D
+E0,21/10/1995,West Ham,Blackburn,1,1,D,1,0,H
+E0,22/10/1995,Everton,Tottenham,1,1,D,1,1,D
+E0,22/10/1995,Southampton,Liverpool,1,3,A,1,1,D
+E0,28/10/1995,Aston Villa,Everton,1,0,H,0,0,D
+E0,28/10/1995,Blackburn,Chelsea,3,0,H,1,0,H
+E0,28/10/1995,Leeds,Coventry,3,1,H,2,1,H
+E0,28/10/1995,Liverpool,Man City,6,0,H,2,0,H
+E0,28/10/1995,Man United,Middlesbrough,2,0,H,1,0,H
+E0,28/10/1995,QPR,Nott'm Forest,1,1,D,0,0,D
+E0,28/10/1995,Sheffield Weds,West Ham,0,1,A,0,1,A
+E0,28/10/1995,Wimbledon,Southampton,1,2,A,0,1,A
+E0,29/10/1995,Tottenham,Newcastle,1,1,D,1,0,H
+E0,30/10/1995,Bolton,Arsenal,1,0,H,1,0,H
+E0,4/11/1995,Arsenal,Man United,1,0,H,1,0,H
+E0,4/11/1995,Chelsea,Sheffield Weds,0,0,D,0,0,D
+E0,4/11/1995,Coventry,Tottenham,2,3,A,1,2,A
+E0,4/11/1995,Man City,Bolton,1,0,H,1,0,H
+E0,4/11/1995,Middlesbrough,Leeds,1,1,D,1,1,D
+E0,4/11/1995,Newcastle,Liverpool,2,1,H,1,1,D
+E0,4/11/1995,Southampton,QPR,2,0,H,1,0,H
+E0,4/11/1995,West Ham,Aston Villa,1,4,A,0,1,A
+E0,5/11/1995,Everton,Blackburn,1,0,H,1,0,H
+E0,6/11/1995,Nott'm Forest,Wimbledon,4,1,H,2,1,H
+E0,8/11/1995,Newcastle,Blackburn,1,0,H,1,0,H
+E0,18/11/1995,Aston Villa,Newcastle,1,1,D,1,0,H
+E0,18/11/1995,Blackburn,Nott'm Forest,7,0,H,2,0,H
+E0,18/11/1995,Bolton,West Ham,0,3,A,0,0,D
+E0,18/11/1995,Leeds,Chelsea,1,0,H,0,0,D
+E0,18/11/1995,Liverpool,Everton,1,2,A,0,0,D
+E0,18/11/1995,Man United,Southampton,4,1,H,3,0,H
+E0,18/11/1995,Sheffield Weds,Man City,1,1,D,1,0,H
+E0,18/11/1995,Tottenham,Arsenal,2,1,H,1,1,D
+E0,18/11/1995,Wimbledon,Middlesbrough,0,0,D,0,0,D
+E0,19/11/1995,QPR,Coventry,1,1,D,1,0,H
+E0,20/11/1995,Southampton,Aston Villa,0,1,A,0,1,A
+E0,21/11/1995,Arsenal,Sheffield Weds,4,2,H,1,2,A
+E0,21/11/1995,Middlesbrough,Tottenham,0,1,A,0,0,D
+E0,22/11/1995,Chelsea,Bolton,3,2,H,1,1,D
+E0,22/11/1995,Coventry,Man United,0,4,A,0,1,A
+E0,22/11/1995,Everton,QPR,2,0,H,2,0,H
+E0,22/11/1995,Man City,Wimbledon,1,0,H,0,0,D
+E0,22/11/1995,West Ham,Liverpool,0,0,D,0,0,D
+E0,25/11/1995,Chelsea,Tottenham,0,0,D,0,0,D
+E0,25/11/1995,Coventry,Wimbledon,3,3,D,1,2,A
+E0,25/11/1995,Everton,Sheffield Weds,2,2,D,1,2,A
+E0,25/11/1995,Man City,Aston Villa,1,0,H,0,0,D
+E0,25/11/1995,Middlesbrough,Liverpool,2,1,H,1,0,H
+E0,25/11/1995,Newcastle,Leeds,2,1,H,0,1,A
+E0,25/11/1995,Southampton,Bolton,1,0,H,0,0,D
+E0,25/11/1995,West Ham,QPR,1,0,H,0,0,D
+E0,26/11/1995,Arsenal,Blackburn,0,0,D,0,0,D
+E0,27/11/1995,Nott'm Forest,Man United,1,1,D,1,0,H
+E0,2/12/1995,Aston Villa,Arsenal,1,1,D,0,0,D
+E0,2/12/1995,Blackburn,West Ham,4,2,H,3,0,H
+E0,2/12/1995,Bolton,Nott'm Forest,1,1,D,0,0,D
+E0,2/12/1995,Leeds,Man City,0,1,A,0,0,D
+E0,2/12/1995,Liverpool,Southampton,1,1,D,0,0,D
+E0,2/12/1995,Man United,Chelsea,1,1,D,0,0,D
+E0,2/12/1995,QPR,Middlesbrough,1,1,D,1,1,D
+E0,2/12/1995,Tottenham,Everton,0,0,D,0,0,D
+E0,3/12/1995,Wimbledon,Newcastle,3,3,D,2,3,A
+E0,4/12/1995,Sheffield Weds,Coventry,4,3,H,2,2,D
+E0,9/12/1995,Bolton,Liverpool,0,1,A,0,0,D
+E0,9/12/1995,Chelsea,Newcastle,1,0,H,1,0,H
+E0,9/12/1995,Coventry,Blackburn,5,0,H,1,0,H
+E0,9/12/1995,Leeds,Wimbledon,1,1,D,0,1,A
+E0,9/12/1995,Man United,Sheffield Weds,2,2,D,1,0,H
+E0,9/12/1995,Middlesbrough,Man City,4,1,H,1,1,D
+E0,9/12/1995,Southampton,Arsenal,0,0,D,0,0,D
+E0,9/12/1995,Tottenham,QPR,1,0,H,1,0,H
+E0,10/12/1995,Nott'm Forest,Aston Villa,1,1,D,0,0,D
+E0,11/12/1995,Everton,West Ham,3,0,H,2,0,H
+E0,16/12/1995,Arsenal,Chelsea,1,1,D,0,1,A
+E0,16/12/1995,Aston Villa,Coventry,4,1,H,1,0,H
+E0,16/12/1995,Blackburn,Middlesbrough,1,0,H,1,0,H
+E0,16/12/1995,Newcastle,Everton,1,0,H,1,0,H
+E0,16/12/1995,QPR,Bolton,2,1,H,1,1,D
+E0,16/12/1995,Sheffield Weds,Leeds,6,2,H,3,1,H
+E0,16/12/1995,West Ham,Southampton,2,1,H,0,1,A
+E0,16/12/1995,Wimbledon,Tottenham,0,1,A,0,0,D
+E0,17/12/1995,Liverpool,Man United,2,0,H,1,0,H
+E0,18/12/1995,Man City,Nott'm Forest,1,1,D,1,0,H
+E0,23/12/1995,Coventry,Everton,2,1,H,0,0,D
+E0,23/12/1995,Liverpool,Arsenal,3,1,H,1,1,D
+E0,23/12/1995,Man City,Chelsea,0,1,A,0,0,D
+E0,23/12/1995,Middlesbrough,West Ham,4,2,H,3,0,H
+E0,23/12/1995,Newcastle,Nott'm Forest,3,1,H,2,1,H
+E0,23/12/1995,QPR,Aston Villa,1,0,H,0,0,D
+E0,23/12/1995,Sheffield Weds,Southampton,2,2,D,1,1,D
+E0,23/12/1995,Tottenham,Bolton,2,2,D,1,0,H
+E0,23/12/1995,Wimbledon,Blackburn,1,1,D,0,1,A
+E0,24/12/1995,Leeds,Man United,3,1,H,2,1,H
+E0,26/12/1995,Arsenal,QPR,3,0,H,1,0,H
+E0,26/12/1995,Blackburn,Man City,2,0,H,1,0,H
+E0,26/12/1995,Chelsea,Wimbledon,1,2,A,1,2,A
+E0,26/12/1995,Everton,Middlesbrough,4,0,H,2,0,H
+E0,26/12/1995,Nott'm Forest,Sheffield Weds,1,0,H,1,0,H
+E0,26/12/1995,Southampton,Tottenham,0,0,D,0,0,D
+E0,27/12/1995,Bolton,Leeds,0,2,A,0,1,A
+E0,27/12/1995,Man United,Newcastle,2,0,H,1,0,H
+E0,30/12/1995,Arsenal,Wimbledon,1,3,A,1,1,D
+E0,30/12/1995,Blackburn,Tottenham,2,1,H,2,0,H
+E0,30/12/1995,Bolton,Coventry,1,2,A,1,1,D
+E0,30/12/1995,Chelsea,Liverpool,2,2,D,2,1,H
+E0,30/12/1995,Everton,Leeds,2,0,H,2,0,H
+E0,30/12/1995,Man United,QPR,2,1,H,1,0,H
+E0,30/12/1995,Nott'm Forest,Middlesbrough,1,0,H,1,0,H
+E0,1/01/1996,Coventry,Southampton,1,1,D,0,0,D
+E0,1/01/1996,Leeds,Blackburn,0,0,D,0,0,D
+E0,1/01/1996,Liverpool,Nott'm Forest,4,2,H,2,2,D
+E0,1/01/1996,Man City,West Ham,2,1,H,1,0,H
+E0,1/01/1996,Middlesbrough,Aston Villa,0,2,A,0,2,A
+E0,1/01/1996,Sheffield Weds,Bolton,4,2,H,2,0,H
+E0,1/01/1996,Tottenham,Man United,4,1,H,2,1,H
+E0,1/01/1996,Wimbledon,Everton,2,3,A,0,3,A
+E0,2/01/1996,Newcastle,Arsenal,2,0,H,1,0,H
+E0,2/01/1996,QPR,Chelsea,1,2,A,0,0,D
+E0,13/01/1996,Bolton,Wimbledon,1,0,H,1,0,H
+E0,13/01/1996,Everton,Chelsea,1,1,D,1,1,D
+E0,13/01/1996,Leeds,West Ham,2,0,H,1,0,H
+E0,13/01/1996,Man United,Aston Villa,0,0,D,0,0,D
+E0,13/01/1996,Middlesbrough,Arsenal,2,3,A,1,1,D
+E0,13/01/1996,Nott'm Forest,Southampton,1,0,H,1,0,H
+E0,13/01/1996,QPR,Blackburn,0,1,A,0,0,D
+E0,13/01/1996,Sheffield Weds,Liverpool,1,1,D,1,0,H
+E0,13/01/1996,Tottenham,Man City,1,0,H,0,0,D
+E0,14/01/1996,Coventry,Newcastle,0,1,A,0,1,A
+E0,20/01/1996,Arsenal,Everton,1,2,A,1,0,H
+E0,20/01/1996,Blackburn,Sheffield Weds,3,0,H,2,0,H
+E0,20/01/1996,Chelsea,Nott'm Forest,1,0,H,0,0,D
+E0,20/01/1996,Liverpool,Leeds,5,0,H,1,0,H
+E0,20/01/1996,Man City,Coventry,1,1,D,0,0,D
+E0,20/01/1996,Newcastle,Bolton,2,1,H,2,1,H
+E0,20/01/1996,Southampton,Middlesbrough,2,1,H,0,1,A
+E0,20/01/1996,Wimbledon,QPR,2,1,H,1,0,H
+E0,21/01/1996,Aston Villa,Tottenham,2,1,H,1,1,D
+E0,23/01/1996,West Ham,Man United,0,1,A,0,1,A
+E0,31/01/1996,Aston Villa,Liverpool,0,2,A,0,0,D
+E0,31/01/1996,Nott'm Forest,Leeds,2,1,H,1,0,H
+E0,31/01/1996,Southampton,Man City,1,1,D,0,0,D
+E0,31/01/1996,West Ham,Coventry,3,2,H,0,0,D
+E0,3/02/1996,Arsenal,Coventry,1,1,D,1,1,D
+E0,3/02/1996,Aston Villa,Leeds,3,0,H,2,0,H
+E0,3/02/1996,Blackburn,Bolton,3,1,H,1,1,D
+E0,3/02/1996,Liverpool,Tottenham,0,0,D,0,0,D
+E0,3/02/1996,Man City,QPR,2,0,H,1,0,H
+E0,3/02/1996,Newcastle,Sheffield Weds,2,0,H,0,0,D
+E0,3/02/1996,Southampton,Everton,2,2,D,0,0,D
+E0,3/02/1996,West Ham,Nott'm Forest,1,0,H,1,0,H
+E0,3/02/1996,Wimbledon,Man United,2,4,A,0,2,A
+E0,4/02/1996,Chelsea,Middlesbrough,5,0,H,3,0,H
+E0,10/02/1996,Bolton,Aston Villa,0,2,A,0,1,A
+E0,10/02/1996,Coventry,Chelsea,1,0,H,1,0,H
+E0,10/02/1996,Everton,Man City,2,0,H,1,0,H
+E0,10/02/1996,Man United,Blackburn,1,0,H,1,0,H
+E0,10/02/1996,Middlesbrough,Newcastle,1,2,A,1,0,H
+E0,10/02/1996,Nott'm Forest,Arsenal,0,1,A,0,0,D
+E0,10/02/1996,Sheffield Weds,Wimbledon,2,1,H,0,0,D
+E0,11/02/1996,QPR,Liverpool,1,2,A,0,2,A
+E0,12/02/1996,Tottenham,West Ham,0,1,A,0,1,A
+E0,17/02/1996,Chelsea,West Ham,1,2,A,1,0,H
+E0,17/02/1996,Middlesbrough,Bolton,1,4,A,1,2,A
+E0,17/02/1996,Sheffield Weds,QPR,1,3,A,1,1,D
+E0,21/02/1996,Man United,Everton,2,0,H,1,0,H
+E0,21/02/1996,West Ham,Newcastle,2,0,H,1,0,H
+E0,24/02/1996,Blackburn,Liverpool,2,3,A,1,2,A
+E0,24/02/1996,Coventry,Middlesbrough,0,0,D,0,0,D
+E0,24/02/1996,Everton,Nott'm Forest,3,0,H,0,0,D
+E0,24/02/1996,Man City,Newcastle,3,3,D,1,1,D
+E0,24/02/1996,Southampton,Chelsea,2,3,A,2,2,D
+E0,24/02/1996,Tottenham,Sheffield Weds,1,0,H,1,0,H
+E0,24/02/1996,West Ham,Arsenal,0,1,A,0,1,A
+E0,24/02/1996,Wimbledon,Aston Villa,3,3,D,1,1,D
+E0,25/02/1996,Bolton,Man United,0,6,A,0,2,A
+E0,28/02/1996,Aston Villa,Blackburn,2,0,H,0,0,D
+E0,2/03/1996,Coventry,West Ham,2,2,D,2,2,D
+E0,2/03/1996,Leeds,Bolton,0,1,A,0,1,A
+E0,2/03/1996,Man City,Blackburn,1,1,D,0,0,D
+E0,2/03/1996,Middlesbrough,Everton,0,2,A,0,2,A
+E0,2/03/1996,QPR,Arsenal,1,1,D,1,0,H
+E0,2/03/1996,Sheffield Weds,Nott'm Forest,1,3,A,0,1,A
+E0,2/03/1996,Tottenham,Southampton,1,0,H,0,0,D
+E0,2/03/1996,Wimbledon,Chelsea,1,1,D,1,1,D
+E0,3/03/1996,Liverpool,Aston Villa,3,0,H,3,0,H
+E0,4/03/1996,Newcastle,Man United,0,1,A,0,0,D
+E0,5/03/1996,Arsenal,Man City,3,1,H,2,0,H
+E0,6/03/1996,Aston Villa,Sheffield Weds,3,2,H,0,1,A
+E0,6/03/1996,QPR,Leeds,1,2,A,1,2,A
+E0,9/03/1996,Aston Villa,QPR,4,2,H,1,0,H
+E0,9/03/1996,Everton,Coventry,2,2,D,2,1,H
+E0,9/03/1996,West Ham,Middlesbrough,2,0,H,1,0,H
+E0,12/03/1996,Chelsea,Man City,1,1,D,1,1,D
+E0,13/03/1996,Blackburn,Leeds,1,0,H,0,0,D
+E0,13/03/1996,Liverpool,Wimbledon,2,2,D,1,0,H
+E0,16/03/1996,Coventry,Bolton,0,2,A,0,0,D
+E0,16/03/1996,Liverpool,Chelsea,2,0,H,0,0,D
+E0,16/03/1996,Man City,Southampton,2,1,H,2,0,H
+E0,16/03/1996,Middlesbrough,Nott'm Forest,1,1,D,0,0,D
+E0,16/03/1996,QPR,Man United,1,1,D,0,0,D
+E0,16/03/1996,Sheffield Weds,Aston Villa,2,0,H,0,0,D
+E0,16/03/1996,Tottenham,Blackburn,2,3,A,0,2,A
+E0,16/03/1996,Wimbledon,Arsenal,0,3,A,0,0,D
+E0,17/03/1996,Leeds,Everton,2,2,D,2,1,H
+E0,18/03/1996,Newcastle,West Ham,3,0,H,1,0,H
+E0,19/03/1996,Aston Villa,Middlesbrough,0,0,D,0,0,D
+E0,20/03/1996,Bolton,Tottenham,2,3,A,0,1,A
+E0,20/03/1996,Man United,Arsenal,1,0,H,0,0,D
+E0,20/03/1996,Southampton,Sheffield Weds,0,1,A,0,1,A
+E0,23/03/1996,Arsenal,Newcastle,2,0,H,2,0,H
+E0,23/03/1996,Bolton,Sheffield Weds,2,1,H,1,1,D
+E0,23/03/1996,Chelsea,QPR,1,1,D,1,1,D
+E0,23/03/1996,Everton,Wimbledon,2,4,A,1,1,D
+E0,23/03/1996,Nott'm Forest,Liverpool,1,0,H,1,0,H
+E0,23/03/1996,West Ham,Man City,4,2,H,1,0,H
+E0,24/03/1996,Man United,Tottenham,1,0,H,0,0,D
+E0,25/03/1996,Southampton,Coventry,1,0,H,1,0,H
+E0,30/03/1996,Blackburn,Everton,0,3,A,0,0,D
+E0,30/03/1996,Bolton,Man City,1,1,D,0,1,A
+E0,30/03/1996,Leeds,Middlesbrough,0,1,A,0,1,A
+E0,30/03/1996,QPR,Southampton,3,0,H,1,0,H
+E0,30/03/1996,Tottenham,Coventry,3,1,H,1,0,H
+E0,30/03/1996,Wimbledon,Nott'm Forest,1,0,H,0,0,D
+E0,3/04/1996,Leeds,Southampton,1,0,H,0,0,D
+E0,3/04/1996,Liverpool,Newcastle,4,3,H,1,2,A
+E0,5/04/1996,Middlesbrough,Sheffield Weds,3,1,H,0,0,D
+E0,6/04/1996,Arsenal,Leeds,2,1,H,1,0,H
+E0,6/04/1996,Chelsea,Aston Villa,1,2,A,1,1,D
+E0,6/04/1996,Coventry,Liverpool,1,0,H,1,0,H
+E0,6/04/1996,Everton,Bolton,3,0,H,1,0,H
+E0,6/04/1996,Man City,Man United,2,3,A,1,2,A
+E0,6/04/1996,Newcastle,QPR,2,1,H,0,0,D
+E0,6/04/1996,Nott'm Forest,Tottenham,2,1,H,1,0,H
+E0,6/04/1996,Southampton,Blackburn,1,0,H,0,0,D
+E0,6/04/1996,West Ham,Wimbledon,1,1,D,1,1,D
+E0,8/04/1996,Aston Villa,Southampton,3,0,H,0,0,D
+E0,8/04/1996,Blackburn,Newcastle,2,1,H,0,0,D
+E0,8/04/1996,Bolton,Chelsea,2,1,H,2,1,H
+E0,8/04/1996,Leeds,Nott'm Forest,1,3,A,1,2,A
+E0,8/04/1996,Liverpool,West Ham,2,0,H,2,0,H
+E0,8/04/1996,Man United,Coventry,1,0,H,0,0,D
+E0,8/04/1996,QPR,Everton,3,1,H,2,0,H
+E0,8/04/1996,Sheffield Weds,Arsenal,1,0,H,0,0,D
+E0,8/04/1996,Tottenham,Middlesbrough,1,1,D,0,0,D
+E0,8/04/1996,Wimbledon,Man City,3,0,H,1,0,H
+E0,13/04/1996,Chelsea,Leeds,4,1,H,3,0,H
+E0,13/04/1996,Coventry,QPR,1,0,H,0,0,D
+E0,13/04/1996,Man City,Sheffield Weds,1,0,H,0,0,D
+E0,13/04/1996,Middlesbrough,Wimbledon,1,2,A,1,1,D
+E0,13/04/1996,Nott'm Forest,Blackburn,1,5,A,1,3,A
+E0,13/04/1996,Southampton,Man United,3,1,H,3,0,H
+E0,13/04/1996,West Ham,Bolton,1,0,H,1,0,H
+E0,14/04/1996,Newcastle,Aston Villa,1,0,H,0,0,D
+E0,15/04/1996,Arsenal,Tottenham,0,0,D,0,0,D
+E0,16/04/1996,Everton,Liverpool,1,1,D,1,0,H
+E0,17/04/1996,Aston Villa,West Ham,1,1,D,1,0,H
+E0,17/04/1996,Blackburn,Wimbledon,3,2,H,1,1,D
+E0,17/04/1996,Man United,Leeds,1,0,H,0,0,D
+E0,17/04/1996,Newcastle,Southampton,1,0,H,1,0,H
+E0,17/04/1996,Nott'm Forest,Coventry,0,0,D,0,0,D
+E0,17/04/1996,Sheffield Weds,Chelsea,0,0,D,0,0,D
+E0,27/04/1996,Aston Villa,Man City,0,1,A,0,0,D
+E0,27/04/1996,Blackburn,Arsenal,1,1,D,1,0,H
+E0,27/04/1996,Bolton,Southampton,0,1,A,0,1,A
+E0,27/04/1996,Liverpool,Middlesbrough,1,0,H,0,0,D
+E0,27/04/1996,QPR,West Ham,3,0,H,0,0,D
+E0,27/04/1996,Sheffield Weds,Everton,2,5,A,1,3,A
+E0,27/04/1996,Tottenham,Chelsea,1,1,D,0,1,A
+E0,27/04/1996,Wimbledon,Coventry,0,2,A,0,0,D
+E0,28/04/1996,Man United,Nott'm Forest,5,0,H,2,0,H
+E0,29/04/1996,Leeds,Newcastle,0,1,A,0,1,A
+E0,1/05/1996,Arsenal,Liverpool,0,0,D,0,0,D
+E0,2/05/1996,Leeds,Tottenham,1,3,A,1,2,A
+E0,2/05/1996,Nott'm Forest,Newcastle,1,1,D,0,1,A
+E0,4/05/1996,Arsenal,Bolton,2,1,H,0,0,D
+E0,4/05/1996,Chelsea,Blackburn,2,3,A,1,1,D
+E0,4/05/1996,Coventry,Leeds,0,0,D,0,0,D
+E0,4/05/1996,Everton,Aston Villa,1,0,H,0,0,D
+E0,4/05/1996,Man City,Liverpool,2,2,D,0,2,A
+E0,4/05/1996,Middlesbrough,Man United,0,3,A,0,1,A
+E0,4/05/1996,Newcastle,Tottenham,1,1,D,0,0,D
+E0,4/05/1996,Nott'm Forest,QPR,3,0,H,1,0,H
+E0,4/05/1996,Southampton,Wimbledon,0,0,D,0,0,D
+E0,4/05/1996,West Ham,Sheffield Weds,1,1,D,0,0,D

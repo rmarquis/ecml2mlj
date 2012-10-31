@@ -1,0 +1,230 @@
+Adelaide: "Adelaide Crows,Crows" "FP"
+Brisbane: "Brisbane Lions,Lions" "GABBA"
+Carlton: "Carlton Blues,Blues" "OO"
+Collingwood: "Collingwood Magpies,Magpies" "MCG"
+Essendon: "Essendon Bombers,Bombers" "MCG"
+Fremantle: "Fremantle Dockers,Dockers" "S"
+Geelong: "Geelong Cats,Cats" "SS"
+Hawthorn: "Hawthorn Hawks,Hawks" "MCG"
+Melbourne: "Melbourne Demons,Demons" "MCG"
+Kangaroos: "North Melbourne Kangaroos,North Melbourne,North,Kangaroos" "MCG"
+P_Adelaide: "Port Adelaide Power,Power,Port Power" "FP"
+Richmond: "Richmond Tigers,Tigers" "MCG"
+St_Kilda: "St. Kilda Saints,Saints" "CS"
+Sydney: "Sydney Swans,Swans" "SCG"
+W_Coast: "West Coast Eagles,Eagles,Weagles" "S"
+W_Bulldogs: "Western Bulldogs,Bulldogs,Footscray,Fitzroy" "OO"                                                                
+
+1.1 Carlton Richmond "MCG" 20080320:1810 #(11 13 79) (17 7 109)
+1.2 P_Adelaide Geelong "AAMI Stadium" 20080320:2045 #(14 12 96) (15 15 105)
+1.3 Collingwood Fremantle "MCG" 20080322:1410 #(16 15 111) (13 7 85)
+1.4 St_Kilda Sydney "Telstra Dome" 20080322:1910 #(6 15 51) (6 13 49)
+1.5 W_Coast Brisbane "Subiaco" 20080322:1940 #(14 8 92) (11 10 76)
+1.6 W_Bulldogs Adelaide "Telstra Dome" 20080323:1310 #(19 12 126) (18 15 123)
+1.7 Hawthorn Melbourne "MCG" 20080323:1640 #(23 16 154) (6 14 50)
+1.8 Kangaroos Essendon "Telstra Dome" 20080324:1410 #(9 13 67) (19 8 122)
+
+2.1 Brisbane Collingwood "Gabba" 20080328:2040 #(13 18 96) (13 16 94)
+2.2 Melbourne W_Bulldogs "MCG" 20080329:1410 #(9 12 66) (24 17 161)
+2.3 Adelaide W_Coast "AAMI Stadium" 20080329:1510 #(21 7 133) (8 9 57)
+2.4 St_Kilda Carlton "Telstra Dome" 20080329:1910 #(19 11 125) (12 13 85)
+2.5 Fremantle Hawthorn "Subiaco" 20080329:1940 #(14 13 97) (16 16 112)
+2.6 Sydney P_Adelaide "SCG" 20080330:1310 #(22 14 146) (11 12 78)
+2.7 Geelong Essendon "Telstra Dome" 20080330:1410 #(22 18 150) (6 15 51)
+2.8 Richmond Kangaroos "MCG" 20080330:1640 #(13 8 86) (20 7 127)
+
+3.1 W_Bulldogs St_Kilda "Telstra Dome" 20080404:1940 #(19 11 125) (13 9 87)
+3.2 Kangaroos Hawthorn "Telstra Dome" 20080405:1410 #(13 8 86) (15 12 102)
+3.3 W_Coast Fremantle "Subiaco" 20080405:1710 #(10 13 73) (12 15 87)
+3.4 Essendon Carlton "MCG" 20080405:1910 #(23 12 150) (21 8 134)
+3.5 Brisbane Sydney "Gabba" 20080405:2010 #(10 11 71) (13 10 88)
+3.6 Geelong Melbourne "Skilled Stadium" 20080406:1310 #(16 16 112) (12 10 82)
+3.7 Richmond Collingwood "MCG" 20080406:1410 #(11 12 78) (18 14 122)
+3.8 Adelaide P_Adelaide "AAMI Stadium" 20080406:1640 #(12 13 85) (11 13 79)
+
+4.1 Essendon W_Bulldogs "Telstra Dome" 20080411:1940 #(14 14 98) (19 14 128)
+4.2 Kangaroos Melbourne "MCG" 20080412:1410 #(18 19 127) (11 13 79)
+4.3 St_Kilda Geelong "Telstra Dome" 20080412:1410 #(13 16 94) (21 10 136)
+4.4 Sydney W_Coast "ANZ Stadium" 20080412:1910 #(16 11 107) (5 15 45)
+4.5 P_Adelaide Brisbane "AAMI Stadium" 20080412:1940 #(16 8 104) (18 16 124)
+4.6 Hawthorn Adelaide "Aurora Stadium" 20080413:1310 #(17 12 114) (10 10 70)
+4.7 Carlton Collingwood "MCG" 20080413:1410 #(17 9 111) (13 10 88)
+4.8 Fremantle Richmond "Subiaco" 20080413:1640 #(10 13 73) (20 17 137)
+
+5.1 St_Kilda Essendon "Telstra Dome" 20080418:1940 #(18 15 123) (14 3 87)
+5.2 Geelong Sydney "Skilled Stadium" 20080419:1410 #(16 18 114) (10 12 72)
+5.3 Adelaide Fremantle "AAMI Stadium" 20080419:1510 #(12 16 88) (10 11 71)
+5.4 Brisbane Hawthorn "Gabba" 20080419:1910 #(17 16 118) (19 16 130)
+5.5 Collingwood Kangaroos "MCG" 20080419:1910 #(15 15 105) (16 16 112)
+5.6 Melbourne Carlton "MCG" 20080420:1310 #(9 14 68) (15 11 101)
+5.7 W_Bulldogs Richmond "Telstra Dome" 20080420:1410 #(19 16 130) (20 10 130)
+5.8 W_Coast P_Adelaide "Subiaco" 20080420:1640 #(16 8 104) (19 14 128)
+
+6.1 Collingwood Essendon "MCG" 20080425:1440 #(23 16 154) (12 9 81)
+6.2 Fremantle Geelong "Subiaco" 20080425:2040 #(13 10 88) (13 11 89)
+6.3 Carlton Adelaide "MCG" 20080426:1410 #(11 15 81) (16 15 111)
+6.4 W_Bulldogs W_Coast "Telstra Dome" 20080426:1910 #(20 14 134) (11 8 74)
+6.5 P_Adelaide St_Kilda "AAMI Stadium" 20080426:1940 #(12 10 82) (9 7 61)
+6.6 Brisbane Melbourne "Gabba" 20080427:1310 #(19 23 137) (13 7 85)
+6.7 Kangaroos Sydney "Telstra Dome" 20080427:1410 #(9 10 64) (8 16 64)
+6.8 Hawthorn Richmond "MCG" 20080427:1640 #(14 22 106) (15 4 94)
+
+7.1 W_Coast Carlton "Subiaco" 20080502:2040 #(10 14 74) (17 9 111)
+7.2 Hawthorn Collingwood "MCG" 20080503:1410 #(24 10 154) (13 11 89)
+7.3 Geelong Brisbane "Skilled Stadium" 20080503:1410 #(15 15 105) (11 12 78)
+7.4 Richmond St_Kilda "Telstra Dome" 20080503:1910 #(16 11 107) (17 8 110)
+7.5 Adelaide Kangaroos "AAMI Stadium" 20080503:1940 #(15 17 107) (11 8 74)
+7.6 Sydney W_Bulldogs "SCG" 20080504:1310 #(14 10 94) (18 4 112)
+7.7 Melbourne Fremantle "MCG" 20080504:1410 #(17 17 119) (15 23 113) 
+7.8 Essendon P_Adelaide "Telstra Dome" 20080504:1640 #(15 4 94) (24 14 158)
+
+8.1 St_Kilda Collingwood "Telstra Dome" 20080516:1940 #(14 10 94) (16 7 103)
+8.2 Hawthorn P_Adelaide "Aurora Stadium" 20080517:1410 #(17 15 117) (15 12 102)
+8.3 Richmond Geelong "MCG" 20080517:1410 #(10 9 69) (14 15 99)
+8.4 Kangaroos W_Coast "Gold Coast Stadium" 20080517:1910 #(13 11 89) (12 11 83)
+8.5 Carlton Brisbane "Telstra Dome" 20080517:1910 #(12 20 92) (18 17 125)
+8.6 Adelaide Melbourne "AAMI Stadium" 20080518:1310 #(22 18 150) (11 8 74)
+8.7 Sydney Essendon "ANZ Stadium" 20080518:1410 #(21 17 143) (7 10 52) 
+8.8 Fremantle W_Bulldogs "Subiaco" 20080518:1640 #(17 9 111) (17 12 114)
+
+9.1 Collingwood Geelong "MCG" 20080523:1940 #(20 14 134) (7 6 48)
+9.2 Carlton Fremantle "Telstra Dome" 20080524:1410 #(14 13 97) (14 4 88)
+9.3 P_Adelaide Sydney "AAMI Stadium" 20080524:1510 #(14 10 94) (16 9 105)
+9.4 Essendon Richmond "MCG" 20080524:1940 #(10 12 72) (16 14 110)
+9.5 W_Coast Adelaide "Subiaco" 20080524:1940 #(14 13 97) (5 17 47)
+9.6 Brisbane St_Kilda "Gabba" 20080525:1310 #(21 15 141) (14 11 95)
+9.7 Melbourne Hawthorn "MCG" 20080525:1410 #(12 6 78) (14 13 97)
+9.8 W_Bulldogs Kangaroos "Telstra Dome" 20080525:1640 #(16 14 110) (16 17 113)
+
+10.1 Sydney Richmond "SCG" 20080601:1310 #(21 13 139) (8 9 57)
+10.2 St_Kilda Melbourne "Telstra Dome" 20080601:1410 #(19 15 129) (7 8 50)
+10.3 Fremantle P_Adelaide "Subiaco" 20080601:1640 #(10 15 75) (16 7 103)
+10.4 Adelaide Essendon "AAMI Stadium" 20080530:2010 #(9 20 74) (10 9 69)
+10.5 Hawthorn W_Bulldogs "Aurora Stadium" 20080531:1410 #(12 2 74) (15 16 106)
+10.6 Collingwood W_Coast "MCG" 20080531:1410 #(27 11 173) (10 13 73)
+10.7 Brisbane Kangaroos "Gabba" 20080531:1910 #(18 21 129) (15 8 98)
+10.8 Geelong Carlton "Telstra Dome" 20080531:1910 #(19 19 133) (12 5 77)
+
+11.1 Kangaroos Geelong "Telstra Dome" 20080606:1940 #(17 12 114) (19 13 127)
+11.2 Richmond Adelaide "MCG" 20080607:1410 #(14 12 96) (22 14 146)
+11.3 Essendon Hawthorn "Telstra Dome" 20080607:1910 #(12 7 79) (19 16 130)
+11.4 W_Coast Sydney "Subiaco" 20080607:1940 #(11 12 78) (12 11 83)
+11.5 Brisbane Fremantle "Gabba" 20080608:1310 #(14 12 96) (10 14 74)
+11.6 St_Kilda W_Bulldogs "Telstra Dome" 20080608:1410 #(11 13 79) (15 16 106)
+11.7 P_Adelaide Carlton "AAMI Stadium" 20080608:1640 #(8 15 63) (10 15 75)
+11.8 Melbourne Collingwood "MCG" 20080609:1410 #(13 17 95) (17 14 116)
+
+12.1 Essendon W_Coast "Telstra Dome" 20080613:1940 #(16 17 113) (13 13 91)
+12.2 W_Bulldogs Brisbane "MCG" 20080614:1410 #(19 17 131) (10 8 68)
+12.3 Fremantle Kangaroos "Subiaco" 20080614:1610 #(18 12 120) (9 13 67)
+12.4 Sydney St_Kilda "SCG" 20080614:1910 #(14 18 102) (9 13 67)
+12.5 Adelaide Hawthorn "AAMI Stadium" 20080614:1940 #(10 12 72) (11 10 76)
+12.6 Geelong P_Adelaide "Skilled Stadium" 20080615:1310 #(15 18 108) (7 7 49)
+12.7 Collingwood Carlton "MCG" 20080615:1410 #(12 17 89) (17 17 119)
+12.8 Richmond Melbourne "Telstra Dome" 20080615:1640 #(16 20 116) (14 10 94)
+
+13.1 St_Kilda Fremantle "Telstra Dome" 20080620:1940 #(10 5 65) (8 9 57)
+13.2 Hawthorn Kangaroos "MCG" 20080621:1410 #(10 16 76) (15 13 103)
+13.3 P_Adelaide Richmond "AAMI Stadium" 20080621:1510 #(19 9 123) (20 7 127)
+13.4 Brisbane Adelaide "Gabba" 20080621:1910 #(11 17 83) (10 10 70) 
+13.5 W_Coast Geelong "Subiaco" 20080621:1940 #(5 17 47) (28 14 182)
+13.6 Melbourne Sydney "Manuka Oval" 20080622:1310 #(11 8 74) (17 12 114)
+13.7 Carlton Essendon "MCG" 20080622:1410 #(15 11 101) (20 16 136)
+13.8 Collingwood W_Bulldogs "Telstra Dome" 20080622:1640 #(13 11 89) (15 9 99)
+
+14.1 Adelaide Geelong "AAMI Stadium" 20080704:2010 #(8 8 56) (18 16 124)
+14.2 Sydney Collingwood "ANZ Stadium" 20080705:1910 #(6 14 50) (11 13 79)
+14.3 Hawthorn W_Coast "MCG" 20080627:1940 #(18 18 126) (9 15 69)
+14.4 Richmond Carlton "MCG" 20080628:1410 #(12 16 88) (17 16 118)
+14.5 Kangaroos St_Kilda "Gold Coast Stadium" 20080628:1910 #(9 15 69) (12 12 84)
+14.6 W_Bulldogs P_Adelaide "TIO Stadium" 20080628:1940 #(20 15 135) (11 15 81)
+14.7 Melbourne Brisbane "MCG" 20080629:1310 #(14 9 93) (13 14 92)
+14.8 Fremantle Essendon "Subiaco" 20080629:1640 #(13 13 91) (14 11 95)
+
+15.1 Carlton St_Kilda "MCG" 20080711:1940 #(12 15 87) (18 11 119)
+15.2 Collingwood Adelaide "MCG" 20080712:1410 #(15 16 106) (11 8 74)
+15.3 Geelong Fremantle "Skilled Stadium" 20080712:1410 #(18 10 118) (6 8 44)
+15.4 Essendon Brisbane "Telstra Dome" 20080712:1910 #(24 11 155) (18 10 118)
+15.5 P_Adelaide Kangaroos "AAMI Stadium" 20080712:1940 #(10 14 74) (10 16 76)
+15.6 Hawthorn Sydney "MCG" 20080713:1310 #(15 16 106) (10 15 75)
+15.7 W_Bulldogs Melbourne "Telstra Dome" 20080713:1410 #(14 11 95) (9 10 64)
+15.8 W_Coast Richmond "Subiaco" 20080713:1640 #(11 9 75) (24 8 152)
+
+16.1 Kangaroos Collingwood "Telstra Dome" 20080718:1940 #(17 12 114) (14 12 96)
+16.2 Richmond Essendon "MCG" 20080719:1410 #(16 12 108) (15 14 104)
+16.3 Geelong W_Bulldogs "Skilled Stadium" 20080719:1410 #(19 17 131) (10 10 70)
+16.4 Brisbane W_Coast "Gabba" 20080719:1910 #(17 11 113) (9 13 67)
+16.5 St_Kilda Hawthorn "Telstra Dome" 20080719:1910 #(18 11 119) (13 11 89)
+16.6 Carlton Sydney "Telstra Dome" 20080720:1310 #(18 11 119) (18 13 121)
+16.7 P_Adelaide Adelaide "AAMI Stadium" 20080720:1510 #(13 14 92) (11 14 80)
+16.8 Fremantle Melbourne "Subiaco" 20080720:1640 #(16 18 114) (10 8 68)
+
+17.1 Hawthorn Geelong "MCG" 20080725:1940 #(11 11 77) (12 16 88)
+17.2 Essendon Collingwood "MCG" 20080726:1410 #(19 14 128) (11 14 80)
+17.3 W_Coast St_Kilda "Subiaco" 20080726:1610 #(15 13 103) (12 14 86)
+17.4 Sydney Adelaide "SCG" 20080726:1910 #(6 17 53) (11 11 77)
+17.5 Richmond Brisbane "Telstra Dome" 20080726:1910 #(18 9 117) (16 18 114)
+17.6 P_Adelaide Fremantle "AAMI Stadium" 20080727:1310 #(15 11 101) (20 9 129)
+17.7 Melbourne Kangaroos "MCG" 20080727:1410 #(10 10 70) (14 14 98)
+17.8 W_Bulldogs Carlton "Telstra Dome" 20080727:1640 #(15 8 98) (18 18 126)
+
+18.1 Collingwood Hawthorn "MCG" 20080801:1940 #(8 14 62) (17 14 116)
+18.2 Essendon Melbourne "MCG" 20080802:1410 #(19 10 124) (17 6 108)
+18.3 Adelaide Carlton "AAMI Stadium" 20080802:1510 #(13 16 94) (12 14 86)
+18.4 Kangaroos Brisbane "Gold Coast Stadium" 20080802:1910 #(13 14 92) (11 18 84)
+18.5 Geelong Richmond "Telstra Dome" 20080802:1910 #(20 14 134) (10 11 71)
+18.6 W_Bulldogs Sydney "Manuka Oval" 20080803:1310 #(17 11 113) (14 13 97)
+18.7 St_Kilda P_Adelaide "Telstra Dome" 20080803:1410 #(14 17 101) (14 9 93)
+18.8 Fremantle W_Coast "Subiaco" 20080803:1640 #(17 14 116) (12 11 83)
+
+19.1 Melbourne Geelong "MCG" 20080808:1910 #(5 11 41) (24 13 157) 
+19.2 Hawthorn Brisbane "Aurora Stadium" 20080809:1410 #(16 14 110) (5 11 41) 
+19.3 Carlton P_Adelaide "Telstra Dome" 20080809:1410 #(18 24 132) (9 12 66) 
+19.4 Collingwood St_Kilda "MCG" 20080809:1910 #(14 13 97) (12 11 83) 
+19.5 Sydney Fremantle "SCG" 20080809:1910 #(17 10 112) (15 18 108) 
+19.6 Kangaroos W_Bulldogs "Telstra Dome" 20080810:1310 #(21 10 136) (18 8 116) 
+19.7 Adelaide Richmond "AAMI Stadium" 20080810:1510 #(16 12 108) (6 9 45) 
+19.8 W_Coast Essendon "Subiaco" 20080810:1640 #(17 11 113) (16 7 103) 
+
+20.1 P_Adelaide Collingwood "AAMI Stadium" 20080815:2010 #(10 15 75) (16 10 106) 
+20.2 Melbourne W_Coast "MCG" 20080816:1410 #(11 13 79) (5 15 45) 
+20.3 Essendon Adelaide "Telstra Dome" 20080816:1410 #(10 13 73) (19 15 129) 
+20.4 Sydney Geelong "ANZ Stadium" 20080816:1910 #(14 10 94) (20 13 133) 
+20.5 Brisbane W_Bulldogs "Gabba" 20080816:1910 #(13 12 90) (10 19 79) 
+20.6 Richmond Hawthorn "MCG" 20080817:1310 #(16 9 105) (10 16 76) 
+20.7 Carlton Kangaroos "Telstra Dome" 20080817:1410 #(14 6 90) (22 9 141) 
+20.8 Fremantle St_Kilda "Subiaco" 20080817:1640 #(9 15 69) (17 10 112) 
+
+21.1 W_Bulldogs Essendon "Telstra Dome" 20080822:1940 #(23 13 151) (15 15 105) 
+21.2 Richmond Fremantle "MCG" 20080823:1410 #(15 15 105) (15 8 98)
+21.3 P_Adelaide Melbourne "AAMI Stadium" 20080823:1510 #(18 21 129) (7 9 51)
+21.4 Brisbane Carlton "Gabba" 20080823:1910 #(16 13 109) (18 7 115)
+21.5 Collingwood Sydney "Telstra Dome" 20080823:1910 #(18 10 118) (10 13 73)
+21.6 Geelong Kangaroos "Skilled Stadium" 20080824:1310 #(17 13 115) (13 4 82)
+21.7 St_Kilda Adelaide "Telstra Dome" 20080824:1410 #(13 17 95) (6 11 47)
+21.8 W_Coast Hawthorn "Subiaco" 20080824:1640 #(9 8 62) (19 19 133)
+
+22.1 Fremantle Collingwood "Subiaco" 20080829:2040 #(12 8 80) (8 8 56)
+22.2 Kangaroos P_Adelaide "MCG" 20080830:1310 #(10 12 72) (23 10 148)
+22.3 Geelong W_Coast "Skilled Stadium" 20080830:1410 #(24 20 164) (10 5 65)
+22.4 Adelaide W_Bulldogs "AAMI Stadium" 20080830:1610 #(10 16 76) (9 13 67)
+22.5 Sydney Brisbane "SCG" 20080830:1910 #(17 12 114) (6 17 53)
+22.6 Carlton Hawthorn "Telstra Dome" 20080830:1910 #(12 9 81) (24 15 159)
+22.7 Melbourne Richmond "MCG" 20080831:1410 #(6 5 41) (18 13 121)
+22.8 Essendon St_Kilda "Telstra Dome" 20080831:1640 #(5 9 39) (21 21 147)
+
+23.1 Hawthorn W_Bulldogs "MCG" 20080905:1950 #(18 19 127) (11 10 76)
+23.2 Adelaide Collingwood "AAMI Stadium" 20080906:1430 #(14 10 94) (19 11 125)
+23.3 Sydney Kangaroos "ANZ Stadium" 20080906:1930 #(17 8 110) (11 9 75)
+23.4 Geelong St_Kilda "MCG" 20080907:1440 #(17 17 119) (8 13 61)
+
+24.1 W_Bulldogs Sydney "MCG" 20080912:1950 #(16 10 106) (9 15 69)
+24.2 St_Kilda Collingwood "MCG" 20080913:1930 #(17 4 106) (9 18 72)
+
+25.1 Geelong W_Bulldogs "MCG" 20080919:1940 #(12 11 83) (7 12 54)
+25.2 Hawthorn St_Kilda "MCG" 20080920:1900 #(18 10 118) (9 10 64)
+
+26.1 Geelong Hawthorn "MCG" 20080927:1430 #(11 23 89) (18 7 115)
+
+
+

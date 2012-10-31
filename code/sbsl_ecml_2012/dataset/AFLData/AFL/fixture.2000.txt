@@ -1,0 +1,230 @@
+Adelaide: "Adelaide Crows,Crows" "FP"
+Brisbane: "Brisbane Lions,Lions" "GABBA"
+Carlton: "Carlton Blues,Blues" "OO"
+Collingwood: "Collingwood Magpies,Magpies" "VP"
+Essendon: "Essendon Bombers,Bombers" "MCG"
+Fremantle: "Fremantle Dockers,Dockers" "WACA"
+Geelong: "Geelong Cats,Cats" "SS"
+Hawthorn: "Hawthorn Hawks,Hawks" "P"
+Melbourne: "Melbourne Demons,Demons" "MCG"
+Kangaroos: "North Melbourne Kangaroos,North Melbourne,North,Kangaroos" "MCG"
+P_Adelaide: "Port Adelaide Power,Power,Port Power" "FP"
+Richmond: "Richmond Tigers,Tigers" "MCG"
+St_Kilda: "St. Kilda Saints,Saints" "P"
+Sydney: "Sydney Swans,Swans" "SCG"
+W_Coast: "West Coast Eagles,Eagles,Weagles" "S"
+W_Bulldogs: "Western Bulldogs,Bulldogs,Footscray,Fitzroy" "OO"
+
+1.1 Richmond Melbourne "MCG" 20000308:1940 #(14 10 94) (13 14 92)
+1.2 Essendon P_Adelaide "CS" 20000309:2010 #(24 12 156) (8 14 62)
+1.3 Kangaroos W_Coast "MCG" 20000310:1940 #(16 15 111) (24 10 154)
+1.4 Adelaide W_Bulldogs "FP" 20000311:1520 #(15 18 108) (19 17 131)
+1.5 Fremantle Geelong "S" 20000311:2040 #(16 11 107) (19 15 129)
+1.6 St_Kilda Sydney "CS" 20000312:1940 #(15 10 100) (21 8 134)
+1.7 Carlton Brisbane "OO" 20000313:1410 #(22 20 152) (16 16 112)
+1.8 Hawthorn Collingwood "MCG" 20000313:1410 #(13 8 86) (20 20 140)
+
+2.1 Essendon Richmond "MCG" 20000316:1940 #(20 10 130) (12 15 87)
+2.2 Melbourne Kangaroos "MCG" 20000317:1940 #(23 7 145) (17 18 120)
+2.3 Geelong St_Kilda "SS" 20000318:1410 #(21 13 139) (15 9 99)
+2.4 P_Adelaide Fremantle "FP" 20000318:1940 #(12 15 87) (19 11 125)
+2.5 Carlton Hawthorn "OO" 20000319:1210 #(22 22 154) (18 4 112)
+2.6 Collingwood Adelaide "MCG" 20000319:1410 #(14 19 103) (13 14 92)
+2.7 W_Bulldogs Brisbane "CS" 20000319:1940 #(17 8 110) (21 13 139)
+2.8 W_Coast Sydney "S" 20000319:2040 #(10 10 70) (12 10 82)
+
+3.1 Richmond Kangaroos "MCG" 20000324:1940 #(20 14 134) (27 8 170)
+3.2 Hawthorn Brisbane "MCG" 20000325:1410 #(16 14 110) (15 13 103)
+3.3 Adelaide Geelong "FP" 20000325:1940 #(14 16 100) (17 9 111)
+3.4 St_Kilda W_Coast "CS" 20000325:1940 #(18 8 116) (17 14 116)
+3.5 Collingwood Carlton "MCG" 20000326:1410 #(24 16 160) (11 21 87)
+3.6 W_Bulldogs P_Adelaide "CS" 20000326:1410 #(22 9 141) (14 10 94)
+3.7 Sydney Melbourne "SCG" 20000326:1410 #(19 12 126) (17 12 114)
+3.8 Fremantle Essendon "S" 20000326:2040 #(12 16 88) (19 10 124)
+
+4.1 Kangaroos Geelong "CS" 20000331:1940 #(15 14 104) (15 9 99)
+4.2 Hawthorn Essendon "MCG" 20000401:1410 #(14 6 90) (20 17 137)
+4.3 Carlton W_Bulldogs "CS" 20000401:1410 #(8 11 59) (14 14 98)
+4.4 Sydney Collingwood "SCG" 20000401:1940 #(15 11 101) (15 16 106)
+4.5 W_Coast Adelaide "WACA" 20000401:2210 #(29 13 187) (10 13 73)
+4.6 P_Adelaide Brisbane "FP" 20000402:1410 #(23 11 149) (15 16 106)
+4.7 Melbourne St_Kilda "MCG" 20000402:1410 #(25 15 165) (11 9 75)
+4.8 Richmond Fremantle "CS" 20000402:1410 #(13 9 87) (12 16 88)
+
+5.1 W_Bulldogs Collingwood "CS" 20000407:1940 #(16 14 110) (17 16 118)
+5.2 Essendon Carlton "MCG" 20000408:1410 #(18 15 123) (15 9 99)
+5.3 Brisbane Adelaide "GABBA" 20000408:1940 #(17 20 122) (13 14 92)
+5.4 Fremantle Melbourne "WACA" 20000408:2210 #(10 15 75) (14 22 106)
+5.5 Kangaroos Sydney "SCG" 20000409:1410 #(19 14 128) (18 12 120)
+5.6 St_Kilda Richmond "CS" 20000409:1410 #(11 18 84) (17 8 110)
+5.7 Geelong W_Coast "SS" 20000409:1410 #(24 18 162) (11 15 81)
+5.8 P_Adelaide Hawthorn "FP" 20000409:2040 #(10 14 74) (16 17 113)
+
+6.1 W_Bulldogs Essendon "CS" 20000414:1940 #(12 9 81) (22 12 144)
+6.2 Collingwood Kangaroos "MCG" 20000415:1410 #(11 16 82) (17 12 114)
+6.3 Carlton P_Adelaide "OO" 20000415:1410 #(26 13 169) (12 6 78)
+6.4 W_Coast Fremantle "S" 20000415:2040 #(28 10 178) (9 7 61)
+6.5 Brisbane St_Kilda "CS" 20000415:1940 #(15 15 105) (9 12 66)
+6.6 Adelaide Hawthorn "FP" 20000416:1240 #(22 11 143) (8 9 57)
+6.7 Sydney Richmond "SCG" 20000416:1410 #(16 10 106) (17 10 112)
+6.8 Geelong Melbourne "SS" 20000416:1520 #(15 19 109) (12 12 84)
+
+7.1 Hawthorn W_Bulldogs "MCG" 20000422:1410 #(19 9 123) (14 8 92)
+7.2 St_Kilda Kangaroos "CS" 20000422:1940 #(18 9 117) (19 15 129)
+7.3 Sydney Geelong "SCG" 20000422:1940 #(15 9 99) (17 6 108)
+7.4 P_Adelaide Adelaide "FP" 20000423:1410 #(13 13 91) (14 14 98) 
+7.5 Melbourne W_Coast "CS" 20000423:1410 #(20 18 138) (12 5 77)
+7.6 Richmond Carlton "MCG" 20000424:1410 #(10 9 69) (18 12 120)
+7.7 Collingwood Essendon "MCG" 20000425:1410 #(15 10 100) (21 14 140)
+7.8 Fremantle Brisbane "S" 20000425:1610 #(17 9 111) (15 10 100)
+
+8.1 Kangaroos Hawthorn "MCG" 20000428:1940 #(9 13 67) (18 20 128)
+8.2 St_Kilda Adelaide "CS" 20000429:1410 #(10 8 68) (14 24 108)
+8.3 W_Coast W_Bulldogs "WACA" 20000429:2040 #(15 18 108) (15 12 102)
+8.4 P_Adelaide Melbourne "FP" 20000430:1410 #(12 14 86) (17 9 111)
+8.5 Carlton Sydney "OO" 20000430:1410 #(16 13 109) (9 10 64)
+8.6 Geelong Richmond "CS" 20000430:1410 #(11 11 77) (23 9 147)
+8.7 Brisbane Essendon "GABBA" 20000501:1940 #(9 9 63) (19 13 127)
+8.8 Collingwood Fremantle "CS" 20000501:1940 #(12 13 85) (15 17 107)
+
+9.1 W_Bulldogs St_Kilda "CS" 20000505:1940 #(16 9 105) (16 8 104)
+9.2 Hawthorn Geelong "MCG" 20000506:1410 #(14 14 98) (10 13 73)
+9.3 Adelaide Kangaroos "FP" 20000506:1940 #(19 11 125) (19 14 128)
+9.4 Richmond W_Coast "CS" 20000506:1940 #(11 13 79) (9 16 70)
+9.5 Brisbane Collingwood "GABBA" 20000507:1240 #(22 14 146) (18 9 117)
+9.6 Fremantle Carlton "S" 20000507:1520 #(13 4 82) (21 21 147)
+9.7 Sydney P_Adelaide "SCG" 20000507:1410 #(16 15 111) (11 19 85)
+9.8 Melbourne Essendon "MCG" 20000507:1410 #(13 15 93) (15 16 106)
+
+10.1 W_Coast Hawthorn "S" 20000512:2040 #(17 16 118) (13 10 88)
+10.2 Richmond Collingwood "MCG" 20000513:1410 #(15 12 102) (7 12 54)
+10.3 P_Adelaide Geelong "FP" 20000513:1940 #(10 18 78) (12 6 78)
+10.4 St_Kilda Carlton "CS" 20000513:1940 #(11 16 82) (15 19 109)
+10.5 Melbourne Brisbane "CS" 20000515:1940 #(15 12 102) (11 18 84)
+10.6 Kangaroos Fremantle "MCG" 20000514:1410 #(22 16 148) (8 12 60)
+10.7 W_Bulldogs Sydney "SCG" 20000514:1410 #(21 11 137) (12 7 79)
+10.8 Essendon Adelaide "CS" 20000514:1410 #(20 12 132) (12 12 84)
+
+11.1 St_Kilda P_Adelaide "CS" 20000519:1940 #(17 15 117) (8 7 55)
+11.2 Carlton Kangaroos "OO" 20000520:1410 #(20 9 129) (15 9 99)
+11.3 Hawthorn Richmond "MCG" 20000520:1410 #(11 11 77) (11 14 80)
+11.4 Fremantle W_Bulldogs "S" 20000520:2040 #(12 9 81) (27 12 174)
+11.5 Geelong Essendon "CS" 20000520:1940 #(13 9 87) (22 13 145)
+11.6 Adelaide Melbourne "FP" 20000521:1240 #(15 15 105) (8 22 70)
+11.7 Collingwood W_Coast "CS" 20000521:1410 #(13 14 92) (18 20 128)
+11.8 Sydney Brisbane "SCG" 20000521:1520 #(15 17 107) (16 14 110)
+
+12.1 Essendon St_Kilda "CS" 20000526:1940 #(25 19 169) (13 5 83)
+12.2 Hawthorn Fremantle "CS" 20000527:1940 #(19 7 121) (8 14 62)
+12.3 Adelaide Sydney "FP" 20000527:1940 #(14 14 98) (7 6 48)
+12.4 Brisbane Richmond "GABBA" 20000527:1940 #(14 15 99) (17 9 111)
+12.5 W_Bulldogs Melbourne "CS" 20000528:1410 #(16 12 108) (13 5 83)
+12.6 Kangaroos P_Adelaide "SCG" 20000528:1240 #(10 16 76) (8 11 59)
+12.7 W_Coast Carlton "S" 20000528:1520 #(11 12 78) (20 8 128)
+12.8 Collingwood Geelong "MCG" 20000527:1410 #(9 13 67) (10 11 71)
+
+13.1 Richmond Adelaide "MCG" 20000602:1940 #(17 10 112) (17 19 121)
+13.2 Melbourne Carlton "MCG" 20000603:1410 #(9 7 61) (25 9 159)
+13.3 Brisbane W_Coast "GABBA" 20000603:1940 #(27 11 173) (13 11 89)
+13.4 Essendon Kangaroos "MCG" 20000604:1410 #(17 17 119) (11 4 70)
+13.5 P_Adelaide Collingwood "FP" 20000603:1940 #(12 17 89) (11 9 75)
+13.6 Fremantle St_Kilda "S" 20000604:1520 #(14 16 100) (8 8 56)
+13.7 Geelong W_Bulldogs "CS" 20000604:1410 #(19 12 126) (18 11 119)
+13.8 Sydney Hawthorn "SCG" 20000604:1410 #(16 13 109) (11 12 78)
+
+14.1 Kangaroos Brisbane "CS" 20000609:1940 #(17 14 116) (17 10 112)
+14.2 Melbourne Collingwood "MCG" 20000610:1410 #(22 11 143) (12 6 78)
+14.3 W_Coast P_Adelaide "S" 20000610:2040 #(10 11 71) (16 11 107)
+14.4 St_Kilda Hawthorn "CS" 20000610:1940 #(13 8 86) (27 9 171)
+14.5 Sydney Essendon "SCG" 20000611:1410 #(11 10 76) (12 17 89)
+14.6 Carlton Geelong "OO" 20000611:1410 #(15 17 107) (15 7 97)
+14.7 Adelaide Fremantle "FP" 20000611:2040 #(22 13 145) (11 6 72)
+14.8 Richmond W_Bulldogs "MCG" 20000612:1410 #(12 15 87) (7 10 52)
+
+15.1 Collingwood St_Kilda "MCG" 20000616:1940 #(17 13 115) (13 4 82)
+15.2 Carlton Adelaide "OO" 20000617:1410 #(19 6 120) (14 12 96)
+15.3 Geelong Brisbane "SS" 20000617:1410 #(7 17 59) (20 8 128)
+15.4 Hawthorn Melbourne "MCG" 20000617:1410 #(10 12 72) (22 9 141)
+15.5 Essendon W_Coast "CS" 20000617:1940 #(15 18 108) (11 10 76)
+15.6 P_Adelaide Richmond "FP" 20000618:1240 #(15 13 103) (11 9 75)
+15.7 Fremantle Sydney "S" 20000618:1520 #(20 3 123) (14 12 96)
+15.8 W_Bulldogs Kangaroos "CS" 20000618:1410 #(16 10 106) (15 12 102)
+
+16.1 Collingwood Hawthorn "CS" 20000623:1940 #(10 8 68) (19 11 125)
+16.2 Melbourne Richmond "MCG" 20000624:1410 #(16 14 110) (14 16 100)
+16.3 Geelong Fremantle "SS" 20000624:1410 #(12 18 90) (12 12 84)
+16.4 Sydney St_Kilda "SCG" 20000624:1940 #(14 9 93) (10 5 65)
+16.5 P_Adelaide Essendon "FP" 20000624:2040 #(7 16 58) (12 17 89)
+16.6 Brisbane Carlton "GABBA" 20000625:1240 #(17 10 112) (23 18 156)
+16.7 W_Coast Kangaroos "S" 20000625:1520 #(7 10 52) (16 17 113)
+16.8 W_Bulldogs Adelaide "CS" 20000625:1410 #(21 9 135) (10 14 74)
+
+17.1 St_Kilda Geelong "CS" 20000630:1940 #(16 13 109) (13 7 85)
+17.2 Richmond Essendon "MCG" 20000701:1410 #(10 6 66) (24 23 167)
+17.3 Fremantle P_Adelaide "WACA" 20000701:2040 #(12 10 82) (8 16 64)
+17.4 Kangaroos Melbourne "CS" 20000701:1940 #(14 19 103) (14 18 102)
+17.5 Brisbane W_Bulldogs "GABBA" 20000702:1240 #(20 18 138) (11 15 81)
+17.6 Sydney W_Coast "SCG" 20000702:1410 #(22 19 151) (12 8 80)
+17.7 Hawthorn Carlton "MCG" 20000702:1410 #(9 9 63) (18 12 120)
+17.8 Adelaide Collingwood "FP" 20000702:1520 #(22 15 147) (16 13 109)
+
+18.1 Essendon Fremantle "CS" 20000707:1940 #(24 15 159) (11 6 72)
+18.2 Geelong Adelaide "SS" 20000708:1410 #(17 7 109) (14 18 102)
+18.3 Melbourne Sydney "MCG" 20000708:1410 #(19 11 125) (15 9 99)
+18.4 Kangaroos Richmond "SCG" 20000708:1940 #(20 14 134) (7 14 56)
+18.5 W_Coast St_Kilda "WACA" 20000708:2210 #(17 13 115) (4 5 29)
+18.6 P_Adelaide W_Bulldogs "FP" 20000709:1240 #(23 11 149) (16 10 106)
+18.7 Carlton Collingwood "OO" 20000709:1410 #(28 12 180) (10 9 69)
+18.8 Brisbane Hawthorn "GABBA" 20000709:1520 #(16 10 106) (18 16 124)
+
+19.1 Geelong Kangaroos "CS" 20000714:1940 #(13 7 85) (18 16 124)
+19.2 Adelaide W_Coast "FP" 20000714:2040 #(15 17 107) (13 12 90)
+19.3 W_Bulldogs Carlton "OO" 20000715:1410 #(11 9 75) (11 6 72)
+19.4 Essendon Hawthorn "CS" 20000715:1940 #(25 15 165) (13 4 82)
+19.5 Brisbane P_Adelaide "GABBA" 20000716:1240 #(18 12 120) (7 11 53)
+19.6 Fremantle Richmond "S" 20000716:1520 #(12 7 79) (15 16 106)
+19.7 Collingwood Sydney "MCG" 20000716:1410 #(12 12 84) (15 14 104)
+19.8 St_Kilda Melbourne "CS" 20000716:1410 #(14 14 98) (17 14 116)
+
+20.1 Carlton Essendon "MCG" 20000721:1940 #(12 11 83) (16 13 109)
+20.2 Hawthorn P_Adelaide "MCG" 20000722:1410 #(15 11 101) (12 8 80)
+20.3 W_Coast Geelong "S" 20000722:2040 #(12 6 78) (14 24 108)
+20.4 Sydney Kangaroos "SCG" 20000722:1940 #(21 19 145) (14 7 91)
+20.5 Collingwood W_Bulldogs "CS" 20000722:1940 #(13 13 91) (15 10 100)
+20.6 Adelaide Brisbane "FP" 20000723:1410 #(11 12 78) (17 13 115)
+20.7 Melbourne Fremantle "CS" 20000723:1410 #(25 10 160) (11 11 77)
+20.8 Richmond St_Kilda "MCG" 20000723:1410 #(18 11 119) (12 7 79)
+
+21.1 Essendon W_Bulldogs "CS" 20000728:1940 #(12 9 81) (14 8 92)
+21.2 Hawthorn Adelaide "MCG" 20000729:1410 #(15 8 98) (9 13 67)
+21.3 St_Kilda Brisbane "GABBA" 20000729:1940 #(8 15 63) (23 15 153)
+21.4 Richmond Sydney "CS" 20000729:1410 #(12 11 83) (12 12 84)
+21.5 P_Adelaide Carlton "FP" 20000730:1410 #(12 16 88) (12 11 83)
+21.6 Fremantle W_Coast "S" 20000730:1520 #(15 11 101) (15 10 100)
+21.7 Melbourne Geelong "MCG" 20000730:1410 #(18 18 126) (17 6 108)
+21.8 Kangaroos Collingwood "CS" 20000730:1410 #(11 14 80) (14 14 98)
+
+22.1 W_Bulldogs Hawthorn "CS" 20000804:1940 #(9 12 66) (11 15 81)
+22.2 Essendon Collingwood "MCG" 20000805:1410 #(13 19 97) (11 12 78)
+22.3 Geelong Sydney "SS" 20000805:1410 #(18 16 124) (18 12 120)
+22.4 Brisbane Fremantle "GABBA" 20000805:1940 #(23 18 156) (7 7 49)
+22.5 Kangaroos St_Kilda "CS" 20000805:1940 #(18 12 120) (10 17 77)
+22.6 Adelaide P_Adelaide "FP" 20000806:1240 #(14 8 92) (20 19 139)
+22.7 W_Coast Melbourne "S" 20000806:1520 #(15 10 100) (26 14 170)
+22.8 Carlton Richmond "MCG" 20000806:1410 #(19 11 125) (7 10 52)
+
+23.1 Geelong Hawthorn "CS" 20000811:1945 #(12 11 83) (14 8 92)
+23.2 Essendon Kangaroos "MCG" 20000812:1430 #(31 12 198) (11 7 73)
+23.3 Brisbane W_Bulldogs "GABBA" 20000812:1945 #(15 20 110) (10 16 76)
+23.4 Carlton Melbourne "MCG" 20000813:1430 #(12 15 87) (15 6 96)
+
+24.1 Kangaroos Hawthorn "MCG" 20000818:1945 #(16 14 110) (15 10 100)
+24.2 Carlton Brisbane "MCG" 20000819:1430 #(23 13 151) (10 9 69)
+
+25.1 Melbourne Kangaroos "MCG" 20000825:1940 #(23 18 156) (17 4 106)
+25.2 Essendon Carlton "MCG" 20000826:1430 #(18 17 125) (12 8 80)
+
+26.1 Essendon Melbourne "MCG" 20000902:1430 #(19 21 135) (11 9 75)
+
+
+
