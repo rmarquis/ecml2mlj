@@ -15,7 +15,7 @@ is given to Microsoft Research Ltd. and Bungie.}, the last 10\%
 of matches are used for testing, and we use different proportions of
 the first 90\% of data for training. There are 8 proportions used
 for training, ranging from 10\% to 80\% with an increment of
-10\%, and 90\% is not used for training due to cross validation. To cross validate, we sample the data and run the learning 20 times at each proportion level
+10\%, and 90\% is not used for training due to cross validation. To cross validate, we randomly sample the data and run the learning 10 times at each proportion level
 to get standard error bars. Note that there are some players in the
 testing games who are not involved in any training data sets,
 particularly when small proportion of training data set is selected
@@ -142,16 +142,16 @@ error (MAE), defined as below:
 \end{align}
 where $\hat{s_i}$ ($\hat{s_j}$) is the predicted score for team $i$ ($j$), $s_i$ ($s_j$) the ground truth, and $N$ the number of two-team matches for with teams indexed by $i$ and $j$. 
 
-Note that we must omit the Gaussian-SD model since it can only predict score differences rather than scores. To benchmark the score prediction performance of the Poisson-OD and Gaussian-OD models, we compare with an avarage score prediction methods. This average score methods simply use the avarage scores for a team computed from the training games as predictions for testing games.
+Note that we must omit the Gaussian-SD model since it can only predict score differences rather than scores. To benchmark the score prediction performance of the Poisson-OD and Gaussian-OD models, we compare with an average score prediction methods. This average score methods simply use the average scores for a team computed from the training games as predictions for testing games.
 
 \subsection{Results on Four Criteria}
 \label{sec:results}
 
 Experimental results are reported according to the parameter
-configurations shown in Table~\ref{table:Parameters}. Parameters for the slice sampling used in the Poisson-OD model include the burnin, thinning, and the number of samples required, which we set to 1000, 5, and 1000, repsectively. 
+configurations shown in Table~\ref{table:Parameters}. Parameters for the slice sampling used in the Poisson-OD model include the burn-in, thinning, and the number of samples required, which we set to 1000, 5, and 1000, respectively. 
 Now we discuss the results against these four criteria on three real data sets below. 
 \begin{table}[htbp!]
-\caption{Parameter settings. Priors on offence/defence skills: $\mathcal{N}(\mu_{0},\sigma_{0}^2)$ with $\mu_{0}=25$ and $\sigma_{0}=25/3$. Performance variance: $\beta$, $\beta_o$, $\beta_d$.}
+\caption{Parameter settings. Priors on offence/defense skills: $\mathcal{N}(\mu_{0},\sigma_{0}^2)$ with $\mu_{0}=25$ and $\sigma_{0}=25/3$. Performance variance: $\beta$, $\beta_o$, $\beta_d$.}
 \begin{center}
 \small
 \begin{tabular}{cc}
@@ -170,9 +170,9 @@ Now we discuss the results against these four criteria on three real data sets b
 \end{table}
 
 \subsubsection{Information Gain}
-Information gain for four models on the UK data set is shown in Figure~\ref{fig:InforGain_UK}. The results indicate that the proposed model are significantly better than the TrueSkill for most of the trainning proportions, particularly when less than 30\% data used for training. For limited data, the score-based skill learning models including the Poisson-OD\footnote{We note that the Poisson-OD model achieves much better performances when the win/lose/draw probabilities  are defined according to Section~\ref{sec:winProbabilityPoisson} in the present paper, constrasted with the results in~\cite{Guo:ECML2012} that computes the win probability based on the score difference variable.}, Gaussian-OD, and Gaussian-SD, all of which significantly outperform the TrueSkill. These results indicte that score information are indeed useful for making predictions when training data is limited. 
+Information gain for four models on the UK data set is shown in Figure~\ref{fig:InforGain_UK}. The results indicate that the proposed model are significantly better than the TrueSkill for most of the training proportions, particularly when less than 30\% data used for training. For limited data, the score-based skill learning models including the Poisson-OD\footnote{We note that the Poisson-OD model achieves much better performances when the win/lose/draw probabilities  are defined according to Section~\ref{sec:winProbabilityPoisson} in the present paper, constrasted with the results in~\cite{Guo:ECML2012} that computes the win probability based on the score difference variable.}, Gaussian-OD, and Gaussian-SD, all of which significantly outperform the TrueSkill. These results indicte that score information are indeed useful for making predictions when training data is limited. 
 
-Out of the three proposed models, the Gaussian models signficantly outperform the Poisson-OD model when training with 10\% and 20\% of the data. This is because that the scores for the UK data set are relatively small; thus the amplification due to the exponential term in the Poisson-OD model leads to more extreme probaiblities, thus may hurt the performance if the predictions are wrong. But when the training data increases, the Poisson-OD model can refine further the belief over teams' skill levels thus making less mistakes, leading to comparable performances with the Gaussian models. The two Gaussian models achieve comparable performances for all training settings, with the Gaussian-SD model slightly edging out the Gaussian-OD model. 
+Out of the three proposed models, the Gaussian models significantly outperform the Poisson-OD model when training with 10\% and 20\% of the data. This is because that the scores for the UK data set are relatively small; thus the amplification due to the exponential term in the Poisson-OD model leads to more extreme probaiblities, thus may hurt the performance if the predictions are wrong. But when the training data increases, the Poisson-OD model can refine further the belief over teams' skill levels thus making less mistakes, leading to comparable performances with the Gaussian models. The two Gaussian models achieve comparable performances for all training settings, with the Gaussian-SD model slightly edging out the Gaussian-OD model. 
 
 %These results indicate that (a) score information can be very
 %useful for making predictions when training data is limited;
@@ -194,7 +194,7 @@ using information gain. Error bars indicate
 
 Empirical evaluations with the information gain criterion on the AFL data set is shown in Figure~\ref{fig:InforGain_AFL}. We observed that all the proposed models significantly outperform TrueSkill for limited data, which further validates our hypothesis that information carried by score-based match outcomes are very helpful for skill learning when only small amount of data is available for training. When more data is available, TrueSkill improved its performance and performed the best, which indicates that updating skill levels with win/lose/draw based outcomes is more robust comparing with that based on the possibly noisy scores. 
 
-Across the three proposed models of the AFL data set, the Poisson-OD model signficantly outperforms the Gaussian models, which agrees with the fact that the exponential term in the Poisson-OD model can effectively learn relatively large match outcomes. Note that the average score for the AFL data set is 95.4 vs 1.3 for that of the UK data set. 
+Across the three proposed models of the AFL data set, the Poisson-OD model significantly outperforms the Gaussian models, which agrees with the fact that the exponential term in the Poisson-OD model can effectively learn relatively large match outcomes. Note that the average score for the AFL data set is 95.4 vs 1.3 for that of the UK data set. 
 
 \begin{center}
 \begin{figure*}[htbp!]
@@ -207,7 +207,7 @@ using information gain. Error bars indicate
 \end{figure*}
 \end{center}
 
-Results on the Halo data set are shown in Figure~\ref{fig:InforGain_Halo}, and indicated that all the three proposed models significantly outperform TrueSkill for all training setting. For this data set with small average scores, the Gaussian models clearly outperform the Poisson-OD model, which further supports the fact that the amplification due to the exponential term in the Poisson-OD model may hurt the performance. For the Gaussian models, the Gaussian-OD model that separately model offence and defence skills achieves significantly better performance than the Gaussian-SD model, indicating the importance of modeling these two skill aspects separately. 
+Results on the Halo data set are shown in Figure~\ref{fig:InforGain_Halo}, and indicated that all the three proposed models significantly outperform TrueSkill for all training setting. For this data set with small average scores, the Gaussian models clearly outperform the Poisson-OD model, which further supports the fact that the amplification due to the exponential term in the Poisson-OD model may hurt the performance. For the Gaussian models, the Gaussian-OD model that separately model offence and defense skills achieves significantly better performance than the Gaussian-SD model, indicating the importance of modeling these two skill aspects separately. 
 
 \begin{center}
 \begin{figure*}[t!]
@@ -220,13 +220,13 @@ using information gain. Error bars indicate
 \end{figure*}
 \end{center}
 
-As a short summary for the results on the information gain, our observed that all the proposed models can outperform the TrueSkill for most of the training settings, and the differences are significant particularly for limited training data. This observation reflects our motiviation of modeling the more informative socre-based match outcomes in improving skill modeling. The Gaussian-OD model performs better than the Gaussian-SD model for most of the training cases, and the improvement is significant for the Halo data set, indicating the benefits of modeling the offence and defence of a team's skills. While the Gaussian models are more appropriate for the data sets with small average match scores, the Poisson model edges out for the data set with large score match outcomes. 
+As a short summary for the results on the information gain, our observed that all the proposed models can outperform the TrueSkill for most of the training settings, and the differences are significant particularly for limited training data. This observation reflects our motivation of modeling the more informative score-based match outcomes in improving skill modeling. The Gaussian-OD model performs better than the Gaussian-SD model for most of the training cases, and the improvement is significant for the Halo data set, indicating the benefits of modeling the offence and defense of a team's skills. While the Gaussian models are more appropriate for the data sets with small average match scores, the Poisson model edges out for the data set with large score match outcomes. 
 
 \subsubsection{Win/no-Win Prediction Accuracy }
 
 In terms of win/no-win prediction accuracy, the Gaussian-OD model generally
 provides the best average AUC, followed by Gaussian-SD, then
-TrueSkill, then Poisson-OD model for both the UK and AFL data set corresponding to Figure~\ref{fig:WLAccuracy_UK} and Figure~\ref{fig:WLAccuracy_AFL}. The better performance by the Gaussian-OD model indicated the benefits of separating offence/defence skill modeling in the Gaussian-OD model, achiving a performance edge over the combined skill model of the Gaussian-SD model.
+TrueSkill, then Poisson-OD model for both the UK and AFL data set corresponding to Figure~\ref{fig:WLAccuracy_UK} and Figure~\ref{fig:WLAccuracy_AFL}. The better performance by the Gaussian-OD model indicated the benefits of separating offence/defense skill modeling in the Gaussian-OD model, achieving a performance edge over the combined skill model of the Gaussian-SD model.
 
 \begin{center}
 \begin{figure*}[htbp!]
@@ -328,7 +328,7 @@ When comparing the best performance on the AFL and UK dataset, we note that the 
 %data.  This amplification appears to hurt the Poisson-OD model on the
 %relative low-scoring UK-PL dataset.
 
-We report the score prediction errors for different data sets in Figure~\ref{fig:ScoreError_AFL}, Figure~\ref{fig:ScoreError_UK}, and Figure~\ref{fig:ScoreError_Halo}. Gaussian-OD predicts more accurate scores on the UK-PL, while Poisson-OD is more accurate for the AFL dataset. For the AFL data set (Figure~\ref{fig:ScoreError_AFL}), we observed that the Gaussian-OD model clearly failed in predicting the scores of the matches, because the differences in the learnt skill levels between teams are relatively small. A Gaussian likelihood function with the small difference has low probabilty of generating huge match scores for the AFL data set. Given the same difference, the Poisson-OD model with an exponentiated scoring rate would seem to amplify these small performance differences in learned AFL skills to make more accurate score predictions on AFL data.  This amplification appears to hurt the Poisson-OD model on the lower-scoring UK-PL (the mean score for the AFL data is 95.4 vs 42.7 and 1.3 respectively for the Halo 2 and UK-PL data).
+We report the score prediction errors for different data sets in Figure~\ref{fig:ScoreError_AFL}, Figure~\ref{fig:ScoreError_UK}, and Figure~\ref{fig:ScoreError_Halo}. Gaussian-OD predicts more accurate scores on the UK-PL, while Poisson-OD is more accurate for the AFL dataset. For the AFL data set (Figure~\ref{fig:ScoreError_AFL}), we observed that the Gaussian-OD model clearly failed in predicting the scores of the matches, because the differences in the learned skill levels between teams are relatively small. A Gaussian likelihood function with the small difference has low probability of generating huge match scores for the AFL data set. Given the same difference, the Poisson-OD model with an exponentiated scoring rate would seem to amplify these small performance differences in learned AFL skills to make more accurate score predictions on AFL data.  This amplification appears to hurt the Poisson-OD model on the lower-scoring UK-PL (the mean score for the AFL data is 95.4 vs 42.7 and 1.3 respectively for the Halo 2 and UK-PL data).
 
 \begin{center}
 \begin{figure*}[htbp!]
@@ -398,7 +398,7 @@ the exponentiation performs better for low scoring games.
 In order to verify the hypothesis, we show the estimated skills after
 training on the AFL and UK-PL dataset in
 Figure~\ref{fig:ResultsEstimatedSKills}. On the AFL data set, the
-differences across the skills of different teams learnt from the
+differences across the skills of different teams learned from the
 Poisson model and Gaussian-S are relatively small, which supports the
 above hypothesis.
 
@@ -415,7 +415,7 @@ above hypothesis.
 
 \subsection{Poisson-OD(VB) Vs Poisson-OD(Sampling)}
 \label{sec:VBSampling}
-We studied the performance for the Poisson-OD model when approximate inference is conducted by varaitional Bayes and slice sampling on the AFL data set. As shown in the various results for three criteria on the AFL data set (Figure~\ref{ScoreError_AFL_without_GaussianOD}), the differences in the performances achieved by the Poisson-OD model with VB and slice sampling are negligible; however, it is important to note that the slice sampling takes about 20 seonds; however, our proposed fixed-point solution oftens converges after two or three iterations that can be finished within less  than 0.01 seconds. Thus, our proposed variational Bayes inference is much more efficient than the sampling based approaches. For this reason, we can omit the report of the Poisson-OD(Sampling) on other data sets due to heavy computational requirements. Note that one can perhaps explore the advanced sampling approaches such as \cite{Murray:AISTATS2010} to speed up the sampling method. 
+We studied the performance for the Poisson-OD model when approximate inference is conducted by varaitional Bayes and slice sampling on the AFL data set. As shown in the various results for three criteria on the AFL data set (Figure~\ref{ScoreError_AFL_without_GaussianOD}), the differences in the performances achieved by the Poisson-OD model with VB and slice sampling are negligible; however, it is important to note that the slice sampling takes about 20 seconds; however, our proposed fixed-point solution often converges after two or three iterations that can be finished within less  than 0.01 seconds. Thus, our proposed variational Bayes inference is much more efficient than the sampling based approaches. For this reason, we can omit the report of the Poisson-OD(Sampling) on other data sets due to heavy computational requirements. Note that one can perhaps explore the advanced sampling approaches such as \cite{Murray:AISTATS2010} to speed up the sampling method. 
 
 
 % \subsubsection{Model Home Field Improving Performance}
