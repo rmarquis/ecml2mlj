@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.2.24)  1 NOV 2012 20:24
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.2.24)  1 NOV 2012 21:53
 entering extended mode
 **C:/Shengbo/Research/Submissions/ecml2mlj/doc/sbsl_mlj.tex
 (C:/Shengbo/Research/Submissions/ecml2mlj/doc/sbsl_mlj.tex
@@ -264,7 +264,7 @@ Overfull \hbox (2.33496pt too wide) in paragraph at lines 1--131
 (C:\Shengbo\Research\Submissions\ecml2mlj\doc\trueskill.tex
 Overfull \hbox (10.33397pt too wide) in paragraph at lines 1--8
 \OT1/cmr/m/n/10 Since our score-based Bayesian skill learn-ing con-tri-bu-tions
- build on TrueSkill [12],
+ build on TrueSkill [10],
  []
 
 [3] <TrueSkill.pdf, id=27, 580.1675pt x 640.3925pt>
@@ -330,6 +330,11 @@ LaTeX Warning: Text page 20 contains only floats.
 [20 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/InforGain_AFL.pdf, page is ro
 tated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/InforGain_Halo.
 pdf, page is rotated 90 degrees>]
+Overfull \hbox (5.70894pt too wide) in paragraph at lines 228--230
+\OT1/cmr/m/n/10 di-cated the ben-e-fits of sep-a-rat-ing of-fence/defence skill
+ mod-el-ing in the Gaussian-
+ []
+
 <WLAccuracy_UK.pdf, id=160, 845.1575pt x 597.23125pt>
 File: WLAccuracy_UK.pdf Graphic file (type pdf)
  <use WLAccuracy_UK.pdf>
@@ -347,55 +352,49 @@ earch/Submissions/ecml2mlj/doc/WLAccuracy_Halo.pdf, page is rotated 90 degrees>
 ] <WLAccuracy_UK_BrierScore.pdf, id=184, 845.1575pt x 597.23125pt>
 File: WLAccuracy_UK_BrierScore.pdf Graphic file (type pdf)
 
-<use WLAccuracy_UK_BrierScore.pdf>
-<WLAccuracy_AFL_BrierScore.pdf, id=185, 845.1575pt x 597.23125pt>
+<use WLAccuracy_UK_BrierScore.pdf> [23 <C:/Shengbo/Research/Submissions/ecml2ml
+j/doc/WLAccuracy_UK_BrierScore.pdf, page is rotated 90 degrees>]
+<WLAccuracy_AFL_BrierScore.pdf, id=193, 845.1575pt x 597.23125pt>
 File: WLAccuracy_AFL_BrierScore.pdf Graphic file (type pdf)
 
-<use WLAccuracy_AFL_BrierScore.pdf> [23 <C:/Shengbo/Research/Submissions/ecml2m
-lj/doc/WLAccuracy_UK_BrierScore.pdf, page is rotated 90 degrees>]
+<use WLAccuracy_AFL_BrierScore.pdf>
 <WLAccuracy_Halo_BrierScore.pdf, id=194, 845.1575pt x 597.23125pt>
 File: WLAccuracy_Halo_BrierScore.pdf Graphic file (type pdf)
 
-<use WLAccuracy_Halo_BrierScore.pdf>
-<ScoreError_AFL.pdf, id=195, 845.1575pt x 597.23125pt>
+<use WLAccuracy_Halo_BrierScore.pdf> [24 <C:/Shengbo/Research/Submissions/ecml2
+mlj/doc/WLAccuracy_AFL_BrierScore.pdf, page is rotated 90 degrees>]
+<ScoreError_AFL.pdf, id=203, 845.1575pt x 597.23125pt>
 File: ScoreError_AFL.pdf Graphic file (type pdf)
 
-<use ScoreError_AFL.pdf> [24 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/WLAc
-curacy_AFL_BrierScore.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Text page 25 contains only floats.
-
-[25 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/WLAccuracy_Halo_BrierScore.pd
-f, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/Sc
-oreError_AFL.pdf, page is rotated 90 degrees>]
-<ScoreError_AFL_without_GaussianOD.pdf, id=218, 845.1575pt x 597.23125pt>
+<use ScoreError_AFL.pdf> [25 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/WLAc
+curacy_Halo_BrierScore.pdf, page is rotated 90 degrees>]
+<ScoreError_AFL_without_GaussianOD.pdf, id=213, 845.1575pt x 597.23125pt>
 File: ScoreError_AFL_without_GaussianOD.pdf Graphic file (type pdf)
 
 <use ScoreError_AFL_without_GaussianOD.pdf>
-<ScoreError_UK.pdf, id=219, 845.1575pt x 597.23125pt>
+<ScoreError_UK.pdf, id=214, 845.1575pt x 597.23125pt>
 File: ScoreError_UK.pdf Graphic file (type pdf)
  <use ScoreError_UK.pdf>
-[26 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError_AFL_without_Gaussi
-anOD.pdf, page is rotated 90 degrees>]
-<ScoreError_Halo.pdf, id=228, 845.1575pt x 597.23125pt>
+[26 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError_AFL.pdf, page is r
+otated 90 degrees>]
+
+LaTeX Warning: Text page 27 contains only floats.
+
+[27 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError_AFL_without_Gaussi
+anOD.pdf, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj
+/doc/ScoreError_UK.pdf, page is rotated 90 degrees>]
+<ScoreError_Halo.pdf, id=236, 845.1575pt x 597.23125pt>
 File: ScoreError_Halo.pdf Graphic file (type pdf)
 
 <use ScoreError_Halo.pdf> (Commented text...)
 
-LaTeX Warning: Reference `ScoreError_AFL_without_GaussianOD' on page 27 undefin
-ed on input line 418.
+LaTeX Warning: Reference `ScoreError_AFL_without_GaussianOD' on page 28 undefin
+ed on input line 420.
 
-) (C:\Shengbo\Research\Submissions\ecml2mlj\doc\relatedwork.tex
-Underfull \vbox (badness 2409) has occurred while \output is active []
-
- [27 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError_UK.pdf, page is r
-otated 90 degrees>]
-Underfull \vbox (badness 2529) has occurred while \output is active []
-
- [28 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError_Halo.pdf, page is
- rotated 90 degrees>]) (C:\Shengbo\Research\Submissions\ecml2mlj\doc\conclusion
-.tex)
-(C:\Shengbo\Research\Submissions\ecml2mlj\doc\bib.tex [29]) [30] [31]
+) (C:\Shengbo\Research\Submissions\ecml2mlj\doc\relatedwork.tex [28 <C:/Shengbo
+/Research/Submissions/ecml2mlj/doc/ScoreError_Halo.pdf, page is rotated 90 degr
+ees>]) (C:\Shengbo\Research\Submissions\ecml2mlj\doc\conclusion.tex [29])
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\bib.tex [30]) [31] [32]
 (C:\Shengbo\Research\Submissions\ecml2mlj\doc\sbsl_mlj.aux)
 
 LaTeX Warning: There were undefined references.
@@ -407,11 +406,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2953 strings out of 495285
  42093 string characters out of 3179881
- 90863 words of memory out of 3000000
+ 90873 words of memory out of 3000000
  6090 multiletter control sequences out of 15000+200000
  15558 words of font info for 57 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,18n,24p,1270b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,18n,24p,1280b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 ><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
@@ -439,9 +438,9 @@ onts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfont
 s/cm/cmtt8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfont
 s/symbols/msbm7.pfb>
-Output written on sbsl_mlj.pdf (31 pages, 536871 bytes).
+Output written on sbsl_mlj.pdf (32 pages, 538959 bytes).
 PDF statistics:
- 340 PDF objects out of 1000 (max. 8388607)
+ 343 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
