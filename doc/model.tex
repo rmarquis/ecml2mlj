@@ -116,7 +116,7 @@ will be covered in Section~\ref{sec:PoissonInference}.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t!]
-\centerline{\includegraphics[scale=0.28]{modelAndInference}}
+\centerline{\includegraphics[scale=0.35]{modelAndInference}}
 \caption{
 The Poisson-OD variants of TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the score observation factors use the Poisson distribution for the Poisson-OD model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of
 team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing.
@@ -150,7 +150,7 @@ are Gaussian, allowing for efficient and exact belief updates.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t!]
-\centerline{\includegraphics[scale=0.28]{modelAndInferenceGaussianGraphicalModel}}
+\centerline{\includegraphics[scale=0.35]{modelAndInferenceGaussianGraphicalModel}}
 \caption{
 The Gaussian-OD variant of the TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the score observation factors use the Gaussian distribution for the Gaussian-OD model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of
 team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing.
@@ -184,7 +184,7 @@ Figure~\ref{fig:modelAndInferenceGaussianGraphicalModelScoreDifference}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
-\centerline{\includegraphics[scale=0.275]{modelAndInferenceGaussianGraphicalModelScoreDifference}}
+\centerline{\includegraphics[scale=0.35]{modelAndInferenceGaussianGraphicalModelScoreDifference}}
 \caption{\small
 The Gaussian-SD variant of the TrueSkill factor graph model for skill update of two teams based on the score difference. Both team
 $i$ and team $j$ are characterized by skill level $l_i$ and $l_j$,

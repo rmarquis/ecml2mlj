@@ -1,5 +1,4 @@
 \subsection{Data Sets}
-
 \label{sec:data_sets}
 
 Experimental evaluations are conducted on three data sets: Halo 2 XBox Live
@@ -35,10 +34,10 @@ We evaluate performances using three criteria: {\it information gain}
 of predicting winning probability of a team
 (Section~\ref{sec:informationGain}),
 {\it win/lose prediction accuracy}
-(Section~\ref{sec:WLPredictionAccuracy}),
+(Section~\ref{sec:WLPredictionAccuracy}), {\it win/lose/draw prediction accuracy} (Section~\ref{sec:multiclassClassification}), 
 and {\it score prediction errors}
 (Section~\ref{sec:scorePredictionError}).
-While the first two criteria focus on predicting win/lose, the third
+While the first three criteria focus on predicting win/lose or win/lose/draw, the fourth
 criterion measures how good a model is at predicting scores, for which
 TrueSkill does not apply since it is restricted to WLD only. Let us
 introduce each criterion in detail.
@@ -93,9 +92,9 @@ The Win/no-Win prediction accuracy introduced above suits for binary classificat
 
 Following~\cite{huang06GeneralizedBradleyTerryModels}, we define the Brier Score for a set of $N$ testing games below:
 \begin{align}
-	\frac{1}{N}\sum_{i=1}^{N}\left( \sum_{k=1}^{K} \left(\mathbb{I}[y_i = k] - \hat{p}_{k}^{i}\right)  \right),
+	\frac{1}{N}\sum_{i=1}^{N}\left( \sum_{k=1}^{K} \left(\mathbb{I}[y_i = k] - \hat{p}_{k}^{i}\right)^2  \right),
 \end{align}
-where $\hat(p)_{k}^{i}$ is the probability estimate of the $i$th game being assigned to the $k$-th class, and $I(y_i = k)$ is an indicator function (1 if $y_i=k$ and 0 otherwise). Note that one advantage of this measurement is that it does not require the true probability of a data point belonging to a class. 
+where $\hat{p}_{k}^{i}$ is the probability estimate of the $i$th game being assigned to the $k$-th class, and $I(y_i = k)$ is an indicator function (1 if $y_i=k$ and 0 otherwise). Note that one advantage of this measurement is that it does not require the true probability of a data point belonging to a class. 
 
 \subsubsection{Score Prediction Error}
 \label{sec:scorePredictionError}
@@ -139,88 +138,19 @@ We evaluate the score prediction accuracy for Poisson-OD and
 Gaussian-OD models for \emph{each} team in terms of the mean absolute
 error (MAE), defined as below:
 \begin{align}
-    \frac{1}{N} \sum_{i=1}^{2*N} \left(| \hat{s_i} - s_i | + \hat{s_j} - s_j |\right)
+    \frac{1}{2N} \sum_{i=1}^{2N} \left(| \hat{s_i} - s_i | + \hat{s_j} - s_j |\right)
 \end{align}
-where $\hat{s_i}$ ($\hat{s_j}$) is the predicted score for team $i$ ($j$), $s_i$ ($s_j$) the ground truth, and $N$ the number of two-team matches for with teams indexed by $i$ and $j$.
+where $\hat{s_i}$ ($\hat{s_j}$) is the predicted score for team $i$ ($j$), $s_i$ ($s_j$) the ground truth, and $N$ the number of two-team matches for with teams indexed by $i$ and $j$. 
+
 Note that we must omit the Gaussian-SD model since it can only predict score differences rather than scores. To benchmark the score prediction performance of the Poisson-OD and Gaussian-OD models, we compare with an avarage score prediction methods. This average score methods simply use the avarage scores for a team computed from the training games as predictions for testing games.
 
-% \subsection{Logistic Regression}
-% Perhaps the simplest score prediction approach is to use a linear regression model for $m$ teams and $n$ matches with variables $o_1,\ldots,o_m$ and $d_1,\ldots,d_m$
-% can be setup as in the following example:
-% \begin{equation*}
-%     \underbrace{\begin{pmatrix}
-%         1 & 0 & 0 & -1 & \dots & 0 & 0 \\
-%         0 & -1 & 1 & 0 & \dots & 0 & 0 \\
-%         0 & -1  & 0 & 0 & \dots & 1 & 0 \\
-%         1 & 0  & 0 & 0 & \dots & 0 & -1 \\
-%         \hdotsfor{7}                   \\
-%         0 & 0  & 1 & 0 & \dots & 0 & -1\\
-%         0 & 0  & 0 & -1 & \dots& 1 & 0
-%     \end{pmatrix}}_{A}
-%     \underbrace{\begin{pmatrix}
-%         o_1 \\
-%         d_1 \\
-%         o_2 \\
-%         d_2 \\
-%         \hdotsfor{1} \\
-%         o_m \\
-%         d_m
-%     \end{pmatrix}}_{\vec{z}}
-%     =
-%     \underbrace{\begin{pmatrix}
-%         s_{1,1} \\
-%         s_{1,2} \\
-%         s_{2,m} \\
-%         s_{2,1} \\
-%         \hdotsfor{1} \\
-%         s_{n,2} \\
-%         s_{n,m}
-%     \end{pmatrix}}_{\vec{s}},
-% \end{equation*}
-% where $s_{k,j},k=1,\dots,n$ is the team $j$'s score for the $k$th match. In order to use a logistic model, we propose mapping from $s_{kj},k=\{1,\dots,n\}$ to $t_{jk}$ by
-% \begin{align*}
-%     t_{jk} = \frac{1}{1+\exp(-s_{jk})}.
-% \end{align*}
-% Now the objective is to find the optimal skill vector $z^*$ defined as
-% \begin{align*}
-%     z^* = \arg\min_{z}||Az-\vec{t}||_{2}^2,
-% \end{align*}
-% which can be achieved by using maximum likelihood parameter estimation.
-
-
-\subsection{Results}
-
+\subsection{Results on Four Criteria}
 \label{sec:results}
 
 Experimental results are reported according to the parameter
-configurations shown in Table~\ref{table:Parameters}. All results are
-presented in Figure~\ref{fig:Results} and discussed below.
-%\begin{table}
-%\vspace{-5mm}
-%\caption{Parameter settings. Priors on offence/defence skills: $\mathcal{N}(\mu_{0},\sigma_{0}^2)$ with $\mu_{0}=25$ and $\sigma_{0}=25/3$. Performance variance: $\beta$, $\beta_1$, $\beta_2$.}
-%\begin{center}
-%\small
-%\begin{tabular}{|c|c|}
-%  \hline
-%  Model             & Parameter ($\epsilon,\gamma$ empirically estimated)\\
-%  \hline
-%  TrueSkill          & $\beta=\sigma_{0}/2$; \\
-%                          & $\epsilon$: draw probability of datasets\\
-%\hline
-%  Poisson-OD         & $\beta_1=\beta_2=\sigma_{0}/2$\\
-%\hline
-%  Gaussian-OD    & $\beta_1=\beta_2=\sigma_{0}/2$;\\
-%                         & $\gamma$: score variance in datasets\\
-%\hline
-%  Gaussian-SD & $\beta=\sigma_{0}/2$;  \\
-%                        & $\gamma$: score difference variance in datasets\\
-%  \hline
-%\end{tabular}
-%\label{table:Parameters}
-%\end{center}
-%\vspace{-5mm}
-%\end{table}
-{\small\begin{table}[htbp!]
+configurations shown in Table~\ref{table:Parameters}. Parameters for the slice sampling used in the Poisson-OD model include the burnin, thinning, and the number of samples required, which we set to 1000, 5, and 1000, repsectively. 
+Now we discuss the results against these four criteria on three real data sets below. 
+\begin{table}[htbp!]
 \caption{Parameter settings. Priors on offence/defence skills: $\mathcal{N}(\mu_{0},\sigma_{0}^2)$ with $\mu_{0}=25$ and $\sigma_{0}=25/3$. Performance variance: $\beta$, $\beta_o$, $\beta_d$.}
 \begin{center}
 \small
@@ -229,81 +159,20 @@ presented in Figure~\ref{fig:Results} and discussed below.
   Model             & Parameter ($\epsilon,\gamma$ empirically estimated)\\
   \hline
   TrueSkill          & $\beta=\sigma_{0}/2$, $\epsilon$: draw probability\\
-  Poisson-OD         & $\beta_o=\beta_d=\sigma_{0}/2$\\
+  Poisson-OD(VB)         & $\beta_o=\beta_d=\sigma_{0}/2$\\
+  Poisson-OD(Sampling)         & $\beta_o=\beta_d=\sigma_{0}/2$\\
   Gaussian-OD    & $\beta_o=\beta_d=\sigma_{0}/2$, $\gamma$: score variance\\
   Gaussian-SD & $\beta=\sigma_{0}/2$, $\gamma$: score difference variance\\
   \hline
 \end{tabular}
 \label{table:Parameters}
 \end{center}
-\end{table}}
-
-
-\begin{center}
-\begin{figure*}[t!]
- \centering
- \epsfig{file=WLAccuracy_UK, angle=0, height=8cm}
-\caption{\small Results on the UK-PL, evaluated using win/loss prediction accuracy in
-term of the area of the curve (AUC). Error bars indicate
-95\% confidence intervals.}
-\label{fig:WLAccuracy_UK}
-\end{figure*}
-\end{center}
-
-
-
-\begin{center}
-\begin{figure*}[t!]
- \centering
- \epsfig{file=WLAccuracy_Halo, angle=0, height=8cm}
-\caption{\small Results on the Halo 2 data set, evaluated using win/loss prediction accuracy in
-term of the area of the curve (AUC). Error bars indicate
-95\% confidence intervals.}
-\label{fig:WLAccuracy_Halo}
-\end{figure*}
-\end{center}
-
-
-The score prediction results on the AFL data sets are shown in Figure~\ref{fig:fig:WLAccuracy_AFL} and Figure~\ref{fig:WLAccuracy_AFL_without_GaussianOD}. Clearly, the Gaussian-OD model fails in predicting the scores of the matches, because the differences in the learnt skill levels between teams are relatively small. A Gaussian likelihood function with the small difference has low probabilty of generating huge match scores for the AFL data set.
-
-\begin{center}
-\begin{figure*}[htbp!]
- \centering
- \epsfig{file=WLAccuracy_AFL, angle=0, height=8cm}
-\caption{\small Results on the AFL data set, evaluated using win/loss prediction accuracy in
-term of the area of the curve (AUC). Error bars indicate
-95\% confidence intervals.}
-\label{fig:WLAccuracy_AFL}
-\end{figure*}
-\end{center}
-
-As inclusion of the Gaussian-OD model makes the comparison between the Poisson model and the baseline hard to observe, it was removed in Figure~\ref{fig:WLAccuracy_AFL_without_GaussianOD} for better comparing the Poisson model and the baseline method. Interestingly, we observe that the baseline method making predictions based on average scores make better predictions than the Poisson model when only 10\% of data is used for training. This is not surprising because our belief on team skills exhibits large uncertainty when only a few observations are used for training. As we can see when more data is used for training, the Poisson model performs significantly better than the baseline. For the Poisson model, we observed that the performances are comparable when Bayes inference is conducted by variational Bayes and slice sampling.
-\begin{center}
-\begin{figure*}[t!]
- \centering
- \epsfig{file=ScoreError_AFL_without_GaussianOD, angle=0, height=8cm}
-\caption{\small Results on the AFL data set, evaluated using win/loss prediction accuracy in
-term of the area of the curve (AUC). Error bars indicate
-95\% confidence intervals.}
-\label{fig:WLAccuracy_AFL_without_GaussianOD}
-\end{figure*}
-\end{center}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{table}
 
 \subsubsection{Information Gain}
-%\paragraph {Information Gain}
+Information gain for four models on the UK data set is shown in Figure~\ref{fig:InforGain_UK}. The results indicate that the proposed model are significantly better than the TrueSkill for most of the trainning proportions, particularly when less than 30\% data used for training. For limited data, the score-based skill learning models including the Poisson-OD\footnote{We note that the Poisson-OD model achieves much better performances when the win/lose/draw probabilities  are defined according to Section~\ref{sec:winProbabilityPoisson} in the present paper, constrasted with the results in~\cite{Guo:ECML2012} that computes the win probability based on the score difference variable.}, Gaussian-OD, and Gaussian-SD, all of which significantly outperform the TrueSkill. These results indicte that score information are indeed useful for making predictions when training data is limited. 
 
-%Poisson-OD does not appear to provide accurate probability
-%estimates in general -- we conjecture this could be due to biases
-%introduced in the variational approximation scheme.
-For relatively small amounts of training data (10\% -- 30\%), the
-Gaussian models (OD and SD) statistically significantly outperform
-TrueSkill and Poisson-OD in terms of win/loss probability accuracy.
-On all data sets except AFL, the Gaussian models perform comparably to
-TrueSkill for larger amounts of training data.  Gaussian-OD
-statistically significantly outperforms Gaussian-SD for Halo 2,
-indicating that separate offence/defence modeling helps.
+Out of the three proposed models, the Gaussian models signficantly outperform the Poisson-OD model when training with 10\% and 20\% of the data. This is because that the scores for the UK data set are relatively small; thus the amplification due to the exponential term in the Poisson-OD model leads to more extreme probaiblities, thus may hurt the performance if the predictions are wrong. But when the training data increases, the Poisson-OD model can refine further the belief over teams' skill levels thus making less mistakes, leading to comparable performances with the Gaussian models. The two Gaussian models achieve comparable performances for all training settings, with the Gaussian-SD model slightly edging out the Gaussian-OD model. 
 
 %These results indicate that (a) score information can be very
 %useful for making predictions when training data is limited;
@@ -311,9 +180,9 @@ indicating that separate offence/defence modeling helps.
 %outperform Gaussian-SD on Halo, and (c)
 %the Poisson-OD model seems to predict more extreme probabilities, which
 %can hurt it when its predictions are wrong.
-%%%% results on three data sets with three criteria: 9 figures;
+
 \begin{center}
-\begin{figure*}[t!]
+\begin{figure*}[htbp!]
  \centering
  \epsfig{file=InforGain_UK, angle=0, height=8cm}
 \caption{\small Results on the UK-PL, evaluated
@@ -322,6 +191,23 @@ using information gain. Error bars indicate
 \label{fig:InforGain_UK}
 \end{figure*}
 \end{center}
+
+Empirical evaluations with the information gain criterion on the AFL data set is shown in Figure~\ref{fig:InforGain_AFL}. We observed that all the proposed models significantly outperform TrueSkill for limited data, which further validates our hypothesis that information carried by score-based match outcomes are very helpful for skill learning when only small amount of data is available for training. When more data is available, TrueSkill improved its performance and performed the best, which indicates that updating skill levels with win/lose/draw based outcomes is more robust comparing with that based on the possibly noisy scores. 
+
+Across the three proposed models of the AFL data set, the Poisson-OD model signficantly outperforms the Gaussian models, which agrees with the fact that the exponential term in the Poisson-OD model can effectively learn relatively large match outcomes. Note that the average score for the AFL data set is 95.4 vs 1.3 for that of the UK data set. 
+
+\begin{center}
+\begin{figure*}[htbp!]
+ \centering
+ \epsfig{file=InforGain_AFL, angle=0, height=8cm}
+\caption{\small Results on the AFL data set, evaluated
+using information gain. Error bars indicate
+95\% confidence intervals.}
+\label{fig:InforGain_AFL}
+\end{figure*}
+\end{center}
+
+Results on the Halo data set are shown in Figure~\ref{fig:InforGain_Halo}, and indicated that all the three proposed models significantly outperform TrueSkill for all training setting. For this data set with small average scores, the Gaussian models clearly outperform the Poisson-OD model, which further supports the fact that the amplification due to the exponential term in the Poisson-OD model may hurt the performance. For the Gaussian models, the Gaussian-OD model that separately model offence and defence skills achieves significantly better performance than the Gaussian-SD model, indicating the importance of modeling these two skill aspects separately. 
 
 \begin{center}
 \begin{figure*}[t!]
@@ -334,25 +220,47 @@ using information gain. Error bars indicate
 \end{figure*}
 \end{center}
 
-
+As a short summary for the results on the information gain, our observed that all the proposed models can outperform the TrueSkill for most of the training settings, and the differences are significant particularly for limited training data. This observation reflects our motiviation of modeling the more informative socre-based match outcomes in improving skill modeling. The Gaussian-OD model performs better than the Gaussian-SD model for most of the training cases, and the improvement is significant for the Halo data set, indicating the benefits of modeling the offence and defence of a team's skills. While the Gaussian models are more appropriate for the data sets with small average match scores, the Poisson model edges out for the data set with large score match outcomes. 
 
 \subsubsection{Win/no-Win Prediction Accuracy }
-%\paragraph{Win/Loss Prediction Accuracy}
 
-In terms of win/no-win prediction accuracy,
-%Poisson-OD again does not
-%generally perform as well as the other models -- we again conjecture
-%this may be due to biases introduced in the variational approximation
-%scheme.
-the Gaussian-OD model generally
+In terms of win/no-win prediction accuracy, the Gaussian-OD model generally
 provides the best average AUC, followed by Gaussian-SD, then
-TrueSkill (with the exception of cases for Halo 2 with more than 40\%
-training data where TrueSkill performs best), then Poisson-oD.
-Again, we see that
-the separate offence/defence skill modeling of Gaussian-OD gives
-it a performance edge over the combined skill model of Gaussian-SD.
+TrueSkill, then Poisson-OD model for both the UK and AFL data set corresponding to Figure~\ref{fig:WLAccuracy_UK} and Figure~\ref{fig:WLAccuracy_AFL}. The better performance by the Gaussian-OD model indicated the benefits of separating offence/defence skill modeling in the Gaussian-OD model, achiving a performance edge over the combined skill model of the Gaussian-SD model.
+
+\begin{center}
+\begin{figure*}[htbp!]
+ \centering
+ \epsfig{file=WLAccuracy_UK, angle=0, height=8cm}
+\caption{\small Results on the UK-PL, evaluated using win/loss prediction accuracy in
+term of the area of the curve (AUC). Error bars indicate
+standard errors.}
+\label{fig:WLAccuracy_UK}
+\end{figure*}
+\end{center}
 
 
+\begin{center}
+\begin{figure*}[htbp!]
+ \centering
+ \epsfig{file=WLAccuracy_AFL, angle=0, height=8cm}
+\caption{\small Results on the AFL data set, evaluated using win/loss prediction accuracy in
+term of the area of the curve (AUC). Error bars indicate
+standard errors.}
+\label{fig:WLAccuracy_AFL}
+\end{figure*}
+\end{center}
+
+\begin{center}
+\begin{figure*}[htbp!]
+ \centering
+ \epsfig{file=WLAccuracy_Halo, angle=0, height=8cm}
+\caption{\small Results on the Halo 2 data set, evaluated using win/loss prediction accuracy in
+term of the area of the curve (AUC). Error bars indicate
+standard errors.}
+\label{fig:WLAccuracy_Halo}
+\end{figure*}
+\end{center}
 %We check the statistics of the match outcomes
 %(Table~\ref{table:datasetStatistics}),
 %and observe that the average
@@ -363,22 +271,10 @@ it a performance edge over the combined skill model of Gaussian-SD.
 %amplify small performance differences to explain high scores, leading
 %to more stable skill modeling in high-scoring games.
 
-\subsubsection{Multi-Class Classification Evaluated with the Brier Score}
-We further studied the performances of various models with the Brier Score in a multi-class classification setting, where each game is an observation and the class for an observation for a tuple of two teams $(i, j)$ is in $\{i\text{ wins}, i\text{ loses}, \text{ draw}\}$. Comparing with the previous reported performance on Win/no-Win, the Brier score we used for multi-class classificaitno can handle the matches with the class ``draw". 
+\subsubsection{Win/Lose/Draw Prediction with Brier Score}
+We further studied the performances of various models with the Brier Score in a multi-class classification setting, where each game is an observation and the class for the observation between two teams $(i, j)$ is in $\{i\text{ win}, i\text{ lose}, \text{ draw}\}$. Comparing with the previous reported performance on Win/no-Win, the Brier score we used for multi-class classification can handle the matches that are a draw between the participating teams. 
 
-Brier score for the AFL data set evaluated with the Brier score is shown in Figure~\ref{fig:WLAccuracy_AFL_BrierScore}. We observed that the Poisson and TrueSkill models consistently outperform the Gaussian models (i.e., the Gaussian-OD and Gaussian-SD models). The Poisson model performs comparablly with TrueSkills, but edges out TrueSkils when particularly small percentages (10\% and 20\%) of data were used for training. 
-
-\begin{center}
-\begin{figure*}[t!]
- \centering
- \epsfig{file=WLAccuracy_AFL_BrierScore, angle=0, height=8cm}
-\caption{\small Results on the AFL data set, evaluated using the Brier Score for multi-class classification. Error bars indicate
-standard errors.}
-\label{fig:WLAccuracy_AFL_BrierScore}
-\end{figure*}
-\end{center}
-
-For the UK-PL data set, we reported the Brier score in Figure~\ref{fig:WLAccuracy_UK_BrierScore}. We observed that both Gaussian-OD and Gaussian-SD models outperform the Poisson model. Recall that the Poisson model introduced an exponential term for modeling the scores, thus degraded when the match outcomes are smaller scores, which is the case for the UK-PL data set. The Gaussian-SD model is comparable with the Gaussian-OD model. Interestingly, TrueSkill outperforms all the three proposed model consistently, thanks to its rationale of learning to optimizing the prediction of draw probability for a game. 
+For the results on the UK and AFL data set shown in Figure~\ref{fig:WLAccuracy_UK_BrierScore} and Figure~\ref{fig:WLAccuracy_AFL_BrierScore}, we observed that the the standard errors for all the models are much larger, indicating that the performance differences between these models are not significant. For the Brier score of UK-PL data set (Figure~\ref{fig:WLAccuracy_UK_BrierScore}), the Poisson-OD and the Gaussian models seem to outperform TrueSkill for limited training data. Within the three proposed model, the Gaussian models slightly edge out the Poisson-OD model, which is again due to the scores for the UK data set are relatively small numbers. 
 \begin{center}
 \begin{figure*}[t!]
  \centering
@@ -388,6 +284,30 @@ standard errors.}
 \label{fig:WLAccuracy_UK_BrierScore}
 \end{figure*}
 \end{center}
+
+For the AFL data set (Figure~\ref{fig:WLAccuracy_AFL_BrierScore}), results indicated that the proposed models perform much better than the TrueSkill, although TrueSkill reached the best possible performance of the Poisson-OD, Gaussian-OD, and Gaussian-SD when sufficiently large amount of data is used for training. Across the three proposed models, the Poisson-OD model slightly outperform the Gaussian models, however the performance difference is not significant. 
+\begin{center}
+\begin{figure*}[t!]
+ \centering
+ \epsfig{file=WLAccuracy_AFL_BrierScore, angle=0, height=8cm}
+\caption{\small Results on the AFL data set, evaluated using the Brier Score for Win/Lose/Draw prediction. Error bars indicate
+standard errors.}
+\label{fig:WLAccuracy_AFL_BrierScore}
+\end{figure*}
+\end{center}
+
+\begin{center}
+\begin{figure*}[t!]
+ \centering
+ \epsfig{file=WLAccuracy_Halo_BrierScore, angle=0, height=8cm}
+\caption{\small Results on the Halo data set, evaluated using the Brier Score for Win/Lose/Draw prediction. Error bars indicate
+standard errors.}
+\label{fig:WLAccuracy_Halo_BrierScore}
+\end{figure*}
+\end{center}
+
+When comparing the best performance on the AFL and UK dataset, we note that the Brier Score is much lower for the AFL data set (close to 0.25) comparing with the UK data set (close to 0.38), indicating that predicting the football games may be much harder than that the rugby games. 
+
 
 \subsubsection{Score Prediction Errors}
 %\paragraph{Score Prediction Errors}
@@ -408,31 +328,43 @@ standard errors.}
 %data.  This amplification appears to hurt the Poisson-OD model on the
 %relative low-scoring UK-PL dataset.
 
-As shown in the third column in Figure~\ref{fig:Results}, Gaussian-OD
-predicts more accurate scores on the UK-PL and Halo datasets, while
-Poisson-OD is more accurate for the AFL dataset. This can be explained
-by a simple skill analysis --- the learned skills on the UK-PL dataset
-tend to show a larger variance (for all models), whereas the learned
-skills on the AFL dataset show little variance (for all models except
-Gaussian-SD). Thus, the use of an exponentiated scoring rate in the
-Poisson-OD model would seem to amplify these small performance
-differences in learned AFL skills to make more accurate score
-predictions on AFL data.  This amplification appears to hurt the
-Poisson-OD model on the lower-scoring UK-PL and Halo dataset (the mean
-score for the AFL data is 95.4 vs 42.7 and 1.3 respectively for the
-Halo 2 and UK-PL data).
+We report the score prediction errors for different data sets in Figure~\ref{fig:ScoreError_AFL}, Figure~\ref{fig:ScoreError_UK}, and Figure~\ref{fig:ScoreError_Halo}. Gaussian-OD predicts more accurate scores on the UK-PL, while Poisson-OD is more accurate for the AFL dataset. For the AFL data set (Figure~\ref{fig:ScoreError_AFL}), we observed that the Gaussian-OD model clearly failed in predicting the scores of the matches, because the differences in the learnt skill levels between teams are relatively small. A Gaussian likelihood function with the small difference has low probabilty of generating huge match scores for the AFL data set. Given the same difference, the Poisson-OD model with an exponentiated scoring rate would seem to amplify these small performance differences in learned AFL skills to make more accurate score predictions on AFL data.  This amplification appears to hurt the Poisson-OD model on the lower-scoring UK-PL (the mean score for the AFL data is 95.4 vs 42.7 and 1.3 respectively for the Halo 2 and UK-PL data).
 
+\begin{center}
+\begin{figure*}[htbp!]
+ \centering
+ \epsfig{file=ScoreError_AFL, angle=0, height=8cm}
+\caption{\small Results on the AFL data set, evaluated using win/loss prediction accuracy in
+term of the area of the curve (AUC). Error bars indicate
+standard errors.}
+\label{fig:ScoreError_AFL}
+\end{figure*}
+\end{center}
+
+As inclusion of the Gaussian-OD model makes the comparison between the Poisson model and the baseline hard to visualize, we removed the Gaussian-OD model in Figure~\ref{fig:ScoreError_AFL_without_GaussianOD} for better comparing the Poisson model and the baseline method. Interestingly, we observe that the baseline method based on average scores of each team makes better predictions than the Poisson model when only 10\% of data is used for training. This is not surprising because the belief associated with the Poisson-OD model on team skills exhibits large uncertainty when only a few observations are used for training. As we can see when more data is used for training, the Poisson-OD model performs significantly better than the baseline. Note that for the Poisson-OD model, we observed that the performances are comparable when Bayes inference is conducted by variational Bayes and slice sampling.
+ 
+\begin{center}
+\begin{figure*}[htbp!]
+ \centering
+ \epsfig{file=ScoreError_AFL_without_GaussianOD, angle=0, height=8cm}
+\caption{\small Results on the AFL data set, evaluated using win/loss prediction accuracy in
+term of the area of the curve (AUC). Error bars indicate
+standard errors.}
+\label{fig:ScoreError_AFL_without_GaussianOD}
+\end{figure*}
+\end{center}
+
+As mentioned above for predicting scores on the UK data set (Figure~\ref{fig:ScoreError_UK}), the Poisson-OD model clearly fails in predicting this type of matches with low match scores (average scores being 1.3 for the UK data set). Given such low score matches, our Gaussian-OD models significantly outperforms the baseline for all the training settings. Our empirical results thus suggest that one can choose the models proposed in the present paper depending on the specific applications in order to achieve satisfactory results. 
 \begin{center}
 \begin{figure*}[t!]
  \centering
  \epsfig{file=ScoreError_UK, angle=0, height=8cm}
 \caption{\small Results on the UK-PL, evaluated using score
 prediction error (right column). Error bars indicate
-95\% confidence intervals.}
+standard errors.}
 \label{fig:ScoreError_UK}
 \end{figure*}
 \end{center}
-
 
 \begin{center}
 \begin{figure*}[t!]
@@ -440,20 +372,8 @@ prediction error (right column). Error bars indicate
  \epsfig{file=ScoreError_Halo, angle=0, height=8cm}
 \caption{\small Results on the Halo 2 data set, evaluated using score
 prediction error (right column). Error bars indicate
-95\% confidence intervals.}
+standard errors.}
 \label{fig:ScoreError_Halo}
-\end{figure*}
-\end{center}
-
-
-\begin{center}
-\begin{figure*}[t!]
- \centering
- \epsfig{file=ScoreError_AFL, angle=0, height=8cm}
-\caption{\small Results on the AFL data set, evaluated using score
-prediction error (right column). Error bars indicate
-95\% confidence intervals.}
-\label{fig:ScoreError_AFL}
 \end{figure*}
 \end{center}
 
@@ -482,49 +402,7 @@ differences across the skills of different teams learnt from the
 Poisson model and Gaussian-S are relatively small, which supports the
 above hypothesis.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure*}[t!]
- \centering
- \vspace{-3cm}
- \subfigure{
-   \hspace{-0.5cm}
-   \epsfig{file=skillEstimation_AFL, angle=0, height=13cm}
-  \hspace{-1.2cm}
-   \epsfig{file=skillEstimation_UK, angle=0, height=13cm}
- }\\
- \vspace{-1.5cm}
-\caption{Estimated skill levels of teams on the AFL (left) and UK-PL
-  data (right) sets. Error bar indicates standard deviation.}
-\label{fig:ResultsEstimatedSKills}
-\end{figure*}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \ENDCOMMENT
-
-
-\COMMENT
-% JUST THREE NUMBERS, DON'T NEED A TABLE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}
-\caption{Score statistics for Halo, UK-PL, and AFL}
-\begin{center}
-\small
-\begin{tabular}{|l|c|c|}
-  \hline
-  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-  Data set          & Mean and Standard Deviation\\
-  \hline
-  UK-PL             &  1.3023$\pm$1.2237 \\
-  Halo 2 Beta     & 42.6929$\pm$3.0440 \\
-  AFL                 &95.3784$\pm$27.8993 \\
-  \hline
-\end{tabular}
-\label{table:datasetStatistics}
-\end{center}
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\ENDCOMMENT
-
 % %TODO
 % \begin{itemize}
 %   \item Table: {\it testing on the last 10 percent data using models learnt from the first 90 percent data; Five by Three (algorithm by datasets);}
@@ -535,7 +413,9 @@ above hypothesis.
 %   \item Rel Info Gain???
 % \end{itemize}
 
-\subsubsection{VB Vs Sampling for the Poisson-OD Model}
-We studied the performance for the Poisson-OD model when approximate inference is conducted by varaitional Bayes and slice sampling on the AFL data set. As shown in the result for three criteria on the AFL data set (Figure~\ref{fig:InforGain_AFL}, Figure~\ref{fig:WLAccuracy_AFL}, and Figure~\ref{fig:ScoreError_AFL}), the performance differences between VB and slice sampling are negligible; however, it is important to note that the slice sampling takes about 20 seonds; however, our proposed fixed-point solution oftens converges after two or three iterations that can be finished within less  than 0.01 seconds. 
+\subsection{Poisson-OD(VB) Vs Poisson-OD(Sampling)}
+\label{sec:VBSampling}
+We studied the performance for the Poisson-OD model when approximate inference is conducted by varaitional Bayes and slice sampling on the AFL data set. As shown in the various results for three criteria on the AFL data set (Figure~\ref{ScoreError_AFL_without_GaussianOD}), the differences in the performances achieved by the Poisson-OD model with VB and slice sampling are negligible; however, it is important to note that the slice sampling takes about 20 seonds; however, our proposed fixed-point solution oftens converges after two or three iterations that can be finished within less  than 0.01 seconds. Thus, our proposed variational Bayes inference is much more efficient than the sampling based approaches. For this reason, we can omit the report of the Poisson-OD(Sampling) on other data sets due to heavy computational requirements. Note that one can perhaps explore the advanced sampling approaches such as \cite{Murray:AISTATS2010} to speed up the sampling method. 
+
 
 % \subsubsection{Model Home Field Improving Performance}
