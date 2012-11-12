@@ -4,28 +4,45 @@ We infer skill distributions in all proposed models via
 online Bayesian updating.  While exact inference in the purely Gaussian
 models can be achieved by solving linear systems, Bayesian
 updating provides an efficient (also exact) incremental learning alternative.
-Equations for Bayesian updates and the probability of three possible match outcomes (e.g., winning, losing and drawing) are
+Equations for Bayesian updates and the WLD probability of matches are
 model-dependent and presented below.
 
 \subsection{Inference in TrueSkill}
 
-\subsubsection{Bayesian update}
+\noindent{\bf Bayesian update:}
 The Bayesian update equations in the TrueSkill model
 (Figure~\ref{fig:trueskill}) are presented
-in~\cite{herbrich06569}, and we omit the details in the present paper and refer the interesting readers to Table 1 in~\cite{herbrich06569}. 
+in~\cite{herbrich06569}.
 
-\subsubsection{Win/Lose/Draw Probability} 
-\label{sec:winProbabilityTrueSkill}
-Given skill levels of team $i$ and $j$, $l_i\sim\mathcal{N}(l_i;\mu_i,\sigma_i^2)$ and
+\noindent{\bf WLD probability:} Given skill levels of
+team $i$ and $j$, $l_i\sim\mathcal{N}(l_i;\mu_i,\sigma_i^2)$ and
 $l_j\sim\mathcal{N}(l_j;\mu_j,\sigma_j^2)$, we first compute the
 distribution over performance difference variable $d$, and get
 $d\sim\mathcal{N}(d;\mu_d,\sigma_d^2)$ with $\mu_d = \mu_i - \mu_j$
 and $\sigma_d^2 = \sigma_i^2 + \sigma_j^2+2\beta^2$. The winning
-probability of team $i$ is given by the probability $p(d>0)$ defined as
+probability of team $i$ is given by the probability $p(d>\epsilon$ defined as
 \begin{align}
-  p(d>0) = 1 - \Phi\left(\frac{-\mu_d}{\sigma_d}\right),
+  p(d>\epsilon) = 1 - \Phi\left(\frac{\epsilon-\mu_d}{\sigma_d}\right),
 \end{align}
-where $\Phi(\cdot)$ is the normal CDF. Likewise, we define the draw probability as the probability distribution funciton of the variable $d$, evaluated at 0, and the lose probability of team $i$ as $\Phi\left(\frac{-\mu_d}{\sigma_d}\right)$.
+where $\Phi(\cdot)$ is the normal CDF and the $\epsilon$ is the draw margin computed on the training data. Likewise, one can define the lose probability for team $i$ as $p(d<\epsilon)$, and the draw probability as $p(|d|<\epsilon)$.
+
+%{\bf Win probability:} Given skill levels of
+%team $i$ and $j$, $l_i\sim\mathcal{N}(l_i;\mu_i,\sigma_i^2)$ and
+%$l_j\sim\mathcal{N}(l_j;\mu_j,\sigma_j^2)$, we first compute the
+%distribution over skill difference variable $d$, and get
+%$d\sim\mathcal{N}(d;\mu_d,\sigma_d^2)$ with $\mu_d = \mu_i - \mu_j$
+%and $\sigma_d^2 = \sigma_i^2 + \sigma_j^2$. The winning
+%probability of team $i$ is given by transforming the skill difference with a logistic function as below
+%\begin{align}
+%  p(i\succ j) = E_{x\sim\mathcal{N}(d;\mu_d,\sigma_d^2)}\frac{1}{1+\exp(-x)},
+%\label{eq:winProbDefinition}
+%\end{align}
+%
+%The winning probability $p(i\succ j)$ defined above is the logistic-normal integral, and does not have an analytic form. We apply the results proposed in \cite{Maragakis08JCP} for approximation as below
+%\begin{align}
+%    p(i\succ j) \approx \frac{1}{1+\exp(-\gamma)}
+%\end{align}
+%where $\gamma = \sqrt{1+ \frac{\pi \sigma_d^2}{8}}$. Note that the absolute difference between approximation and the exact integral is always less than 0.02.
 
 \subsection{Inference in Poisson-OD Model}
 \label{sec:PoissonInference}
@@ -93,6 +110,9 @@ where
 \begin{align}\label{eq:approximationZQuad5}
      \kappa  &= \log\left(\frac{\mu + s_i\sigma^2-1-\kappa+\sqrt{(\kappa - \mu - s_i\sigma^2 -1)^2+2\sigma^2}}{2\sigma^2}\right).
 \end{align}
+Ths fixed point equation in $\kappa$ converges linearly
+with factor upper bounded by 
+$\left( 2/3 \sigma^2 e^\kappa \right)^{-1}$.
 \end{lemma}
 \begin{proof}
 The second term in~\eqref{eq:KL} is evaluated using
@@ -101,15 +121,22 @@ $p(x|s_i)=p(s_i|x)p(x)/p(s_i)$.
 The term in $\log p(s_i)$ can be dropped because it is constant
 with respect to $\mu_{\text{new}}$ and $\sigma_{\text{new}}^2$.
 The term $E_{x\sim q(x)} [\log p(s_i|x)]$ is found by expanding the
-Poisson distribution and noting $E_{x\sim p(x)}[\exp(x)] = \exp(\mu+\sigma^2/2)$ (Appendix~\ref{app:exponentialIntegral} for derivation).
-Thus it becomes
+Poisson distribution. 
+%%  WRAY - this integral is quite standard and easy, no need for supplemental;
+%%    - I also moved the footnote up so it doesn't look like part of equation
+Note the expected value\footnote{Shown by manipulating the Gaussian integral.}
+ of $\exp(y)$ for $\mathcal{N}(y;\mu,\sigma^2)$
+is  $\exp(\mu+\sigma^2/2)$.
+Thus 
 \begin{equation}\label{eq:firstTermFinal}
-  s_i \mu_{\text{new}} - \exp(\mu_{\text{new}} + \sigma_{\text{new}}^2/2) - \log(s_i!)~.
+  E_{x\sim q(x)} [\log p(s_i|x)] ~=~ s_i \mu_{\text{new}} - \exp(\mu_{\text{new}} + \sigma_{\text{new}}^2/2) - \log(s_i!)~.
 \end{equation}
 \noindent
 % Appendix \ref{app:exponentialIntegral} for derivation)
-The term $E_{x\sim q(x)}[\log p(x)]$
-according to the derivation in Appendix~\ref{app:logGaussianIntegral} becomes
+The term $E_{x\sim q(x)}[\log p(x)]$ is readily derived because
+$\log p(x)$ is a quadratic.
+%%  WRAY:  again, no need for supplemental material
+This becomes 
 \begin{equation}\label{eq:finalSecondTerm}
      -\frac{1}{2}\log(2\pi\sigma^2) -
          \frac{1}{2\sigma^2}\left(\sigma_{new}^2 + \mu_{new}^2-2\mu\mu_{new} + \mu^2 \right)~.
@@ -117,7 +144,7 @@ according to the derivation in Appendix~\ref{app:logGaussianIntegral} becomes
 Plugging~\eqref{eq:firstTermFinal} and~\eqref{eq:finalSecondTerm} into
 \eqref{eq:KL} gives
 \begin{align*}
-    &\arg\min_{q(x)}\text{KL}\left(q(x)|| p(x|s_i)\right) \equiv \arg\min_{q(x)}-\log\sqrt{2\pi e \sigma_{new}^2} - \nonumber \\
+    &\text{KL}\left(q(x)|| p(x|s_i)\right) \equiv -\log\sqrt{2\pi e \sigma_{new}^2} - \nonumber \\
     &\bigg( \underbrace{s_i \mu_{\text{new}} - \exp(\mu_{\text{new}} + \sigma_{\text{new}}^2/2) - \log(s_i!)}_{E_{x\sim q(x)} (\log p(s_i|x))} \nonumber \\
     & \underbrace{-\frac{1}{2}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2}\left(\sigma_{new}^2 + \mu_{new}^2-2\mu\mu_{new} + \mu^2 \right)}_{E_{x\sim q(x)}(\log p(x))} \bigg).
 \end{align*}
@@ -135,57 +162,122 @@ $\mu_{\text{new}}$ and $\sigma_{new}$, and set them to zero, leading to% as belo
     \mu_{\text{new}} & = \sigma^{2}\left(s_i - \exp\left(\mu_{\text{new}}+\frac{\sigma_{\text{new}}^2}{2}\right)\right) + \mu, \nonumber \\
    \sigma_{\text{new}}^2 & = \frac{\sigma^2}{1+\sigma^2 \exp(\mu_{\text{new}}+\frac{\sigma_{new}^2}{2})}~.\nonumber
 \end{align}
-Summing the first plus half the second of these equations,
-and defining $\kappa=\mu_{\text{new}}+\sigma_{\text{new}}^2/2$
+Define $\kappa=\mu_{\text{new}}+\sigma_{\text{new}}^2/2$ and these
+equations yield~\eqref{eq:ExactMuSigmaNew}.  Moreover,
+summing the first plus half the second of these equations
 yields the equation for $\kappa$ of
 \begin{align}\label{eq:kappa}
-    \kappa & = \mu + \sigma^2(s_i - \exp(\kappa)) + \frac{\sigma^2}{2(1+\sigma^2\exp(\kappa))},
+    \kappa & = \mu + \sigma^2(s_i - e^\kappa) + \frac{\sigma^2}{2(1+\sigma^2e^\kappa)}.
 \end{align}
-and one gets~\eqref{eq:ExactMuSigmaNew} in terms of $\kappa$.
 %Note that the variance $\sigma_{\text{new}}^2$ does not explicitly depends on $s_i$.
-
-We convert~\eqref{eq:kappa} by solving for $\exp(\kappa)$
+We convert~\eqref{eq:kappa} by solving for $e^\kappa$
 as it appears on the right-hand side.  This yields
-a quadratic equation, and we take the positive solution since $\exp(\kappa)$
-must be non-negative (see the Supplemental material).
-The result gives us~\eqref{eq:approximationZQuad5}.
+a quadratic equation in $e^k$:
+\[
+\sigma^2e^{2\kappa}
++ (\kappa-\mu+1-s_i\sigma^2)e^\kappa
++ \left((\kappa-\mu)/\sigma^2-s_i-1/2\right)=0~.
+\]
+For the quadratic in the form
+$Ae^{2\kappa}+Be^\kappa+C$ we note 
+by appropriate manipulation of~(\ref{eq:ExactMuSigmaNew})
+\begin{eqnarray*}
+AC&=&\kappa-\mu-s_i\sigma^2-\sigma^2/2=
+-\sigma^2e^\kappa +\frac{\sigma^2}{2\left(1+\sigma^2e^\kappa\right)}-\sigma^2/2
+\\
+&=& -\sigma^2e^\kappa \left(1+\frac{\sigma^2}{2\left(1+\sigma^2e^\kappa\right)}\right)
+~.
+\end{eqnarray*}
+This must be negative.
+Thus it follows that the quadratic has a positive and negative solution.
+We take the positive solution since $e^\kappa$ must be non-negative.
+Simplifying the term inside the square root,
+\[
+(\kappa-\mu+1-s_i\sigma^2)^2-4\left(\kappa-\mu-s_i\sigma^2-\sigma^2/2\right)
+= (\kappa-\mu-1-s_i\sigma^2)^2+2\sigma^2~,
+\]
+gives us~\eqref{eq:approximationZQuad5}.
+
+Now consider~\eqref{eq:approximationZQuad5} as a fixed point equation
+in $e^\kappa$.  Linear convergence will hold with rate
+$\left|\frac{\delta \exp(\kappa')}{\delta \exp(\kappa)}\right|$,
+so we need an upper bound on this value.
+From~\eqref{eq:approximationZQuad5} we get
+\[
+\frac{\delta \exp(\kappa')}{\delta \exp(\kappa)}=
+\frac{1}{2\sigma^2 e^\kappa}
+\left(-1 + 
+2\frac{(\kappa - \mu - s_i\sigma^2 -1)}{
+ \left((\kappa - \mu - s_i\sigma^2 -1)^2+2\sigma^2\right)^{-1/2}}\right)
+\]
+Note the term in brackets is in the range $-1+-2$ to $-1+2$.
+The bound on the rate follows.
 \end{proof}
 
 We can use~\eqref{eq:approximationZQuad5}
 as a fixed-point rewrite rule.
 For a given $\mu$ and $\sigma^2$ together with an initial value of
 $\kappa$, one iterates~\eqref{eq:approximationZQuad5} until
-convergence.  Empirically, this happens within 2-3 iterations.
+convergence.  Empirically, this happens within 2-3 iterations
+because typically $2 \sigma^2 e^\kappa>10^3$.
 With convergence, we substitute the fixed-point solution
-into \eqref{eq:ExactMuSigmaNew} to get the optimal mean
+into~\eqref{eq:ExactMuSigmaNew} to get the optimal mean
 and variance for $q(x)^*$.
 
 \paragraph{\bf Bayes Update with Slice Sampling}
-One caveat associated with variational Bayes is that it may yield local minimum; and thus one tends to use sampling-based appoaches to obtain exact solutions. One widely used sampling-based approaches is based on Markov chain Monte Carlo (MCMC). To approximate this univariate distribution $p(x|s_i$, we can use one type of MCMC called slice sampling~\cite{neal03SliceSampling}. The idea behind slice sampling is to sample uniformly from the region under the plot of the density function to be approximated; by doing so, one can adatp to the characteristics of the distribution. One can construct this Markov chain that converges to this uniform distribution by alternating uniform sampling in the vertical direction with uniform sampling from the horizontal ``slice" defined by the current vertical position. This method can be easily implemented for univariate distributions, and we use the Matlab embedded function slicesample for approximating $p(x|s_i)$. 
+One caveat associated with variational Bayes is that it may yield local minimum; and thus one tends to use sampling methods such as Markov chain Monte Carlo (MCMC) to obtain exact solutions. To approximate this univariate distribution $p(x|s_i)$, we can use one type of MCMC named slice sampling~\cite{neal03SliceSampling}. The idea behind slice sampling is to sample uniformly from the region under the plot of the density function to be approximated; by doing so, one can adapt to the characteristics of the distribution. More specifically, we construct this Markov chain that converges to this uniform distribution by alternating uniform sampling in the vertical direction with uniform sampling from the horizontal ``slice" defined by the current vertical position. This method can be easily implemented for univariate distributions, and we use the Matlab embedded function slicesample for approximating the marginal distribution $p(x|s_i)$, which is on the variable $x$ after integrating the message from $s_i$. Given $L$ samples from the slice sampler, we can compute their mean $\hat{\mu}_x$ and variance $\hat{\sigma}_x^2$, then we can approximate $p(x|s_i)$ by with the Gaussian distribution $\mathcal{N}\left(\hat{\mu}_x, \hat{\sigma}_x^2\right)$. 
 
 
-\subsubsection{Win/Lose/Draw Probability}
-\label{sec:winProbabilityPoisson}
-Suppose we are given the offence and defence skills for team $i$ and $j$, we can pass the messages down in Figure~\ref{fig:trueskill_variant} to 
-estimate the distributions for the performance variables $p_{oi}, p_{dj}, p_{di}, p_{oj}$. To estimate the win/lose/draw probability, we simply construct a  variable $d=p_{oi} + p_{di} - (p_{oj} + p_{dj})$ to represent the performance difference for team $i$ and $j$. Since the variable $d$ is a Gaussian distributed variable, the win/lose/draw probability $p(s>0)$for the Poisson-OD model defined below is simliar with the TrueSkill.
-\begin{align}
-  p(d>0) = 1 - \Phi\left(\frac{-\mu_d}{\sigma_d}\right),
-\label{eq:winProbabilityPoisson}
-\end{align}
-where $\mu_d$ and $\sigma_d$ are the mean and the standard deviation of the performance difference variable $d$. We can omit the definitions of $\mu_d$ and $\sigma_d$ since they fall out of the linear operations of Gaussian variables. Given this Gaussian distribution performance difference variable, we define the draw and lose probability following that of TrueSkill defined in Section~\ref{sec:winProbabilityTrueSkill}. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-We pause here to note that the above definitions for win/lose/draw probability slightly deviates from the Poisson-OD model (Figure~\ref{fig:trueskill_variant}) in the sense that we do not compute these probabilities based on the score difference that the model predicts. To compute the winning probability of team $i$, i.e., $s_i>s_j$, based on score difference, we first construct a new variable $s= s_i-s_j$, the difference variable between two Poisson distributions, which proves to be a Skellam distribution in
+%Let us directly present the result of optimizing $q(x)^*$ as below.
+%(The derivation must be omitted due to space limitations.)
+%% Detailed derivations can be found in Appendix~\ref{app:Minimizer}.
+%The optimization consists of two steps. The first step is to iterate
+%the following equation
+%\begin{align}\label{eq:IterativeFixPoint}
+%    z_{\text{new}}  =
+%\log\left(\frac{\mu + s_i\sigma^2-1-z_{\text{old}}+\sqrt{(z_{\text{old}} - \mu - s_i\sigma^2 -1)^2+2\sigma^2}}{2\sigma^2}\right),
+%\end{align}
+%%%%%%%%%%%%%% Check "dimension" of the iteration: log(a/a^2) == log (1/a)
+%with $\mu$, $\sigma^2$, and $s_i$ as defined in the messages above and
+%where $z_{\text{old}}$ can be initialized with $\mu+\sigma^2/2$. The
+%objective of iteration is to find a convergent $z^*$. The second step
+%makes use of the $z^*$ found in the first step to estimate the
+%Gaussian minimizer $q(x)^*$ with its mean and variance given as
+%follows:
+%\begin{align}\label{eq:ExactMuNew}
+%    \mu_{\text{new}}  = \sigma^{2}\left(k_i - \exp(z^*)\right) + \mu, \;\;\;
+%    \sigma_{\text{new}}^2  = \frac{\sigma^2}{1+\sigma^2 \exp(z^*)}.
+%\end{align}
+%Setting $p(x|s_i) :=
+%\mathcal{N}(x;\mu_{\text{new}},\sigma_{\text{new}}^2)$, the remaining
+%message passing to compute the posterior involves only Gaussians and
+%can be done exactly and efficiently.
+
+\subsubsection{WLD Probability}
+Suppose we are given the offence and defence skills for team $i$ and $j$, we can
+estimate the distributions over performance difference variables of
+$x$ and $y$ (c.f., Figure~\ref{fig:trueskill_variant}), and compute
+the Poisson parameters for $s_i$ and $s_j$ by using $\lambda_i =
+\exp(x)$ and $\lambda_j = \exp(y)$. To compute the winning probability
+of team $i$, i.e., $p(s_i>s_j)$, we first construct a new variable $s
+= s_i-s_j$, the difference variable between two Poisson distributions,
+which proves to be a Skellam distribution in
 \cite{Skellam46TheFrequencyDistribution}. Thus, we can compute the win
 probability of $P(s>0)$ of team $i$, according to the probability mass
 function for the Skellam distribution
 \begin{align*}
      P(s=k; \lambda_i, \lambda_j) =e^{-(\lambda_i+\lambda_j)}\left(\frac{\lambda_i}{\lambda_j}\right)^{k/2}I_{|k|}\left(2\sqrt{\lambda_i\lambda_j}\right),
 \end{align*}
-where $I_{k}(z)$ is the modified Bessel function of the first kind given in \cite{Abramowitz74HandbookOfMathematical}.
+where $I_{k}(z)$ is the modified Bessel function of the first kind given in \cite{Abramowitz74HandbookOfMathematical}:
 \begin{align}
     I_k{(z)} = \left(\frac{z}{2}\right)^k\sum_{i=0}^{+\infty}\frac{(z^2/4)^i}{i!\Gamma(k+i+1)}.
 \end{align}
-Unfortunately, we need approximation to compute the win probability $P(s>0)$. To avoid the approximmation, we choose the Equation~\ref{eq:winProbabilityPoisson} for computing the winning probability in the present paper. The lose and draw probability are also derived from Equation~\ref{eq:winProbabilityPoisson} as described above. 
+We approximated $P(s>0,\lambda_i, \lambda_j)$ with
+$\sum_{k=1}^{n} P(s=k; \lambda_i, \lambda_j)$ using $n=100$ since
+$P(s=k; \lambda_i, \lambda_j) \approx 0$ for all of our experiments
+when $k>100$. Likewise, we can compute the winning probability of team $j$ by constructing $s=s_j-s_i$ and computing $P(s>0)$, and the draw probability by computing $P(s=0)$. 
 
 \subsection{Inference in Gaussian-OD Model}
 
@@ -197,7 +289,7 @@ compute the belief update in closed-form as follows
 \label{eq:GaussianGraphicalModelsUpdatingEquation}
   \pi_{o_{i}}     &=    \frac{1}{\sigma_{o_{i}}^2} + \frac{1}{\beta_1^2+\beta_2^2+\gamma^2+\sigma_{d_{j}}^2},  \nonumber \\
   \tau_{o_{i}}    &=    \frac{\mu_{o_{i}}}{\sigma_{o_{i}}^2} + \frac{s_i+\mu_{d_{j}}}{\beta_1^2+\beta_2^2+\gamma^2+\sigma_{d_{j}}^2},  \nonumber \\
-  \pi_{d_{j}}     &=    \frac{1}{\sigma_{d_{j}}^2} + \frac{1}{\beta_1^2+\beta_2^2+\gamma^2+\sigma_{o_{i}}^2}, \nonumber \\ 
+  \pi_{d_{j}}     &=    \frac{1}{\sigma_{d_{j}}^2} + \frac{1}{\beta_1^2+\beta_2^2+\gamma^2+\sigma_{o_{i}}^2}, \nonumber \\
   \tau_{d_{j}}    &=    \frac{\mu_{d_{j}}}{\sigma_{d_{j}}^2} + \frac{\mu_{o_{i}}-s_i}{\beta_1^2+\beta_2^2+\gamma^2+\sigma_{o_{i}}^2},
 \end{align}
 \unindentmore where $\mu_{o_{i}}$ and $\sigma_{o_{i}}$ are the mean
@@ -210,18 +302,18 @@ precision and precision-adjusted mean for the posterior offence
 derive the update equations for team $j$'s offence skill $o_j$ and
 team $i$'s defence skill $d_i$.
 
-\subsubsection{Win/Lose/Draw Probability} 
+\subsubsection{WLD Probability} 
 To compute the probability of team $i$ winning vs team $j$, we first use message
 passing to estimate the normally distributed distributions for score
 variables $s_i$ and $s_j$, and then compute the probability that
-$s_i-s_j>0$, i.e., team $i$'s score is larger than team $j$'s. Given
+$s_i-s_j>\epsilon$, i.e., team $i$'s score is larger than team $j$'s. Given
 $s_i\sim\mathcal{N}(s_i;\mu_{si},\sigma_{si}^2)$ and
 $s_j\sim\mathcal{N}(s_j;\mu_{sj},\sigma_{sj}^2)$, we can compute the
 winning probability of team $i$ by
 \begin{align}
-  p(s>0) = 1 - \Phi\left(\frac{-(\mu_{si}-\mu_{sj})}{\sigma_{si}^2+\sigma_{sj}^2}\right).
+  p(s>\epsilon) = 1 - \Phi\left(\frac{\epsilon-(\mu_{si}-\mu_{sj})}{\sigma_{si}^2+\sigma_{sj}^2}\right).
 \end{align}
-where $s$ is the Gaussian distributed variable representing the difference $s_i-s_j$. The draw probability is the probaiblity density function of the Gaussian distributed variable $s$, evaluated at 0, and the lose probability of team $i$ is simply the probability that $s<0$, which is the normal cdf $\Phi\left(\frac{-(\mu_{si}-\mu_{sj})}{\sigma_{si}^2+\sigma_{sj}^2}\right)$. 
+where $\epsilon$ is a parameter to represent draw margin. Similarly, the lose probability of team $i$ can be computed by $p(s<-\epsilon)$, and the draw probability by $p(|s|<\epsilon$, which are both easy to compute as $s$ is distributed normally. 
 
 \subsection{Inference in Gaussian-SD Model}
 
@@ -249,15 +341,15 @@ $\pi_{l_{i}}$ ($\pi_{l_{j}}$) and $\tau_{l_{i}}$
     % \item $\pi_{l_{j}}$ and $\tau_{l_{j}}$ are the precision and precision adjusted mean for team $j$'s posterior skill distribution.
 %\end{itemize}
 
-\subsubsection{Win/Lose/Draw Probability} 
+\subsubsection{WLD probability} 
 To estimate the winning probability of team $i$ for a match with team $j$, one can first use message passing to estimate the normally distributed score difference variable $s$, and then compute the winning probability of team $i$ by
 \begin{align}
-  p(s>0) = 1 -
-  \Phi\left(\frac{l_i-l_j}{\sigma_i^2+\sigma_j^2+2 \beta^2}\right),
+  p(s>\epsilon) = 1 -
+  \Phi\left(\frac{\epsilon-l_i-l_j}{\sigma_i^2+\sigma_j^2+2 \beta^2}\right),
 \end{align}
 where $l_i$ and $\sigma_i$ are the mean and standard deviation for
 team $i$'s skill level, and $\beta$ the standard deviation of the
-performance variable.
+performance variable. Likewise, the lose probability of team $i$ is $p(s<-\epsilon)$, and the draw probability $p(|s|<\epsilon)$.
 
 %To estimate the winning probability of team $i$ for a match with team $j$, one can first use message passing to estimate the normally distributed score difference variable $s$, and then compute the winning probability of team $i$ by
 %{\small

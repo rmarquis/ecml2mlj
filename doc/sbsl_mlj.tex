@@ -58,7 +58,7 @@
 \usepackage{subfigure}
 \usepackage{epsfig}
 \usepackage[hyphens]{url}
-%\usepackage{hyperref}
+\usepackage{hyperref}
 
 \urldef{\mailsa}\path|{shengbo.guo}@xrce.xerox.com|
 \urldef{\mailsb}\path|{scott.sanner, wray.buntine}@nicta.com.au|
@@ -148,7 +148,7 @@
 \input model.tex
 
 %%
-\section{Skill and Win Probability Inference}
+\section{Skill and Win/Lose/Draw Probability Inference}
 \input inference.tex
 
 %%
@@ -164,7 +164,7 @@
 \input conclusion.tex
 
 \begin{acknowledgements}
-We thank Marconi Barbosa, Guillaume Bouchard, David Stern and Onno Zoeter for interesting discussions, and we also thank the anonymous reviwers at ECML-PKDD'12 for their constructive comments, which help to improve the paper. NICTA is funded by the Australian Government as represented by the Department of Broadband, Communications and the Digital Economy and the Australian Research Council through the ICT Centre of Excellence program.
+We thank Marconi Barbosa, Guillaume Bouchard, David Stern and Onno Zoeter for interesting discussions, and we also thank the anonymous reviewers at ECML-PKDD'12 for their constructive comments, which help to improve the paper. NICTA is funded by the Australian Government as represented by the Department of Broadband, Communications and the Digital Economy and the Australian Research Council through the ICT Centre of Excellence program.
 \end{acknowledgements}
 
 
@@ -178,29 +178,29 @@ We thank Marconi Barbosa, Guillaume Bouchard, David Stern and Onno Zoeter for in
 % Non-BibTeX users please use
 \input bib.tex
 
-\newpage
-\appendix{{\normalsize Appendix}}
-\section{Exponential Integral}
-\label{app:exponentialIntegral}
-Suppose that $x$ is a random variable with Gaussian distribution, i.e., $p(x):=\mathcal{N}(x; \mu, \sigma^2)$, we present the derivations of the expectation for the $\exp(x)$ w.r.t. $x$ as follows:
-\begin{align*}
-    &E_{x\sim p(x)}(\exp(x)) =\int_{x} \frac{\exp(x)}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)\mathrm{d}x \\
-    &=\frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{\mu^2}{2\sigma^2}\right)\int_{x} \exp\left(-\frac{x^{2}-2x(\mu+\sigma^2)}{2\sigma^2}\right)\mathrm{d}x \\
-    %&=\frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{\mu^2}{2\sigma^2}\right) \exp\left(\frac{(\mu+\sigma^2)^2}{2\sigma^2}\right) \int_{x} \exp\left(-\frac{(x-(\mu+\sigma^2))^2}{2\sigma^2}\right)dx\\
-    &=\frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(\mu + \frac{\sigma^2}{2}\right) \int_{x} \exp\left(-\frac{(x-(\mu+\sigma^2))^2}{2\sigma^2}\right)\mathrm{d}x\\
-    &=\frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(\mu + \frac{\sigma^2}{2}\right) \sqrt{2\pi \sigma^2 } \\
-    &=\exp(\mu+\sigma^2/2).
-\end{align*}
-
-\section{Log Gaussian Integral}
-\label{app:logGaussianIntegral}
-Suppose $x$ is a random variable with Gaussian distribution $p(x): \mathcal{N}\sim(\mu, \sigma^2)$ and $q(x)$ is a Gaussian, $\mathcal{N}\sim(\mu_1, \sigma_1^2)$, let us show how to derive the expectation of $\log q(x)$ w.r.t. $x$ as follows:
-\begin{align*}
-    &E_{x\sim p(x)}( \log q(x) ) =E_{x \sim p(x)} \left(\log\left(\frac{1}{\sqrt{2\pi\sigma_1^2}}\exp\left(-\frac{(x-\mu_1)^2}{2\sigma_1^2}\right)\right)\right)\\
-   &= -\frac{1}{2}\log(2\pi\sigma_{1}^2) - \frac{1}{2\sigma_{1}^2}E_{x\sim p(x)}( x-\mu_{1} )^2 \\
-    &= -\frac{1}{2}\log(2\pi\sigma_{1}^2) - \frac{1}{2\sigma_{1}^2}\left(E_{x\sim p(x)}( x^2 )-2\mu_1\mu + \mu_{1}^2 \right) \\
-    &= -\frac{1}{2}\log(2\pi\sigma_{1}^2) - \frac{1}{2\sigma_{1}^2}\left(\sigma^2 + \mu^2-2\mu_1\mu + \mu_{1}^2 \right).
-\end{align*}
+%\newpage
+%\appendix{{\normalsize Appendix}}
+%\section{Exponential Integral}
+%\label{app:exponentialIntegral}
+%Suppose that $x$ is a random variable with Gaussian distribution, i.e., $p(x):=\mathcal{N}(x; \mu, \sigma^2)$, we present the derivations of the expectation for the $\exp(x)$ w.r.t. $x$ as follows:
+%\begin{align*}
+%    &E_{x\sim p(x)}(\exp(x)) =\int_{x} \frac{\exp(x)}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)\mathrm{d}x \\
+%    &=\frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{\mu^2}{2\sigma^2}\right)\int_{x} \exp\left(-\frac{x^{2}-2x(\mu+\sigma^2)}{2\sigma^2}\right)\mathrm{d}x \\
+%    %&=\frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{\mu^2}{2\sigma^2}\right) \exp\left(\frac{(\mu+\sigma^2)^2}{2\sigma^2}\right) \int_{x} \exp\left(-\frac{(x-(\mu+\sigma^2))^2}{2\sigma^2}\right)dx\\
+%    &=\frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(\mu + \frac{\sigma^2}{2}\right) \int_{x} \exp\left(-\frac{(x-(\mu+\sigma^2))^2}{2\sigma^2}\right)\mathrm{d}x\\
+%    &=\frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(\mu + \frac{\sigma^2}{2}\right) \sqrt{2\pi \sigma^2 } \\
+%    &=\exp(\mu+\sigma^2/2).
+%\end{align*}
+%
+%\section{Log Gaussian Integral}
+%\label{app:logGaussianIntegral}
+%Suppose $x$ is a random variable with Gaussian distribution $p(x): \mathcal{N}\sim(\mu, \sigma^2)$ and $q(x)$ is a Gaussian, $\mathcal{N}\sim(\mu_1, \sigma_1^2)$, let us show how to derive the expectation of $\log q(x)$ w.r.t. $x$ as follows:
+%\begin{align*}
+%    &E_{x\sim p(x)}( \log q(x) ) =E_{x \sim p(x)} \left(\log\left(\frac{1}{\sqrt{2\pi\sigma_1^2}}\exp\left(-\frac{(x-\mu_1)^2}{2\sigma_1^2}\right)\right)\right)\\
+%   &= -\frac{1}{2}\log(2\pi\sigma_{1}^2) - \frac{1}{2\sigma_{1}^2}E_{x\sim p(x)}( x-\mu_{1} )^2 \\
+%    &= -\frac{1}{2}\log(2\pi\sigma_{1}^2) - \frac{1}{2\sigma_{1}^2}\left(E_{x\sim p(x)}( x^2 )-2\mu_1\mu + \mu_{1}^2 \right) \\
+%    &= -\frac{1}{2}\log(2\pi\sigma_{1}^2) - \frac{1}{2\sigma_{1}^2}\left(\sigma^2 + \mu^2-2\mu_1\mu + \mu_{1}^2 \right).
+%\end{align*}
 
 \end{document}
 % end of file template.tex
