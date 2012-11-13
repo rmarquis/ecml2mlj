@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.2.24)  12 NOV 2012 21:17
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.2.24)  13 NOV 2012 14:33
 entering extended mode
 **C:/Shengbo/Research/Submissions/ecml2mlj/doc/sbsl_mlj.tex
 (C:/Shengbo/Research/Submissions/ecml2mlj/doc/sbsl_mlj.tex
@@ -511,59 +511,49 @@ File: ScoreError_AFL.pdf Graphic file (type pdf)
 
 LaTeX Warning: Float too large for page by 96.45518pt on input line 280.
 
-
-Underfull \vbox (badness 1762) has occurred while \output is active []
-
- [26]
-[27 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError_UK.pdf, page is ro
-tated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError_Halo
-.pdf, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc
-/ScoreError_AFL.pdf, page is rotated 90 degrees>])
+[26] [27 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError_UK.pdf, page 
+is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError
+_Halo.pdf, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2ml
+j/doc/ScoreError_AFL.pdf, page is rotated 90 degrees>])
 (C:\Shengbo\Research\Submissions\ecml2mlj\doc\relatedwork.tex [28])
 (C:\Shengbo\Research\Submissions\ecml2mlj\doc\conclusion.tex)
-(C:\Shengbo\Research\Submissions\ecml2mlj\doc\bib.tex
-Underfull \vbox (badness 2245) has occurred while \output is active []
-
- [29])
-[30] (C:\Shengbo\Research\Submissions\ecml2mlj\doc\sbsl_mlj.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\bib.tex [29]) [30]
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\sbsl_mlj.aux) ) 
 Here is how much of TeX's memory you used:
- 6142 strings out of 495285
- 90817 string characters out of 3179881
- 165140 words of memory out of 3000000
- 9067 multiletter control sequences out of 15000+200000
+ 6141 strings out of 495285
+ 90807 string characters out of 3179881
+ 165146 words of memory out of 3000000
+ 9066 multiletter control sequences out of 15000+200000
  15558 words of font info for 57 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,18n,36p,1359b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
-><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
-/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program F
-iles (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program File
-s (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (
-x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86
-)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/M
-iKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTe
-X 2.8/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.
-8/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/ty
-pe1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1
-/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/
-amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/ams
-fonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfon
-ts/cm/cmtt8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfon
-ts/symbols/msbm7.pfb>
-Output written on sbsl_mlj.pdf (30 pages, 617751 bytes).
+<C:/Program Files 
+(x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files (
+x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)
+/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files (x86)/Mi
+KTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKT
+eX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX
+ 2.8/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.
+8/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.8/f
+onts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.8/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type
+1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public
+/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/
+cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10
+.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti7.pf
+b><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti8.pfb><
+C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
+Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
+C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/symbols/msbm7.pfb
+>
+Output written on sbsl_mlj.pdf (30 pages, 618066 bytes).
 PDF statistics:
  675 PDF objects out of 1000 (max. 8388607)
  142 named destinations out of 1000 (max. 500000)
