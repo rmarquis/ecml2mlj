@@ -11,7 +11,7 @@ TrueSkill and that separate offence/defence skill modeling does help
 (c.f. the performance of Gaussian-OD vs. Gaussian-SD). The introduction of home field advantages to the models also show improved performance for some of the settings. Furthermore, these new models allow the prediction of scores (unlike TrueSkill),
 with the Poisson-OD model and its fast variational Bayesian update derived
 in Section~\ref{sec:PoissonInference} performing best on the
-high-scoring AFL data for predicting scores. For the Poisson-OD model, we also provided a sampling based Bayesian inference approach, which achieved comparable performances with our proposed variational Bayes method but requires longer time for obtaining convergent samples. Altogether, these results suggest the
+high-scoring AFL data for predicting scores. For the Poisson-OD model, we also provided a sampling based Bayesian inference approach, but results indicated that the proposed Poisson-OD variational Bayes was 1000x faster than sampling but almost always performed just as well. Altogether, these results suggested the
 potential advantages of score-based Bayesian skill learning over
 state-of-the-art WLD-based skill learning approaches like TrueSkill.
 

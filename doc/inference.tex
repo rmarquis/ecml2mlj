@@ -20,11 +20,11 @@ $l_j\sim\mathcal{N}(l_j;\mu_j,\sigma_j^2)$, we first compute the
 distribution over performance difference variable $d$, and get
 $d\sim\mathcal{N}(d;\mu_d,\sigma_d^2)$ with $\mu_d = \mu_i - \mu_j$
 and $\sigma_d^2 = \sigma_i^2 + \sigma_j^2+2\beta^2$. The winning
-probability of team $i$ is given by the probability $p(d>\epsilon$ defined as
+probability of team $i$ is given by the probability $p(d>\epsilon)$ defined as
 \begin{align}
   p(d>\epsilon) = 1 - \Phi\left(\frac{\epsilon-\mu_d}{\sigma_d}\right),
 \end{align}
-where $\Phi(\cdot)$ is the normal CDF and the $\epsilon$ is the draw margin computed on the training data. Likewise, one can define the lose probability for team $i$ as $p(d<\epsilon)$, and the draw probability as $p(|d|<\epsilon)$.
+where $\Phi(\cdot)$ is the normal CDF and the $\epsilon$ is the draw margin computed on the training data. Likewise, one can define the lose probability for team $i$ as $p(d<\epsilon)$, and the draw probability as $p(|d|<\epsilon)$. The setting of draw margin is essential for WLD probability calculation. For the TrueSkill model, there are two draw margins involved: one is used in the TrueSkill factor graph (Figure~\ref{fig:trueskill}) computed by taking the proportion of matches with draws out of all the matches; the other is used here to compute the WLD probability, which is obtained by maximizing the WLD prediction accuracy (defined in Section~\ref{sec:multiclassClassification}) on the training data set. 
 
 %{\bf Win probability:} Given skill levels of
 %team $i$ and $j$, $l_i\sim\mathcal{N}(l_i;\mu_i,\sigma_i^2)$ and
@@ -225,8 +225,9 @@ into~\eqref{eq:ExactMuSigmaNew} to get the optimal mean
 and variance for $q(x)^*$.
 
 \paragraph{\bf Bayes Update with Slice Sampling}
-One caveat associated with variational Bayes is that it may yield local minimum; and thus one tends to use sampling methods such as Markov chain Monte Carlo (MCMC) to obtain exact solutions. To approximate this univariate distribution $p(x|s_i)$, we can use one type of MCMC named slice sampling~\cite{neal03SliceSampling}. The idea behind slice sampling is to sample uniformly from the region under the plot of the density function to be approximated; by doing so, one can adapt to the characteristics of the distribution. More specifically, we construct this Markov chain that converges to this uniform distribution by alternating uniform sampling in the vertical direction with uniform sampling from the horizontal ``slice" defined by the current vertical position. This method can be easily implemented for univariate distributions, and we use the Matlab embedded function slicesample for approximating the marginal distribution $p(x|s_i)$, which is on the variable $x$ after integrating the message from $s_i$. Given $L$ samples from the slice sampler, we can compute their mean $\hat{\mu}_x$ and variance $\hat{\sigma}_x^2$, then we can approximate $p(x|s_i)$ by with the Gaussian distribution $\mathcal{N}\left(\hat{\mu}_x, \hat{\sigma}_x^2\right)$. 
+One caveat associated with variational Bayes is that it may yield local minimum; and thus one tends to use sampling methods such as Markov chain Monte Carlo (MCMC) to obtain exact solutions. In our Poisson-OD model, recall that the problem is to compute the outgoing message for the variable $x$ as it is not tractable. To approximate $p(x|s_i)$ in the message passing framework, we propose an MCMC based sampling method named slice sampling, which can draw samples from any analytical univariate distribution~\cite{neal03SliceSampling}.
 
+During message passing inference framework for the Poisson-OD model factor graph (Figure~\ref{fig:trueskill_variant}), we first compute the outgoing message for the variable $x$ by defining its analytical function as $m_{\delta \rightarrow x}(x) m_{s_i \rightarrow x}(x)$ (Refer to Equation~\ref{eq:marginal} for details of these notations), and then call the Matlab embedded function \emph{slicesample} to draw samples from this function. With these samples, we can compute a normal approximation of this outgoing message. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -313,7 +314,7 @@ winning probability of team $i$ by
 \begin{align}
   p(s>\epsilon) = 1 - \Phi\left(\frac{\epsilon-(\mu_{si}-\mu_{sj})}{\sigma_{si}^2+\sigma_{sj}^2}\right).
 \end{align}
-where $\epsilon$ is a parameter to represent draw margin. Similarly, the lose probability of team $i$ can be computed by $p(s<-\epsilon)$, and the draw probability by $p(|s|<\epsilon$, which are both easy to compute as $s$ is distributed normally. 
+where $\epsilon$ is a parameter to represent draw margin. Similarly, the lose probability of team $i$ can be computed by $p(s<-\epsilon)$, and the draw probability by $p(|s|<\epsilon$, which are both easy to compute as $s$ is distributed normally. Note that the parameter draw margin $\epsilon$ is optimized by maximizing the WLD accuracy (defined in Section~\ref{sec:multiclassClassification}) on the training data set.
 
 \subsection{Inference in Gaussian-SD Model}
 
@@ -349,7 +350,7 @@ To estimate the winning probability of team $i$ for a match with team $j$, one c
 \end{align}
 where $l_i$ and $\sigma_i$ are the mean and standard deviation for
 team $i$'s skill level, and $\beta$ the standard deviation of the
-performance variable. Likewise, the lose probability of team $i$ is $p(s<-\epsilon)$, and the draw probability $p(|s|<\epsilon)$.
+performance variable. Likewise, the lose probability of team $i$ is $p(s<-\epsilon)$, and the draw probability $p(|s|<\epsilon)$. Similar with the Gaussian-OD model, $\epsilon$ is computed by optimizing the WLD predict accuracy defined in Section~\ref{sec:multiclassClassification} on the training data set. 
 
 %To estimate the winning probability of team $i$ for a match with team $j$, one can first use message passing to estimate the normally distributed score difference variable $s$, and then compute the winning probability of team $i$ by
 %{\small

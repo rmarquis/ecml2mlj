@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.2.24)  13 NOV 2012 14:33
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=latex 2011.3.10)  18 NOV 2012 00:29
 entering extended mode
-**C:/Shengbo/Research/Submissions/ecml2mlj/doc/sbsl_mlj.tex
-(C:/Shengbo/Research/Submissions/ecml2mlj/doc/sbsl_mlj.tex
+**sbsl_mlj.tex
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\sbsl_mlj.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
@@ -94,11 +94,10 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 90.
+Package graphics Info: Driver file: dvips.def on input line 90.
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
-\Gread@gobject=\count105
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\dvips.def"
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
@@ -134,13 +133,13 @@ Package: amsbsy 1999/11/29 v1.2d
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count106
+\inf@bad=\count105
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count107
-\leftroot@=\count108
+\uproot@=\count106
+\leftroot@=\count107
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count109
-\DOTSCASE@=\count110
+\classnum@=\count108
+\DOTSCASE@=\count109
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -153,15 +152,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 
 Package amsmath Warning: Unable to redefine math accent \vec.
 
-\macc@depth=\count111
-\c@MaxMatrixCols=\count112
+\macc@depth=\count110
+\c@MaxMatrixCols=\count111
 \dotsspace@=\muskip10
-\c@parentequation=\count113
-\dspbrk@lvl=\count114
+\c@parentequation=\count112
+\dspbrk@lvl=\count113
 \tag@help=\toks19
-\row@=\count115
-\column@=\count116
-\maxfields@=\count117
+\row@=\count114
+\column@=\count115
+\maxfields@=\count116
 \andhelp@=\toks20
 \eqnshift@=\dimen119
 \alignsep@=\dimen120
@@ -183,10 +182,10 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigbottomskip=\skip48
 \subfigcapmargin=\dimen126
 \subfiglabelskip=\skip49
-\c@subfigure=\count118
-\c@lofdepth=\count119
-\c@subtable=\count120
-\c@lotdepth=\count121
+\c@subfigure=\count117
+\c@lofdepth=\count118
+\c@subtable=\count119
+\c@lotdepth=\count120
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -209,7 +208,7 @@ Package: hyperref 2009/08/04 v6.78t Hypertext links for LaTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
+Package ifpdf Info: pdfTeX in pdf mode not detected.
 )
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
@@ -226,8 +225,8 @@ O)
 Package: xcolor-patch 2008/09/08 xcolor patch
 ))
 \@linkdim=\dimen129
-\Hy@linkcounter=\count122
-\Hy@pagecounter=\count123
+\Hy@linkcounter=\count121
+\Hy@pagecounter=\count122
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2009/08/04 v6.78t Hyperref: PDFDocEncoding definition (HO)
@@ -281,7 +280,7 @@ Package pdftexcmds Info: LuaTeX not detected on input line 145.
 Package: kvsetkeys 2009/07/19 v1.4 Key value parser with default handler suppor
 t (HO)
 )
-\Fld@menulength=\count124
+\Fld@menulength=\count123
 \Field@Width=\dimen130
 \Fld@charsize=\dimen131
 \Field@toks=\toks23
@@ -296,15 +295,22 @@ Package hyperref Info: PDF/A mode OFF on input line 4370.
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\atbegshi.sty"
 Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 )
-\Hy@abspage=\count125
-\c@Item=\count126
-\c@Hfootnote=\count127
+\Hy@abspage=\count124
+\c@Item=\count125
+\c@Hfootnote=\count126
 )
-*hyperref using default driver hpdftex*
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2009/08/04 v6.78t Hyperref driver for pdfTeX
-\Fld@listcount=\count128
-)
+*hyperref using default driver hdvips*
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\hdvips.def"
+File: hdvips.def 2009/08/04 v6.78t Hyperref driver for dvips
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\pdfmark.def"
+File: pdfmark.def 2009/08/04 v6.78t Hyperref definitions for pdfmark specials
+\pdf@docset=\toks24
+\pdf@box=\box31
+\pdf@toks=\toks25
+\pdf@defaulttoks=\toks26
+\Fld@listcount=\count127
+))
 (C:\Shengbo\Research\Submissions\ecml2mlj\doc\sbsl_mlj.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
@@ -325,27 +331,14 @@ LaTeX Font Info:    ... okay on input line 84.
 
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
-("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
-\scratchdimen=\dimen132
-\scratchbox=\box31
-\nofMPsegments=\count130
-\nofMParguments=\count131
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count132
-\MPscratchDim=\dimen133
-\MPnumerator=\count133
-\everyMPtoPDFconversion=\toks25
-)
 Package hyperref Info: Link coloring OFF on input line 84.
- ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\nameref.sty"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\nameref.sty"
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\refcount.sty"
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count134
+\c@section@level=\count128
 )
 LaTeX Info: Redefining \ref on input line 84.
 LaTeX Info: Redefining \pageref on input line 84.
@@ -367,53 +360,107 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 (C:\Shengbo\Research\Submissions\ecml2mlj\doc\abstract.tex)
 Overfull \hbox (2.33496pt too wide) in paragraph at lines 1--131
-[]\OT1/cmr/m/n/10 In this pa-per, we ex-tend the Bayesian skill rat-ing sys-tem
- of TrueSkill
+[][]\OT1/cmr/m/n/10 In this pa-per, we ex-tend the Bayesian skill rat-ing sys-t
+em of TrueSkill
  []
 
-[1{C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}]
-(C:\Shengbo\Research\Submissions\ecml2mlj\doc\introduction.tex) [2]
+[1] (C:\Shengbo\Research\Submissions\ecml2mlj\doc\introduction.tex [2])
 (C:\Shengbo\Research\Submissions\ecml2mlj\doc\trueskill.tex
 Overfull \hbox (5.33395pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 Since our score-based Bayesian skill learn-ing con-tri-bu-tions
- build on TrueSkill [[]],
+[]\OT1/cmr/m/n/10 Since our score-based Bayesian skill learn-ing con-tri-bu-tio
+ns build on TrueSkill [[]],
  []
 
-[3] <TrueSkill.pdf, id=84, 580.1675pt x 640.3925pt>
-File: TrueSkill.pdf Graphic file (type pdf)
- <use TrueSkill.pdf>)
-(C:\Shengbo\Research\Submissions\ecml2mlj\doc\model.tex [4] [5 <C:/Shengbo/Rese
-arch/Submissions/ecml2mlj/doc/TrueSkill.pdf>] [6]
-<modelAndInference.pdf, id=129, 950.55125pt x 696.6025pt>
-File: modelAndInference.pdf Graphic file (type pdf)
+[3]
 
-<use modelAndInference.pdf> [7 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/mo
-delAndInference.pdf>]
-<modelAndInferenceHA.pdf, id=151, 1195.46625pt x 796.9775pt>
-File: modelAndInferenceHA.pdf Graphic file (type pdf)
+! LaTeX Error: File `TrueSkill' not found.
 
-<use modelAndInferenceHA.pdf> [8 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/
-modelAndInferenceHA.pdf>]
-<modelAndInferenceGaussianGraphicalModel.pdf, id=172, 950.55125pt x 696.6025pt>
-File: modelAndInferenceGaussianGraphicalModel.pdf Graphic file (type pdf)
-<use modelAndInferenceGaussianGraphicalModel.pdf>
-<modelAndInferenceGaussianGraphicalModelHA.pdf, id=175, 1195.46625pt x 796.9775
-pt>
-File: modelAndInferenceGaussianGraphicalModelHA.pdf Graphic file (type pdf)
- <use modelAndInferenceGaussianGraphicalModelHA.pdf>
-Underfull \vbox (badness 10000) has occurred while \output is active []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...e{\includegraphics[scale=0.35]{TrueSkill}}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
- [9 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/modelAndInferenceGaussianGrap
-hicalModel.pdf>]
-<modelAndInferenceGaussianGraphicalModelScoreDifference.pdf, id=197, 580.1675pt
- x 626.34pt>
-File: modelAndInferenceGaussianGraphicalModelScoreDifference.pdf Graphic file (
-type pdf)
- <use modelAndInferenceGaussianGraphicalModelScoreDifference.pdf>)
-(C:\Shengbo\Research\Submissions\ecml2mlj\doc\inference.tex [10 <C:/Shengbo/Res
-earch/Submissions/ecml2mlj/doc/modelAndInferenceGaussianGraphicalModelHA.pdf>]
-[11 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/modelAndInferenceGaussianGrap
-hicalModelScoreDifference.pdf>]
+) [4] (C:\Shengbo\Research\Submissions\ecml2mlj\doc\model.tex [5] [6]
+
+! LaTeX Error: File `modelAndInference' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...egraphics[scale=0.35]{modelAndInference}}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `modelAndInferenceHA' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 ...graphics[scale=0.3]{modelAndInferenceHA}}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[7]
+
+! LaTeX Error: File `modelAndInferenceGaussianGraphicalModel' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.163 ...modelAndInferenceGaussianGraphicalModel}}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `modelAndInferenceGaussianGraphicalModelHA' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 ...delAndInferenceGaussianGraphicalModelHA}}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[8]
+
+! LaTeX Error: File `modelAndInferenceGaussianGraphicalModelScoreDifference' no
+t found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 ...ceGaussianGraphicalModelScoreDifference}}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (C:\Shengbo\Research\Submissions\ecml2mlj\doc\inference.tex [9]
 Overfull \hbox (8.14456pt too wide) in paragraph at lines 64--77
  \OT1/cmr/m/n/10 To avoid clut-tered no-ta-tion, let us use $\OML/cmm/m/it/10 m
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ to rep-re-sent $\OML/cm
@@ -422,140 +469,362 @@ m/m/it/10 m[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OMS/cmsy/m
  []\OT1/cmr/m/n/10 )$,
  []
 
-[12]
+[10]
 Overfull \hbox (16.56241pt too wide) in paragraph at lines 150--161
-\OT1/cmr/m/n/10 To find the min-i-mizer $\OML/cmm/m/it/10 q\OT1/cmr/m/n/10 (\OM
-L/cmm/m/it/10 x\OT1/cmr/m/n/10 )$, we cal-cu-late the par-tial deriva-tives of 
-$[] []$
+[]\OT1/cmr/m/n/10 To find the min-i-mizer $\OML/cmm/m/it/10 q\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$, we cal-cu-late the par-tial deriva-tives o
+f $[] []$
  []
 
-[13] [14]
-Underfull \vbox (badness 1163) has occurred while \output is active []
+[11] [12]
+Underfull \vbox (badness 2401) has occurred while \output is active []
 
- [15]
-[16]) (C:\Shengbo\Research\Submissions\ecml2mlj\doc\experiment.tex [17]
+ [13]
+[14]) (C:\Shengbo\Research\Submissions\ecml2mlj\doc\experiment.tex [15]
 Overfull \hbox (1.7044pt too wide) in paragraph at lines 33--39
 \OT1/cmr/m/it/10 win/lose/draw pre-dic-tion ac-cu-racy \OT1/cmr/m/n/10 (Sec-tio
-n []5.2.2[]), \OT1/cmr/m/it/10 log-likelihood \OT1/cmr/m/n/10 (Sec-tion []5.2.3
-[]),
+n [][][][]), \OT1/cmr/m/it/10 log-likelihood \OT1/cmr/m/n/10 (Sec-tion [][][][]
+),
  []
 
-[18] [19] <InforGain_UK.pdf, id=368, 845.1575pt x 597.23125pt>
-File: InforGain_UK.pdf Graphic file (type pdf)
+[16] [17] [18]
 
-<use InforGain_UK.pdf> <InforGain_Halo.pdf, id=369, 845.1575pt x 597.23125pt>
-File: InforGain_Halo.pdf Graphic file (type pdf)
+! LaTeX Error: File `InforGain_UK' not found.
 
-<use InforGain_Halo.pdf> <InforGain_AFL.pdf, id=370, 845.1575pt x 597.23125pt>
-File: InforGain_AFL.pdf Graphic file (type pdf)
-
-<use InforGain_AFL.pdf>
-
-LaTeX Warning: Float too large for page by 97.5663pt on input line 163.
-
-
-Underfull \vbox (badness 1067) has occurred while \output is active []
-
- [20]
-[21 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/InforGain_UK.pdf, page is rot
-ated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/InforGain_Halo.p
-df, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/I
-nforGain_AFL.pdf, page is rotated 90 degrees>]
-<accuracy_UK.pdf, id=403, 845.1575pt x 597.23125pt>
-File: accuracy_UK.pdf Graphic file (type pdf)
- <use accuracy_UK.pdf>
-<accuracy_Halo.pdf, id=404, 845.1575pt x 597.23125pt>
-File: accuracy_Halo.pdf Graphic file (type pdf)
- <use accuracy_Halo.pdf>
-<accuracy_AFL.pdf, id=405, 845.1575pt x 597.23125pt>
-File: accuracy_AFL.pdf Graphic file (type pdf)
- <use accuracy_AFL.pdf>
-
-LaTeX Warning: Float too large for page by 97.5663pt on input line 226.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \vbox (badness 3977) has occurred while \output is active []
+! Package graphics Error: Division by 0.
 
- [22]
-[23 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/accuracy_UK.pdf, page is rota
-ted 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/accuracy_Halo.pdf
-, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/acc
-uracy_AFL.pdf, page is rotated 90 degrees>]
-<Loglik_UK.pdf, id=437, 845.1575pt x 597.23125pt>
-File: Loglik_UK.pdf Graphic file (type pdf)
- <use Loglik_UK.pdf>
-<Loglik_Halo.pdf, id=438, 845.1575pt x 597.23125pt>
-File: Loglik_Halo.pdf Graphic file (type pdf)
- <use Loglik_Halo.pdf>
-<Loglik_AFL.pdf, id=439, 845.1575pt x 597.23125pt>
-File: Loglik_AFL.pdf Graphic file (type pdf)
- <use Loglik_AFL.pdf>
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-LaTeX Warning: Float too large for page by 97.5663pt on input line 252.
 
-[24] [25 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/Loglik_UK.pdf, page is r
-otated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/Loglik_Halo.pd
-f, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/Lo
-glik_AFL.pdf, page is rotated 90 degrees>]
-<ScoreError_UK.pdf, id=476, 845.1575pt x 597.23125pt>
-File: ScoreError_UK.pdf Graphic file (type pdf)
- <use ScoreError_UK.pdf>
-<ScoreError_Halo.pdf, id=477, 845.1575pt x 597.23125pt>
-File: ScoreError_Halo.pdf Graphic file (type pdf)
+! LaTeX Error: File `InforGain_Halo' not found.
 
-<use ScoreError_Halo.pdf>
-<ScoreError_AFL.pdf, id=478, 845.1575pt x 597.23125pt>
-File: ScoreError_AFL.pdf Graphic file (type pdf)
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<use ScoreError_AFL.pdf>
 
-LaTeX Warning: Float too large for page by 96.45518pt on input line 280.
+! Package graphics Error: Division by 0.
 
-[26] [27 <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError_UK.pdf, page 
-is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2mlj/doc/ScoreError
-_Halo.pdf, page is rotated 90 degrees> <C:/Shengbo/Research/Submissions/ecml2ml
-j/doc/ScoreError_AFL.pdf, page is rotated 90 degrees>])
-(C:\Shengbo\Research\Submissions\ecml2mlj\doc\relatedwork.tex [28])
-(C:\Shengbo\Research\Submissions\ecml2mlj\doc\conclusion.tex)
-(C:\Shengbo\Research\Submissions\ecml2mlj\doc\bib.tex [29]) [30]
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `InforGain_AFL' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[19]
+
+! LaTeX Error: File `accuracy_UK' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `accuracy_Halo' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `accuracy_AFL' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Loglik_UK' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Loglik_Halo' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Loglik_AFL' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[20]
+
+! LaTeX Error: File `ScoreError_UK' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.269 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.269 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `ScoreError_Halo' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.272 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.272 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `ScoreError_AFL' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.275 }
+       \\
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.275 }
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[21] [22]) (C:\Shengbo\Research\Submissions\ecml2mlj\doc\relatedwork.tex)
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\conclusion.tex [23])
+(C:\Shengbo\Research\Submissions\ecml2mlj\doc\bib.tex [24]) [25]
 (C:\Shengbo\Research\Submissions\ecml2mlj\doc\sbsl_mlj.aux) ) 
 Here is how much of TeX's memory you used:
- 6141 strings out of 495285
- 90807 string characters out of 3179881
- 165146 words of memory out of 3000000
- 9066 multiletter control sequences out of 15000+200000
+ 5652 strings out of 495286
+ 83481 string characters out of 3179904
+ 154956 words of memory out of 3000000
+ 8684 multiletter control sequences out of 15000+200000
  15558 words of font info for 57 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,18n,36p,1359b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files 
-(x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files (
-x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x8
-6)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)
-/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files (x86)/Mi
-KTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKT
-eX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX
- 2.8/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.
-8/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.8/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.8/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type
-1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/
-cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/
-cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cms
-y8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10
-.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti7.pf
-b><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti8.pfb><
-C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
-Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
-C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/symbols/msbm7.pfb
->
-Output written on sbsl_mlj.pdf (30 pages, 618066 bytes).
-PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 37i,18n,36p,1235b,420s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+Output written on sbsl_mlj.dvi (25 pages, 160872 bytes).
