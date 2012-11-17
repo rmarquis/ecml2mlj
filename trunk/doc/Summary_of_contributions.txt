@@ -1,0 +1,37 @@
+1. What is the main claim of the paper? Why is this an important contribution to the machine learning literature? 
+
+In this paper, we extend the Bayesian skill rating system of TrueSkill to accommodate score-based match outcomes. TrueSkill has proven to be a very effective algorithm for matchmaking --- the process of pairing competitors based on similar skill-level --- in competitive online gaming. However, for the case of two teams/players, TrueSkill only learns from win, lose, or draw outcomes and cannot use additional match outcome information such as scores. To address this deficiency, we propose novel Bayesian graphical models based on the Gaussian and Poisson likelihood as extensions of TrueSkill that (1) model player's offence and defence skills separately and (2) model how these offence and defence skills interact to generate score-based match outcomes. Furthermore, we show that our models can naturally integrate home field advantage in a principled way. We derive efficient Bayesian inference methods for inferring latent skills in the Gaussian models, and fast fixed-point iteration method for the variational inference in the Poisson model, which is more than 1000 times faster than a sampling-based method for the Poisson model. We evaluate the proposed models on three real data sets including Halo 2 XBox Live matches. To this end, our contributions to the machine learning community are in terms of: 
+- Practical graphical models for real-world problems on matchmaking; 
+- Efficient Bayesian inference methods for the proposed models; 
+- Theoretical results on variational Bayes inference that can enrich the depth of understanding for variational Bayes and its applications. 
+
+2. What is the evidence you provide to support your claim? Be precise. 
+
+In this paper, we provide both theoretical and empirical results: 
+- Theoretical results: we derive the fixed-point iteration for the variational Bayes inference approaches used for the Poisson likelihood model for score based skill learning. 
+
+- Empirical results: empirical evaluations demonstrate that the new score-based models (a) provide more accurate win/loss/draw probability estimates than TrueSkill (in terms of information gain), (b) provide competitive and often better win/loss/draw (multi-class) classification accuracy, (c) provide reasonably accurate score predictions with an appropriate likelihood --- prediction for which TrueSkill was not originally designed but important in many real-world applications. Furthermore, the proposed variational Bayes method for learning and inference in the Poisson model is about 1000 times faster comparing with the sampling method and performs comparably. 
+
+
+3. What papers by other authors make the most closely related contributions, and how is your paper related to them? 
+
+The single paper that makes the most closely related contribution to our submission is: 
+R. Herbrich, T. Minka, and T. Graepel. Trueskill: A Bayesian skill rating system. In NIPS, pages 569-576, 2006.
+
+Our paper extends the above mentioned one in terms of learning skills by modeling
+(1) player's offence and defence skills separately, 
+(2) how these offence and defence skills interact to generate scores, 
+and (3) home field advantages. 
+More importantly, we derive efficient Bayesian learning algorithms for the proposed models. 
+
+4. Have you published parts of your paper before, for instance in a conference? If so, give details of your previous paper(s) and a precise statement detailing how your paper provides a significant contribution beyond the previous paper(s).
+
+Parts of this paper were published at ECML-PKDD'12 and the details are below: 
+S. Guo and S. Sanner and T. Graepel and W. Buntine Score-based Bayesian Skill Learning. Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases, 106-121, 2012
+
+Comparing with the earlier version of this work, in the current submission we make a number of significant contributions including: 
+1. Proposing a new sampling alternative for message passing inference of the Poisson score likelihood model, 
+2. Proposing a new home-field advantage model for the Gaussian and Poisson score likelihood models,
+3. Introducing a new average baseline for predicting score-based outcomes,
+4. Introducing additional evaluation metrics including the multiclass WLD prediction accuracy and log likelihood, together with the associated computational descriptions, 
+5. Conducting extensive empirical evaluations for comparing all algorithms including previous and new models and inference algorithms with additional discussion. 

@@ -51,21 +51,30 @@ future opponents.
 %Section~\ref{sec:results} support this conjecture in many cases.
 \end{itemize}
 
-In this work\footnote{Part of this work appeared in~\cite{Guo:ECML2012}.}, we augment the TrueSkill model of WLD skill learning to
+In this article, we augment the TrueSkill model of WLD skill learning to
 learn from score-based outcomes. We explore single skill models as
 well as separate offense/defense skill models made possible via
 score-based modeling. We also investigate both Gaussian and Poisson
 score likelihood models, deriving a novel variational update for
-approximate Bayesian inference in the latter case. Additionally, we model home field advantage in some of the proposed models to reflect the possibly better performance when playing on home fields for real-world matches such as football, and we show that modeling of home advantages can be naturally integrated into our proposed graphical models. We evaluate these novel Bayesian score-based skill-learning models in comparison to TrueSkill (for WLD outcomes) on three datasets: 14 years of match
+approximate Bayesian inference in the latter case. Comparing with the earlier version of this work appearing in~\cite{Guo:ECML2012}, we make a number of significant contributions including: 
+\begin{itemize}
+	\item Proposing a new sampling alternative for message passing inference of the Poisson score likelihood model, 
+	\item Proposing a new home-field advantage model for the Gaussian and Poisson score likelihood models,
+	\item Introducing a new average baseline for predicting score-based outcomes,
+	\item Introducing additional evaluation metrics including the multiclass WLD prediction accuracy and log likelihood, together with the associated computational descriptions, 
+	\item Conducting extensive empirical evaluations for comparing all algorithms including previous and new models and inference algorithms with additional discussion. 
+\end{itemize}
+
+Our extensive empirical evaluations are conducted on three datasets: 14 years of match
 outcomes for the UK Premier League, 11 years of match outcomes for the
 Australian Football (Rugby) League (AFL), and three days covering
 6,000+ online match outcomes in the Halo 2 XBox video game.  Empirical
 evaluations demonstrate that the new score-based models (a) provide
-more accurate win/loss probability estimates than TrueSkill (in terms
+more accurate win/loss/draw probability estimates than TrueSkill (in terms
 of information gain) with limited amounts of training data, (b)
-provide competitive and often better win/loss (binary) and win/loss/draw (multi-class) classification
-accuracy, and (c) provide reasonably accurate score predictions with an appropriate
+provide competitive and often better win/loss/draw (multi-class) classification
+accuracy, (c) provide reasonably accurate score predictions with an appropriate
 likelihood --- prediction for which TrueSkill was not designed but
 important in cases such as tournaments that rank (or break ties) by
 points, professional sports betting and bookmaking, and game-play
-strategy decisions that are dependent on final score projections.
+strategy decisions that are dependent on final score projections. In addition, we observe that that proposed variational Bayes method for learning and inference in the Poisson model is about 1000 times faster and performs comparably, thus can achieve real-time belief updating of the skill levels of players/teams, which is essential for large-scale online matchmaking systems. 

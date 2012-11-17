@@ -113,7 +113,7 @@ Note that we must omit the Gaussian-SD model since it can only predict score dif
 \subsection{Results on Four Criteria}
 \label{sec:results}
 
-Experimental results are reported according to the parameter configurations shown in Table~\ref{table:Parameters}. The draw margins used to compute WLD probability for the TrueSkill, Gaussian-OD, and Gaussian-SD are chosen in the way such that the WLD classification on the training data is maximized. Parameters for the slice sampling used in the Poisson-OD model include the burn-in, thinning, and the number of samples required, which we set to 500, 2, and 500, respectively. 
+Experimental results are reported according to the parameter configurations shown in Table~\ref{table:Parameters}. The draw margins used to compute WLD probability for the TrueSkill, Gaussian-OD, and Gaussian-SD are chosen in the way such that the WLD classification accuracy on the training data is maximized, and we omit the details of these optimized parameters, because we optimize these parameters for each training/testing splitting for each training proportion. Parameters for the slice sampling used in the Poisson-OD model include the burn-in, thinning, and the number of samples required, which we set to 500, 2, and 500, respectively. Before we discuss the results against these four criteria on three real data sets, we emphasize that the WLD probabilities for the TrueSkill, Gaussian-OD, and Gaussian-SD models are computed in the way that they can maximize the WLD prediction accuracies, contrasted with the binary prediction Win/no-Win probabilities as reported in~\cite{Guo:ECML2012}, leading to noticeable differences in results for the information gain criterion. 
 \begin{table}[htbp!]
 \caption{Parameter settings. Priors on offence/defence skills: $\mathcal{N}(\mu_{0},\sigma_{0}^2)$ with $\mu_{0}=25$ and $\sigma_{0}=25/3$. Performance variance: $\beta$, $\beta_o$, $\beta_d$.}
 \begin{center}
@@ -132,7 +132,7 @@ Experimental results are reported according to the parameter configurations show
 \label{table:Parameters}
 \end{center}
 \end{table}
-Now we discuss the results against these three criteria on three real data sets below. 
+
 
 \subsubsection{Information Gain}
 Information gain for four models on the UK data set is shown in Figure~\ref{fig:InforGain} (Top Panel). The results indicate that the proposed Gaussian-OD, Gaussian-SD, and Gaussian-OD-AH performed significantly better than TrueSkill for all the training proportions. These results indicated that score information was  indeed useful for learning teams' skill levels when training data is limited. As shows in the results, the Gaussian-OD-AH slightly outperformed Gaussian-OD when 30\% of the data was used for training, indicating the meaningful information carried by the home/away feild for a football game. We also observed that the Poisson-OD(VB) and Poisson-OD(VB)-AH did not perform as good as other models. This is because that the scores for the UK data set are relatively small; thus the amplification due to the exponential term in the Poisson-OD model led to more extreme probaiblities, thus may hurt the performance if the predictions are wrong.
@@ -220,7 +220,7 @@ When comparing the best performance across the three data sets for all the model
  \epsfig{file=accuracy_AFL, angle=0, height=7cm} 
 }\\
 \caption{\small Results on the UK-PL (Top), Halo (Middle), and AFL (Bottom), evaluated
-using the classification accuracy. Error bars indicate
+using the multiclass WLD prediction accuracy. Error bars indicate
 95\% confidence intervals.}
 \label{fig:accuracyWLD}
 \end{figure}
@@ -274,7 +274,7 @@ We want to emphasize that for the AFL data set, we observe that the baseline met
  \epsfig{file=ScoreError_AFL, angle=0, height=7cm} 
 }\\
 \caption{\small Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated
-using the Brier Score. Error bars indicate
+using the score prediction error in term of MAE. Error bars indicate
 95\% confidence intervals.}
 \label{fig:ScoreError}
 \end{figure}

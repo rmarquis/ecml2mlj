@@ -11,17 +11,19 @@
 \global \let \hyper@last\relax 
 \fi
 
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
 \citation{herbrich06569}
 \citation{elo78TheRatingOfChessPlayers}
 \citation{Guo:ECML2012}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}}
 \citation{herbrich06569}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Skill Learning using TrueSkill}{3}{section.2}}
-\newlabel{eq:BayeTrueSkill}{{1}{3}{Skill Learning using TrueSkill\relax }{equation.2.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Score-based Bayesian Skill Models}{4}{section.3}}
-\newlabel{sec:PoissonGaussianModels}{{3}{4}{Score-based Bayesian Skill Models\relax }{section.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip TrueSkill factor graph for a match between two single-player teams with team i winning. There are three types of variables: $l_i$ for the skills of all players, $p_i$ for the performances of all players and $d$ the performance difference. The first row of factors encode the (product) prior; the product of the remaining factors characterizes the likelihood for the game outcome team $i$ winning team $j$. The arrows show the optimal message passing schedule: (1) messages pass along \emph  {gray} arrows from top to bottom, (2) the marginal over $d$ is updated via message 1 followed by message 2 (which requires moment matching), (3) messages pass from bottom to top along \emph  {black} arrows.}}{5}{figure.1}}
-\newlabel{fig:trueskill}{{1}{5}{\small TrueSkill factor graph for a match between two single-player teams with team i winning. There are three types of variables: $l_i$ for the skills of all players, $p_i$ for the performances of all players and $d$ the performance difference. The first row of factors encode the (product) prior; the product of the remaining factors characterizes the likelihood for the game outcome team $i$ winning team $j$. The arrows show the optimal message passing schedule: (1) messages pass along \emph {gray} arrows from top to bottom, (2) the marginal over $d$ is updated via message 1 followed by message 2 (which requires moment matching), (3) messages pass from bottom to top along \emph {black} arrows}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip TrueSkill factor graph for a match between two single-player teams with team i winning. There are three types of variables: $l_i$ for the skills of all players, $p_i$ for the performances of all players and $d$ the performance difference. The first row of factors encode the (product) prior; the product of the remaining factors characterizes the likelihood for the game outcome team $i$ winning team $j$. The arrows show the optimal message passing schedule: (1) messages pass along \emph  {gray} arrows from top to bottom, (2) the marginal over $d$ is updated via message 1 followed by message 2 (which requires moment matching), (3) messages pass from bottom to top along \emph  {black} arrows.}}{4}{figure.1}}
+\newlabel{fig:trueskill}{{1}{4}{\small TrueSkill factor graph for a match between two single-player teams with team i winning. There are three types of variables: $l_i$ for the skills of all players, $p_i$ for the performances of all players and $d$ the performance difference. The first row of factors encode the (product) prior; the product of the remaining factors characterizes the likelihood for the game outcome team $i$ winning team $j$. The arrows show the optimal message passing schedule: (1) messages pass along \emph {gray} arrows from top to bottom, (2) the marginal over $d$ is updated via message 1 followed by message 2 (which requires moment matching), (3) messages pass from bottom to top along \emph {black} arrows}{figure.1}{}}
+\newlabel{eq:BayeTrueSkill}{{1}{4}{Skill Learning using TrueSkill\relax }{equation.2.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Score-based Bayesian Skill Models}{5}{section.3}}
+\newlabel{sec:PoissonGaussianModels}{{3}{5}{Score-based Bayesian Skill Models\relax }{section.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Offence and Defence Skill Models}{5}{subsection.3.1}}
 \newlabel{sec:PoissonGraphicalModel}{{3.1}{5}{Offence and Defence Skill Models\relax }{subsection.3.1}{}}
 \newlabel{eq:sampleAssumption}{{4}{5}{Offence and Defence Skill Models\relax }{equation.3.4}{}}
@@ -29,80 +31,82 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Poisson Offence/Defence Skill Model}{6}{subsubsection.3.1.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  The Poisson-OD variants of TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the score observation factors use the Poisson distribution for the Poisson-OD model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. }}{7}{figure.2}}
 \newlabel{fig:trueskill_variant}{{2}{7}{ The Poisson-OD variants of TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the score observation factors use the Poisson distribution for the Poisson-OD model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. \relax }{figure.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  The Poisson-OD-AH variants of the Poisson-OD factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$), with team $i$ playing home field. Note that $h_i$ is the latent variable representing home field advantages associated with team $i$, and note also that the score observation factors use the Poisson distribution for the Poisson-OD-AH model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$), defence skill $d_{i}$ (the defence skill of team $i$), together with home field advantage variable $h_i$. Given $s_i$ for team $i$, the posterior distributions over $(o_i, h_i, d_j)$ are inferred via message passing). Likewise, given team $j$'s score $s_j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. }}{8}{figure.3}}
-\newlabel{fig:trueskill_variant_AH}{{3}{8}{ The Poisson-OD-AH variants of the Poisson-OD factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$), with team $i$ playing home field. Note that $h_i$ is the latent variable representing home field advantages associated with team $i$, and note also that the score observation factors use the Poisson distribution for the Poisson-OD-AH model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$), defence skill $d_{i}$ (the defence skill of team $i$), together with home field advantage variable $h_i$. Given $s_i$ for team $i$, the posterior distributions over $(o_i, h_i, d_j)$ are inferred via message passing). Likewise, given team $j$'s score $s_j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. \relax }{figure.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Gaussian Offence/Defence Skill Model}{8}{subsubsection.3.1.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  The Gaussian-OD variant of the TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the score observation factors use the Gaussian distribution for the Gaussian-OD model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. }}{9}{figure.4}}
-\newlabel{fig:GaussianOD}{{4}{9}{ The Gaussian-OD variant of the TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the score observation factors use the Gaussian distribution for the Gaussian-OD model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. \relax }{figure.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  The Gaussian-OD-AH variant of the Gaussian-OD factor graph for belief updating of two teams based on (1) the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$) and (2) home/away fields. Note that the score observation factors use the Gaussian distribution for the Gaussian-OD model. Shaded nodes are observed variables. For each team $i$($j$), it is characterized by offence skill $o_{i}$ (the offence skill of team $i$), defence skill $d_{i}$ (the defence skill of team $i$), and home field advantage variable $h_i$. Given $s_i$ for team $i$, the posterior distributions over $(o_i, h_i, d_j)$ are inferred via message passing, and same for $(o_j, d_i)$ given $s_j$.}}{10}{figure.5}}
-\newlabel{fig:GaussianODHA}{{5}{10}{ The Gaussian-OD-AH variant of the Gaussian-OD factor graph for belief updating of two teams based on (1) the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$) and (2) home/away fields. Note that the score observation factors use the Gaussian distribution for the Gaussian-OD model. Shaded nodes are observed variables. For each team $i$($j$), it is characterized by offence skill $o_{i}$ (the offence skill of team $i$), defence skill $d_{i}$ (the defence skill of team $i$), and home field advantage variable $h_i$. Given $s_i$ for team $i$, the posterior distributions over $(o_i, h_i, d_j)$ are inferred via message passing, and same for $(o_j, d_i)$ given $s_j$}{figure.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Gaussian Score Difference (SD) Model}{10}{subsection.3.2}}
-\newlabel{eq:ScoreDifferenceGaussianGraphicalModel}{{9}{10}{Gaussian Score Difference (SD) Model\relax }{equation.3.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  The Poisson-OD-AH variants of the Poisson-OD factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$), with team $i$ playing home field. Note that $h_i$ is the latent variable representing home field advantages associated with team $i$, and note also that the score observation factors use the Poisson distribution for the Poisson-OD-AH model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$), defence skill $d_{i}$ (the defence skill of team $i$), together with home field advantage variable $h_i$. Given $s_i$ for team $i$, the posterior distributions over $(o_i, h_i, d_j)$ are inferred via message passing). Likewise, given team $j$'s score $s_j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. }}{7}{figure.3}}
+\newlabel{fig:trueskill_variant_AH}{{3}{7}{ The Poisson-OD-AH variants of the Poisson-OD factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$), with team $i$ playing home field. Note that $h_i$ is the latent variable representing home field advantages associated with team $i$, and note also that the score observation factors use the Poisson distribution for the Poisson-OD-AH model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$), defence skill $d_{i}$ (the defence skill of team $i$), together with home field advantage variable $h_i$. Given $s_i$ for team $i$, the posterior distributions over $(o_i, h_i, d_j)$ are inferred via message passing). Likewise, given team $j$'s score $s_j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. \relax }{figure.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Gaussian Offence/Defence Skill Model}{7}{subsubsection.3.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  The Gaussian-OD variant of the TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the score observation factors use the Gaussian distribution for the Gaussian-OD model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. }}{8}{figure.4}}
+\newlabel{fig:GaussianOD}{{4}{8}{ The Gaussian-OD variant of the TrueSkill factor graph for skill update of two teams based on the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$). Note that the score observation factors use the Gaussian distribution for the Gaussian-OD model. Shaded nodes are observed variables. For each team $i$, it is characterized by offence skill $o_{i}$ (the offence skill of team $i$) and defence skill $d_{i}$ (the defence skill of team $i$). Given $s_j$ for team $j$, the posterior distributions over $(o_i,d_j)$ are inferred via message passing. \relax }{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  The Gaussian-OD-AH variant of the Gaussian-OD factor graph for belief updating of two teams based on (1) the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$) and (2) home/away fields. Note that the score observation factors use the Gaussian distribution for the Gaussian-OD model. Shaded nodes are observed variables. For each team $i$($j$), it is characterized by offence skill $o_{i}$ (the offence skill of team $i$), defence skill $d_{i}$ (the defence skill of team $i$), and home field advantage variable $h_i$. Given $s_i$ for team $i$, the posterior distributions over $(o_i, h_i, d_j)$ are inferred via message passing, and same for $(o_j, d_i)$ given $s_j$.}}{8}{figure.5}}
+\newlabel{fig:GaussianODHA}{{5}{8}{ The Gaussian-OD-AH variant of the Gaussian-OD factor graph for belief updating of two teams based on (1) the match score outcome (Left: modeling $s_i$; Right: modeling $s_j$) and (2) home/away fields. Note that the score observation factors use the Gaussian distribution for the Gaussian-OD model. Shaded nodes are observed variables. For each team $i$($j$), it is characterized by offence skill $o_{i}$ (the offence skill of team $i$), defence skill $d_{i}$ (the defence skill of team $i$), and home field advantage variable $h_i$. Given $s_i$ for team $i$, the posterior distributions over $(o_i, h_i, d_j)$ are inferred via message passing, and same for $(o_j, d_i)$ given $s_j$}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Gaussian Score Difference (SD) Model}{8}{subsection.3.2}}
+\newlabel{eq:ScoreDifferenceGaussianGraphicalModel}{{9}{8}{Gaussian Score Difference (SD) Model\relax }{equation.3.9}{}}
 \citation{herbrich06569}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip The Gaussian-SD variant of the TrueSkill factor graph model for skill update of two teams based on the score difference. Both team $i$ and team $j$ are characterized by skill level $l_i$ and $l_j$, respectively. The shaded node $s$ ($s=s_i-s_j$) denotes the score difference between $s_i$ and $s_j$. Bayesian inference for the posterior skill level distributions has a closed-form solution.}}{11}{figure.6}}
-\newlabel{fig:modelAndInferenceGaussianGraphicalModelScoreDifference}{{6}{11}{\small The Gaussian-SD variant of the TrueSkill factor graph model for skill update of two teams based on the score difference. Both team $i$ and team $j$ are characterized by skill level $l_i$ and $l_j$, respectively. The shaded node $s$ ($s=s_i-s_j$) denotes the score difference between $s_i$ and $s_j$. Bayesian inference for the posterior skill level distributions has a closed-form solution}{figure.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Skill and Win/Lose/Draw Probability Inference}{11}{section.4}}
-\newlabel{sec:inference}{{4}{11}{Skill and Win/Lose/Draw Probability Inference\relax }{section.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Inference in TrueSkill}{11}{subsection.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip The Gaussian-SD variant of the TrueSkill factor graph model for skill update of two teams based on the score difference. Both team $i$ and team $j$ are characterized by skill level $l_i$ and $l_j$, respectively. The shaded node $s$ ($s=s_i-s_j$) denotes the score difference between $s_i$ and $s_j$. Bayesian inference for the posterior skill level distributions has a closed-form solution.}}{9}{figure.6}}
+\newlabel{fig:modelAndInferenceGaussianGraphicalModelScoreDifference}{{6}{9}{\small The Gaussian-SD variant of the TrueSkill factor graph model for skill update of two teams based on the score difference. Both team $i$ and team $j$ are characterized by skill level $l_i$ and $l_j$, respectively. The shaded node $s$ ($s=s_i-s_j$) denotes the score difference between $s_i$ and $s_j$. Bayesian inference for the posterior skill level distributions has a closed-form solution}{figure.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Skill and Win/Lose/Draw Probability Inference}{9}{section.4}}
+\newlabel{sec:inference}{{4}{9}{Skill and Win/Lose/Draw Probability Inference\relax }{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Inference in TrueSkill}{9}{subsection.4.1}}
 \citation{herbrich06569}
 \citation{kschischang01498}
 \citation{Beal:EMFixedPoint02}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Inference in Poisson-OD Model}{12}{subsection.4.2}}
-\newlabel{sec:PoissonInference}{{4.2}{12}{Inference in Poisson-OD Model\relax }{subsection.4.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Bayes Update}{12}{subsubsection.4.2.1}}
-\newlabel{eq:marginal}{{12}{12}{Bayes Update\relax }{equation.4.12}{}}
-\@writefile{toc}{\contentsline {paragraph}{\bf  Bayesian update with VB}{12}{section*.1}}
-\newlabel{eq:marginal2}{{13}{12}{\bf Bayesian update with VB\relax }{equation.4.13}{}}
-\newlabel{eq:KL}{{14}{12}{\bf Bayesian update with VB\relax }{equation.4.14}{}}
-\newlabel{eq:ExactMuSigmaNew}{{15}{13}{\bf Bayesian update with VB\relax }{equation.4.15}{}}
-\newlabel{eq:approximationZQuad5}{{16}{13}{\bf Bayesian update with VB\relax }{equation.4.16}{}}
-\newlabel{eq:firstTermFinal}{{17}{13}{\bf Bayesian update with VB\relax }{equation.4.17}{}}
-\newlabel{eq:finalSecondTerm}{{18}{13}{\bf Bayesian update with VB\relax }{equation.4.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Inference in Poisson-OD Model}{10}{subsection.4.2}}
+\newlabel{sec:PoissonInference}{{4.2}{10}{Inference in Poisson-OD Model\relax }{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Bayes Update}{10}{subsubsection.4.2.1}}
+\newlabel{eq:marginal}{{12}{10}{Bayes Update\relax }{equation.4.12}{}}
+\@writefile{toc}{\contentsline {paragraph}{\bf  Bayesian update with VB}{10}{section*.1}}
+\newlabel{eq:marginal2}{{13}{10}{\bf Bayesian update with VB\relax }{equation.4.13}{}}
+\newlabel{eq:KL}{{14}{10}{\bf Bayesian update with VB\relax }{equation.4.14}{}}
+\newlabel{eq:ExactMuSigmaNew}{{15}{11}{\bf Bayesian update with VB\relax }{equation.4.15}{}}
+\newlabel{eq:approximationZQuad5}{{16}{11}{\bf Bayesian update with VB\relax }{equation.4.16}{}}
+\newlabel{eq:firstTermFinal}{{17}{11}{\bf Bayesian update with VB\relax }{equation.4.17}{}}
+\newlabel{eq:finalSecondTerm}{{18}{11}{\bf Bayesian update with VB\relax }{equation.4.18}{}}
 \citation{neal03SliceSampling}
-\newlabel{eq:kappa}{{19}{14}{\bf Bayesian update with VB\relax }{equation.4.19}{}}
+\newlabel{eq:kappa}{{19}{12}{\bf Bayesian update with VB\relax }{equation.4.19}{}}
 \citation{Skellam46TheFrequencyDistribution}
 \citation{Abramowitz74HandbookOfMathematical}
-\@writefile{toc}{\contentsline {paragraph}{\bf  Bayes Update with Slice Sampling}{15}{section*.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}WLD Probability}{15}{subsubsection.4.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Inference in Gaussian-OD Model}{16}{subsection.4.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Bayesian update}{16}{subsubsection.4.3.1}}
-\newlabel{eq:GaussianGraphicalModelsUpdatingEquation}{{21}{16}{Bayesian update\relax }{equation.4.21}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}WLD Probability}{16}{subsubsection.4.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Inference in Gaussian-SD Model}{16}{subsection.4.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Bayes Update}{16}{subsubsection.4.4.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}WLD probability}{17}{subsubsection.4.4.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Empirical Evaluation}{17}{section.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Data Sets}{17}{subsection.5.1}}
-\newlabel{sec:data_sets}{{5.1}{17}{Data Sets\relax }{subsection.5.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{\bf  Bayes Update with Slice Sampling}{13}{section*.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}WLD Probability}{13}{subsubsection.4.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Inference in Gaussian-OD Model}{14}{subsection.4.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Bayesian update}{14}{subsubsection.4.3.1}}
+\newlabel{eq:GaussianGraphicalModelsUpdatingEquation}{{21}{14}{Bayesian update\relax }{equation.4.21}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}WLD Probability}{14}{subsubsection.4.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Inference in Gaussian-SD Model}{14}{subsection.4.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Bayes Update}{14}{subsubsection.4.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}WLD probability}{15}{subsubsection.4.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Empirical Evaluation}{15}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Data Sets}{15}{subsection.5.1}}
+\newlabel{sec:data_sets}{{5.1}{15}{Data Sets\relax }{subsection.5.1}{}}
 \citation{Guo:ECML2012}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Evaluation Criteria}{18}{subsection.5.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Information Gain}{18}{subsubsection.5.2.1}}
-\newlabel{sec:informationGain}{{5.2.1}{18}{Information Gain\relax }{subsubsection.5.2.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}WLD Prediction Accuracy}{18}{subsubsection.5.2.2}}
-\newlabel{sec:multiclassClassification}{{5.2.2}{18}{WLD Prediction Accuracy\relax }{subsubsection.5.2.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Log Likelihood}{19}{subsubsection.5.2.3}}
-\newlabel{sec:loglik}{{5.2.3}{19}{Log Likelihood\relax }{subsubsection.5.2.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}Score Prediction Error}{19}{subsubsection.5.2.4}}
-\newlabel{sec:scorePredictionError}{{5.2.4}{19}{Score Prediction Error\relax }{subsubsection.5.2.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Results on Four Criteria}{19}{subsection.5.3}}
-\newlabel{sec:results}{{5.3}{19}{Results on Four Criteria\relax }{subsection.5.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parameter settings. Priors on offence/defence skills: $\mathcal  {N}(\mu _{0},\sigma _{0}^2)$ with $\mu _{0}=25$ and $\sigma _{0}=25/3$. Performance variance: $\beta $, $\beta _o$, $\beta _d$.}}{20}{table.1}}
-\newlabel{table:Parameters}{{1}{20}{Parameter settings. Priors on offence/defence skills: $\mathcal {N}(\mu _{0},\sigma _{0}^2)$ with $\mu _{0}=25$ and $\sigma _{0}=25/3$. Performance variance: $\beta $, $\beta _o$, $\beta _d$}{table.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Information Gain}{20}{subsubsection.5.3.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using information gain. Error bars indicate 95\% confidence intervals.}}{21}{figure.7}}
-\newlabel{fig:InforGain}{{7}{21}{\small Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using information gain. Error bars indicate 95\% confidence intervals}{figure.7}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Win/Lose/Draw Prediction Accuracy}{22}{subsubsection.5.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL (Top), Halo (Middle), and AFL (Bottom), evaluated using the classification accuracy. Error bars indicate 95\% confidence intervals.}}{23}{figure.8}}
-\newlabel{fig:accuracyWLD}{{8}{23}{\small Results on the UK-PL (Top), Halo (Middle), and AFL (Bottom), evaluated using the classification accuracy. Error bars indicate 95\% confidence intervals}{figure.8}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Log likelihood}{24}{subsubsection.5.3.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.4}Score Prediction Errors}{24}{subsubsection.5.3.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using log likelihood. Error bars indicate 95\% confidence intervals.}}{25}{figure.9}}
-\newlabel{fig:logLik}{{9}{25}{\small Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using log likelihood. Error bars indicate 95\% confidence intervals}{figure.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Evaluation Criteria}{16}{subsection.5.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Information Gain}{16}{subsubsection.5.2.1}}
+\newlabel{sec:informationGain}{{5.2.1}{16}{Information Gain\relax }{subsubsection.5.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}WLD Prediction Accuracy}{16}{subsubsection.5.2.2}}
+\newlabel{sec:multiclassClassification}{{5.2.2}{16}{WLD Prediction Accuracy\relax }{subsubsection.5.2.2}{}}
+\citation{Guo:ECML2012}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Log Likelihood}{17}{subsubsection.5.2.3}}
+\newlabel{sec:loglik}{{5.2.3}{17}{Log Likelihood\relax }{subsubsection.5.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}Score Prediction Error}{17}{subsubsection.5.2.4}}
+\newlabel{sec:scorePredictionError}{{5.2.4}{17}{Score Prediction Error\relax }{subsubsection.5.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Results on Four Criteria}{17}{subsection.5.3}}
+\newlabel{sec:results}{{5.3}{17}{Results on Four Criteria\relax }{subsection.5.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parameter settings. Priors on offence/defence skills: $\mathcal  {N}(\mu _{0},\sigma _{0}^2)$ with $\mu _{0}=25$ and $\sigma _{0}=25/3$. Performance variance: $\beta $, $\beta _o$, $\beta _d$.}}{18}{table.1}}
+\newlabel{table:Parameters}{{1}{18}{Parameter settings. Priors on offence/defence skills: $\mathcal {N}(\mu _{0},\sigma _{0}^2)$ with $\mu _{0}=25$ and $\sigma _{0}=25/3$. Performance variance: $\beta $, $\beta _o$, $\beta _d$}{table.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Information Gain}{18}{subsubsection.5.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using information gain. Error bars indicate 95\% confidence intervals.}}{19}{figure.7}}
+\newlabel{fig:InforGain}{{7}{19}{\small Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using information gain. Error bars indicate 95\% confidence intervals}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Win/Lose/Draw Prediction Accuracy}{19}{subsubsection.5.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL (Top), Halo (Middle), and AFL (Bottom), evaluated using the multiclass WLD prediction accuracy. Error bars indicate 95\% confidence intervals.}}{20}{figure.8}}
+\newlabel{fig:accuracyWLD}{{8}{20}{\small Results on the UK-PL (Top), Halo (Middle), and AFL (Bottom), evaluated using the multiclass WLD prediction accuracy. Error bars indicate 95\% confidence intervals}{figure.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Log likelihood}{20}{subsubsection.5.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using log likelihood. Error bars indicate 95\% confidence intervals.}}{21}{figure.9}}
+\newlabel{fig:logLik}{{9}{21}{\small Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using log likelihood. Error bars indicate 95\% confidence intervals}{figure.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.4}Score Prediction Errors}{21}{subsubsection.5.3.4}}
 \citation{Murray:AISTATS2010}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Variational Inference Vs. Sampling for the Poisson-OD Model}{26}{subsection.5.4}}
-\newlabel{sec:VBSampling}{{5.4}{26}{Variational Inference Vs. Sampling for the Poisson-OD Model\relax }{subsection.5.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using the Brier Score. Error bars indicate 95\% confidence intervals.}}{27}{figure.10}}
-\newlabel{fig:ScoreError}{{10}{27}{\small Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using the Brier Score. Error bars indicate 95\% confidence intervals}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \relax \fontsize  {8}{9.5pt}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 4\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using the score prediction error in term of MAE. Error bars indicate 95\% confidence intervals.}}{22}{figure.10}}
+\newlabel{fig:ScoreError}{{10}{22}{\small Results on the UK-PL (upper), Halo (middle), and AFL (bottom), evaluated using the score prediction error in term of MAE. Error bars indicate 95\% confidence intervals}{figure.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Variational Inference Vs. Sampling for the Poisson-OD Model}{22}{subsection.5.4}}
+\newlabel{sec:VBSampling}{{5.4}{22}{Variational Inference Vs. Sampling for the Poisson-OD Model\relax }{subsection.5.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Model Home Field Improving Performance}{22}{subsection.5.5}}
 \citation{elo78TheRatingOfChessPlayers}
 \citation{herbrich06569}
 \citation{dangauthier07337}
@@ -115,12 +119,10 @@
 \citation{Moroney56FactsFromFigures}
 \citation{karlis09BayesianModellingFootballOutcomes}
 \citation{Glickman98JASA}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Model Home Field Improving Performance}{28}{subsection.5.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Related Work}{28}{section.6}}
 \citation{Baio:10JAS}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Related Work}{23}{section.6}}
 \bibstyle{spbasic}
 \bibcite{neal03SliceSampling}{1}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{29}{section.7}}
 \bibcite{Baio:10JAS}{2}
 \bibcite{Abramowitz74HandbookOfMathematical}{3}
 \bibcite{birlutiu07ExpectationPropagation}{4}
@@ -129,6 +131,7 @@
 \bibcite{herbrich06569}{7}
 \bibcite{kschischang01498}{8}
 \bibcite{minka01ExpectationUAI}{9}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{24}{section.7}}
 \bibcite{Skellam46TheFrequencyDistribution}{10}
 \bibcite{Glickman98JASA}{11}
 \bibcite{Beal:EMFixedPoint02}{12}

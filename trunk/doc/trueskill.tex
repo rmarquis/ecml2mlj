@@ -40,7 +40,7 @@ o = \textit{draw}:       & \mathbb{I}[|d| \leq \epsilon],
 where $\mathbb{I}[\cdot]$ is an indicator function. Then the likelihood $p(o|\vec{l},M)$ in~\eqref{eq:BayeTrueSkill}
 can be written as
 \begin{align*} %\label{eq:trueskill_update}
-p(o|\vec{l},M) = \int \cdots \int_{\mathbb{R}^n} \int_{-\infty}^{+\infty} p(o|d) p(d|\vec{p},M) \prod_{i=1}^n p(p_i|l_i) \, \mathrm{d}\vec{p} \, \mathrm{d}d.
+p(o|\vec{l},M) = \int \cdots \int_{\mathbb{R}^n} \int_{-\infty}^{+\infty} p(o|d) p(d|\vec{p},M) \prod_{i=1}^n p(p_i|l_i) \, \mathrm{d}d \, \mathrm{d}\vec{p}.
 \end{align*}
 The entire TrueSkill model relevant to $M$ is shown in the
 factor graph of Figure~\ref{fig:trueskill} with $P(o|d)$ given
